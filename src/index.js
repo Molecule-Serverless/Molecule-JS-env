@@ -5,6 +5,9 @@ const protobuf = require("protobufjs");
 const request = require('superagent');
 const fs = require('fs');
 const admZip = require('adm-zip');
+const opentracing = require("opentracing");
+const cp = require('child_process');
+let child = null
 let packageDefinition = protoLoader.loadSync(
     PROTO_PATH,
     {
@@ -18,7 +21,6 @@ const protoDescriptor = grpc.loadPackageDefinition(packageDefinition);
 let container_proto = protoDescriptor.container;
 let func = null;
 let root = null;
-
 async function test() {
     let root = await protobuf.load(PROTO_PATH);
     let invokeResponse = root.lookupType("container.InvokeResponse")
@@ -26,7 +28,6 @@ async function test() {
     let resp = invokeResponse.create({code: Code.values.NOT_READY})
     console.log(resp)
 }
-
 /**
  * Implements the SayHello RPC method.
  */
@@ -97,7 +98,7 @@ function LoadCode(call, callback) {
             zip.extractAllTo(targetPath, true);
             console.log('finished unzip');
             try {
-                func = require("/tmp/code/index.js").handler
+                func = require('/tmp/code/index.js').handler
                 if (!func) {
                     console.log("function init error")
                     let resp = LoadCodeResponse.create({
@@ -106,6 +107,7 @@ function LoadCode(call, callback) {
                     callback(null, resp)
                     return
                 }
+                child.send({target:'/tmp/code/index.js'})
             } catch (e) {
                 let resp = LoadCodeResponse.create({
                     code: Code.values.ERROR
@@ -127,6 +129,53 @@ function Stop(call, callback) {
     callback(null, resp)
 }
 
+function getLastLine(filename) {
+    var data = fs.readFileSync(filename, 'utf8');
+    var lines = data.split("\n");
+    return lines[lines.length-1]
+}
+
+function readId() {
+    return getLastLine("/etc/hosts").split("\t")[1]
+}
+
+function readIp() {
+    return getLastLine("/etc/hosts").split("\t")[0]
+}
+
+async function RegisterToWorker() {
+    let target = process.env.WORK_HOST || "127.0.0.1:8001"
+    let WORKER_PROTO_PATH = __dirname + '/proto/worker/worker.proto';
+
+    let packageDefinition = protoLoader.loadSync(
+        WORKER_PROTO_PATH,
+        {
+            keepCase: true,
+            longs: String,
+            enums: String,
+            defaults: true,
+            oneofs: true
+        });
+    const protoDescriptor = grpc.loadPackageDefinition(packageDefinition);
+    let worker_proto = protoDescriptor.worker;
+    let client = new worker_proto.Worker(target,
+        grpc.credentials.createInsecure());
+    let result = await new Promise((resolve, reject) => {
+        client.Register({
+            id: readId(),
+            addr: readIp(),
+            runtime: process.env.RUNTIME,
+            funcName: process.env.FUNC_NAME,
+            memory: parseInt(process.env.MEMORY),
+        }, function (err, response) {
+            if(err) {
+                reject(err)
+            }
+            resolve(response)
+        })
+    })
+}
+
 /**
  * Starts an RPC server that receives requests for the Greeter service at the
  * sample server port
@@ -140,8 +189,17 @@ async function main() {
         LoadCode: LoadCode,
         Stop: Stop
     });
+    try {
+        let result = await RegisterToWorker()
+    } catch (e) {
+        console.log(e)
+        process.exit(-1)
+    }
+    //start server.js
+    child = cp.fork('./server.js');
     server.bind('0.0.0.0:50051', grpc.ServerCredentials.createInsecure());
     server.start();
 }
+
 
 main();
