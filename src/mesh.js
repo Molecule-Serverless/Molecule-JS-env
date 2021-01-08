@@ -2,7 +2,7 @@ const info = require('./info');
 const trace = require('./trace');
 const config = require('./config');
 const policy = require('./policy')
-var funcName = process.env.FUNC_NAME || "A"
+var funcName = process.env.FUNC_NAME
 
 exports.InitMesh = (meshData) => {
     // todo init a struct for get info or a interface to get info
@@ -25,7 +25,7 @@ exports.IsFirst = (meshData) => {
         return false
     }
     let steps = meshData.application.stepChains
-    let selfName = process.env.FUNC_NAME || "A"
+    let selfName = process.env.FUNC_NAME
 
     return (steps.length > 0 && steps[0].functionName === selfName)
 }
@@ -37,7 +37,7 @@ exports.GetCallee = (meshData) => {
         return null
     }
     let steps = meshData.application.stepChains
-    let selfName = process.env.FUNC_NAME || "A"
+    let selfName = process.env.FUNC_NAME
     let callee = ""
     for (let index = 0; index < steps.length; ++index) {
         if (steps[index].functionName === selfName) {
@@ -53,10 +53,12 @@ exports.GetCallee = (meshData) => {
         return null // todo here maybe data mistake
     }
     if (meshData.functions != null) {
-
+        console.log("choose functions %o", meshData.functions)
         let calleeFunc = meshData.functions[callee]
+        console.log("callee function %o", calleeFunc)
         let chosenPolicy =  process.env.POLICY || "simple"
-        console.log(policy.Policies)
+
+	console.log("policy.Policies:%s",policy.Policies)
         return policy.Policies[chosenPolicy](calleeFunc)
     }
     return null

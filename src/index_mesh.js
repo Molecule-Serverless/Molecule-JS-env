@@ -45,6 +45,7 @@ function Invoke(call, callback) {
         return
     }
     try {
+	console.log("payload:%s", call.request.payload.toString());
         let payload = JSON.parse(call.request.payload.toString());
         let output = func(payload)
         let resp = invokeResponse.create({
@@ -53,12 +54,13 @@ function Invoke(call, callback) {
         })
         callback(null, resp)
     } catch (e) {
-        console.log(e.toString())
+        console.log("get error in invoke %s",e)
         let resp = invokeResponse.create({
             code: Code.values.RUNTIME_ERROR,
         })
         callback(null, resp)
     }
+    console.log("invoke fianally")
 }
 
 function SetEnvs(call, callback) {
@@ -88,7 +90,7 @@ function LoadCode(call, callback) {
     request
         .get(url)
         .on('error', function (error) {
-            console.log(error);
+            console.log("request get error %o", error);
         })
         .pipe(fs.createWriteStream(zipFile))
         .on('finish', function () {
@@ -109,6 +111,7 @@ function LoadCode(call, callback) {
                 }
                 child.send({target:'/tmp/code/index.js'})
             } catch (e) {
+		console.log("error in require code:%s", e)
                 let resp = LoadCodeResponse.create({
                     code: Code.values.ERROR
                 })
@@ -132,7 +135,7 @@ function Stop(call, callback) {
 function getLastLine(filename) {
     var data = fs.readFileSync(filename, 'utf8');
     var lines = data.split("\n");
-    return lines[lines.length-1]
+    return lines[lines.length-2]
 }
 
 function readId() {
@@ -160,7 +163,7 @@ async function RegisterToWorker() {
     let worker_proto = protoDescriptor.worker;
     let client = new worker_proto.Worker(target,
         grpc.credentials.createInsecure());
-    let result = await new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
         client.Register({
             id: readId(),
             addr: readIp(),
@@ -180,7 +183,8 @@ async function RegisterToWorker() {
  * Starts an RPC server that receives requests for the Greeter service at the
  * sample server port
  */
-async function main() {
+async function main() { 
+    child = cp.fork('./server.js');
     let server = new grpc.Server();
     root = await protobuf.load(PROTO_PATH);
     server.addService(container_proto.Container.service, {
@@ -189,14 +193,12 @@ async function main() {
         LoadCode: LoadCode,
         Stop: Stop
     });
-    try {
-        let result = await RegisterToWorker()
-    } catch (e) {
-        console.log(e)
-        process.exit(-1)
-    }
+    RegisterToWorker().then((res) => {
+	console.log("register res %o", res)
+    }).catch((err)=> {
+	console.log("get err %s", err)
+    })
     //start server.js
-    child = cp.fork('./server.js');
     server.bind('0.0.0.0:50051', grpc.ServerCredentials.createInsecure());
     server.start();
 }

@@ -2,7 +2,13 @@ const mesh = require('./mesh')
 const config = require('./config.json')
 const opentracing = require("opentracing");
 var express = require('express')
+var bodyParser = require('body-parser');
+const isEmpty = require('lodash.isempty');
+var http = require('http');
+
 var app = express()
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 let tracer = null;
 let func = null;
 var meshData = {}
@@ -17,7 +23,7 @@ function getData(opts, data) {
         opts.headers['Content-Length'] = finalData.length
     }
     return new Promise(function (resolve, reject) {
-        let req = https.request(opts, (res) => {
+        let req = http.request(opts, (res) => {
             console.log('req in')
             let returnData = ''
             res.on('data', function (d) {
@@ -58,15 +64,16 @@ async function handler(req) {
     if (span != null) {
         localSpan = tracer.startSpan(process.env.FUNC_NAME || "A", {childOf: span});
         tracer.inject(span, opentracing.FORMAT_HTTP_HEADERS, headers);
-        console.log(headers)
+        console.log("headers after inject %o", headers)
     }
     let finalResult = null
     let result = null
     if (func) {
-        if (req.hasBody) {
-            result = func(req.body);
+        if (isEmpty(req.body)) {
+            result = func({})
         } else {
-            result = func({});
+            console.log("req body: %s", req.body)
+            result = func(req.body);
         }
     } else {
         console.log("function does not init")
@@ -76,12 +83,13 @@ async function handler(req) {
         localSpan.finish()
     }
     let callee = mesh.GetCallee(meshData)
-    if (callee != null) {
-        console.log(callee)
+    console.log("get callee %o", callee)
+    if (callee) {
         let data = result
         // todo use mesh information to mapping transfer data
         let response = await getData({
             hostname: callee.hostname,
+            port: callee.port,
             path: callee.path,
             method: callee.method,
             headers: headers
@@ -101,12 +109,14 @@ async function handler(req) {
 
 function main() {
     process.on('message', function (msg) {
+        console.log(msg)
         func = require(msg.target).handler
         console.log("function init at express")
     })
     tracer = mesh.InitMesh(meshData)
-    app.get('/invoke', function (req, res) {
-        let result = handler(req)
+    app.get('/invoke', async function (req, res) {
+        let result = await handler(req)
+        console.log("result:%o", result)
         res.json(result)
     })
     app.listen(40041, function () {

@@ -16,30 +16,32 @@ const packageDefinition = protoLoader.loadSync(
 const discovery = grpc.loadPackageDefinition(packageDefinition).mesh.discovery;
 const model = grpc.loadPackageDefinition(packageDefinition).mesh.model;
 exports.watch = (config, meshData) => {
+    console.log("start watch")
     let client = new discovery.DiscoveryServer(config.info.target,
         grpc.credentials.createInsecure());
     let call = client.XDS();
     let funcData = {
         "instance": {
-            "provider" :    process.env.PROVIDER || "AWS",
-            "functionName" : process.env.FUNC_NAME || "A",
-            "applicationName" : process.env.APP_NAME || "test",
-            "url": "a.aws.com"
+            "provider" :    process.env.PROVIDER,
+            "functionName" : process.env.FUNC_NAME,
+            "applicationName" : "",
+            "url": ""
         },
         "resourceType": "ads",
-        "resourcesName": [process.env.APP_NAME || "test"],
+        "resourcesName": [""],
         "resourceNonce": ""
     }
     call.on('data', function (res) {
         switch (res.resourceType) {
             case "ads": {
+                console.log("receive ads")
                 if (res.resources.length !== 1) {
                     // mesh center gives wrong ads
-                    let funcData = {}
+                    funcData = {}
                     let instance = {}
-                    instance.provider = process.env.PROVIDER || "AWS"
-                    instance.functionName = process.env.FUNC_NAME || "A"
-                    instance.applicationName = process.env.APP_NAME || "test"
+                    instance.provider = process.env.PROVIDER
+                    instance.functionName = process.env.FUNC_NAME
+                    instance.applicationName = ""
                     instance.url = "a.aws.com"
                     funcData.instance = instance
                     funcData.resourceType = "ads"
@@ -63,10 +65,10 @@ exports.watch = (config, meshData) => {
                                 let requestType = root.lookupType("mesh.discovery.XDSRequest")
                                 let payload = {
                                     "instance": {
-                                        "provider" :    process.env.PROVIDER || "AWS",
-                                        "functionName" : process.env.FUNC_NAME || "A",
-                                        "applicationName" : process.env.APP_NAME || "test",
-                                        "url": "a.aws.com"
+                                        "provider" :    process.env.PROVIDER,
+                                        "functionName" : process.env.FUNC_NAME,
+                                        "applicationName" : meshData.application.name,
+                                        "url": ""
                                     },
                                     "resourceType": "fds",
                                     "resourcesName" : funcNames,
@@ -84,7 +86,10 @@ exports.watch = (config, meshData) => {
             }
             case "fds": {
                 protobuf.load(MODEL_PATH).then(function (root) {
-                    let funcs = {}
+                    console.log("receive fds")
+                    if (!meshData.functions) {
+                        meshData.functions = {}
+                    }
                     for (let resource of res.resources) {
                         let func = root.lookupType("mesh.model.Function")
                         let message = func.decode(resource.value)
@@ -97,10 +102,10 @@ exports.watch = (config, meshData) => {
                             objects: true,  // populates empty objects (map fields) even if defaults=false
                             oneofs: true    // includes virtual oneof fields set to the present field's name
                         });
-                        funcs[funcObject.name] = funcObject
+                        meshData.functions[funcObject.name] = funcObject
                         console.log(funcObject)
                     }
-                    meshData.functions = funcs
+                    console.log(meshData.functions)
                 })
                 break
             }
