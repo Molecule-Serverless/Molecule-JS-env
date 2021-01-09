@@ -70,10 +70,10 @@ async function handler(req) {
     let result = null
     if (func) {
         if (isEmpty(req.body)) {
-            result = func({})
+            result = await func({})
         } else {
             console.log("req body: %s", req.body)
-            result = func(req.body);
+            result = await func(req.body);
         }
     } else {
         console.log("function does not init")

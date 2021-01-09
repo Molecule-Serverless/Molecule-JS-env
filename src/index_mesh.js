@@ -21,6 +21,7 @@ const protoDescriptor = grpc.loadPackageDefinition(packageDefinition);
 let container_proto = protoDescriptor.container;
 let func = null;
 let root = null;
+
 async function test() {
     let root = await protobuf.load(PROTO_PATH);
     let invokeResponse = root.lookupType("container.InvokeResponse")
@@ -31,7 +32,7 @@ async function test() {
 /**
  * Implements the SayHello RPC method.
  */
-function Invoke(call, callback) {
+async function Invoke(call, callback) {
     let invokeResponse = root.lookupType("container.InvokeResponse")
     let Code = root.lookupEnum("container.InvokeResponse.Code")
     if (func == null) {
@@ -47,7 +48,7 @@ function Invoke(call, callback) {
     try {
 	console.log("payload:%s", call.request.payload.toString());
         let payload = JSON.parse(call.request.payload.toString());
-        let output = func(payload)
+        let output = await func(payload)
         let resp = invokeResponse.create({
             code: Code.values.OK,
             output: Buffer.from(JSON.stringify(output))
@@ -183,7 +184,7 @@ async function RegisterToWorker() {
  * Starts an RPC server that receives requests for the Greeter service at the
  * sample server port
  */
-async function main() { 
+async function main() {
     child = cp.fork('./server.js');
     let server = new grpc.Server();
     root = await protobuf.load(PROTO_PATH);
