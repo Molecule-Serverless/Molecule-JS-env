@@ -15,8 +15,8 @@ var meshData = {}
 
 // getData assume we will send data to the next step function, now we igonre the param
 function getData(opts, data) {
-    let finalData = ""
-    let needPost = opts.method === 'DELETE' || opts.method === 'POST' || opts.method === 'PUT'
+    let finalData = "{}"
+    let needPost = true
     if (needPost) {
         finalData = JSON.stringify(data)
         opts.headers["Content-Type"] = 'application/json'
@@ -70,10 +70,10 @@ async function handler(req) {
     let result = null
     if (func) {
         if (isEmpty(req.body)) {
-            result = func({})
+            result = await func({})
         } else {
             console.log("req body: %s", req.body)
-            result = func(req.body);
+            result = await func(req.body);
         }
     } else {
         console.log("function does not init")
@@ -94,8 +94,8 @@ async function handler(req) {
             method: callee.method,
             headers: headers
         }, data)
-        console.log("send result indirectly which is from " + callee)
-        finalResult = response
+        console.log("send result indirectly which is from %o", callee)
+        finalResult = JSON.parse(response);
     } else {
         console.log("send result directly")
         finalResult = result
