@@ -4,6 +4,7 @@ const opentracing = require("opentracing");
 var express = require('express')
 var bodyParser = require('body-parser');
 const isEmpty = require('lodash.isempty');
+const prom = require('./prom')
 var http = require('http');
 
 var app = express()
@@ -114,11 +115,14 @@ function main() {
         console.log("function init at express")
     })
     tracer = mesh.InitMesh(meshData)
-    app.get('/invoke', async function (req, res) {
+    app.get('/invoke', async (req, res) => {
         let result = await handler(req)
         console.log("result:%o", result)
         res.json(result)
+        prom.qps.inc()
     })
+    app.get('/metrics', prom.metrics);
+
     app.listen(40041, function () {
         console.log('Example app listening on port 40041');
     })
