@@ -21,6 +21,7 @@ const protoDescriptor = grpc.loadPackageDefinition(packageDefinition);
 let container_proto = protoDescriptor.container;
 let func = null;
 let root = null;
+
 async function test() {
     let root = await protobuf.load(PROTO_PATH);
     let invokeResponse = root.lookupType("container.InvokeResponse")
@@ -28,6 +29,7 @@ async function test() {
     let resp = invokeResponse.create({code: Code.values.NOT_READY})
     console.log(resp)
 }
+
 /**
  * Implements the SayHello RPC method.
  */
@@ -45,7 +47,7 @@ async function Invoke(call, callback) {
         return
     }
     try {
-	console.log("payload:%s", call.request.payload.toString());
+        console.log("payload:%s", call.request.payload.toString());
         let payload = JSON.parse(call.request.payload.toString());
         let output = await func(payload)
         let resp = invokeResponse.create({
@@ -54,7 +56,7 @@ async function Invoke(call, callback) {
         })
         callback(null, resp)
     } catch (e) {
-        console.log("get error in invoke %s",e)
+        console.log("get error in invoke %s", e)
         let resp = invokeResponse.create({
             code: Code.values.RUNTIME_ERROR,
         })
@@ -81,48 +83,55 @@ function SetEnvs(call, callback) {
     callback(null, resp)
 }
 
+function loadCode(url) {
+    return new Promise((resolve, reject) => {
+        const zipFile = "index.zip"
+        const targetPath = "/tmp/code/"
+        request
+            .get(url)
+            .on('error', function (e) {
+                console.log("request get error %o", e);
+                reject(e)
+            })
+            .pipe(fs.createWriteStream(zipFile))
+            .on('finish', function () {
+                console.log('finished dowloading');
+                var zip = new admZip(zipFile);
+                console.log('start unzip');
+                zip.extractAllTo(targetPath, true);
+                console.log('finished unzip');
+                try {
+                    let initFunc = require('/tmp/code/index.js').handler
+                    if (!initFunc) {
+                        console.log("function init error")
+                        throw new Error("function init error")
+                    }
+                    child.send({target: '/tmp/code/index.js'})
+                    resolve(initFunc)
+                } catch (e) {
+                    console.log("error in require code:%s", e)
+                    reject(e)
+                }
+            })
+    })
+}
+
 function LoadCode(call, callback) {
     let LoadCodeResponse = root.lookupType("container.LoadCodeResponse")
     let Code = root.lookupEnum("container.LoadCodeResponse.Code")
     let url = call.request.url
-    const zipFile = "index.zip"
-    const targetPath = "/tmp/code/"
-    request
-        .get(url)
-        .on('error', function (error) {
-            console.log("request get error %o", error);
+    let resp = LoadCodeResponse.create({
+        code: Code.values.OK
+    })
+    try {
+        loadCode(url)
+    } catch (e) {
+        console.log(e)
+        resp = LoadCodeResponse.create({
+            code: Code.values.ERROR
         })
-        .pipe(fs.createWriteStream(zipFile))
-        .on('finish', function () {
-            console.log('finished dowloading');
-            var zip = new admZip(zipFile);
-            console.log('start unzip');
-            zip.extractAllTo(targetPath, true);
-            console.log('finished unzip');
-            try {
-                func = require('/tmp/code/index.js').handler
-                if (!func) {
-                    console.log("function init error")
-                    let resp = LoadCodeResponse.create({
-                        code: Code.values.ERROR
-                    })
-                    callback(null, resp)
-                    return
-                }
-                child.send({target:'/tmp/code/index.js'})
-            } catch (e) {
-		console.log("error in require code:%s", e)
-                let resp = LoadCodeResponse.create({
-                    code: Code.values.ERROR
-                })
-                callback(null, resp)
-                return
-            }
-            let resp = LoadCodeResponse.create({
-                code: Code.values.OK
-            })
-            callback(null, resp)
-        });
+    }
+    callback(null, resp)
 }
 
 function Stop(call, callback) {
@@ -135,7 +144,7 @@ function Stop(call, callback) {
 function getLastLine(filename) {
     var data = fs.readFileSync(filename, 'utf8');
     var lines = data.split("\n");
-    return lines[lines.length-2]
+    return lines[lines.length - 2]
 }
 
 function readId() {
@@ -147,6 +156,12 @@ function readIp() {
 }
 
 async function RegisterToWorker() {
+    try {
+        func = await loadCode(process.env.CODE_URI)
+    } catch(e) {
+        console.log(e)
+        process.exit(-1)
+    }
     let target = process.env.WORK_HOST || "127.0.0.1:8001"
     let WORKER_PROTO_PATH = __dirname + '/proto/worker/worker.proto';
 
@@ -171,7 +186,7 @@ async function RegisterToWorker() {
             funcName: process.env.FUNC_NAME,
             memory: parseInt(process.env.MEMORY),
         }, function (err, response) {
-            if(err) {
+            if (err) {
                 reject(err)
             }
             resolve(response)
@@ -194,9 +209,9 @@ async function main() {
         Stop: Stop
     });
     RegisterToWorker().then((res) => {
-	console.log("register res %o", res)
-    }).catch((err)=> {
-	console.log("get err %s", err)
+        console.log("register res %o", res)
+    }).catch((err) => {
+        console.log("get err %s", err)
     })
     //start server.js
     server.bind('0.0.0.0:50051', grpc.ServerCredentials.createInsecure());

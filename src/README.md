@@ -8,3 +8,4 @@
 
 v1.0: the image has basic functions, which can connection with mesh control plane and call other function.
 v2.0: add `/metrics` interface for Prometheus.
+v3.0: make load code static (read uri from ENV CODE_URI instead of receiving from worker for reduce one grpc request).
