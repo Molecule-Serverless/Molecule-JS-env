@@ -141,65 +141,18 @@ function Stop(call, callback) {
     callback(null, resp)
 }
 
-function getLastLine(filename) {
-    var data = fs.readFileSync(filename, 'utf8');
-    var lines = data.split("\n");
-    return lines[lines.length - 2]
-}
-
-function readId() {
-    return getLastLine("/etc/hosts").split("\t")[1]
-}
-
-function readIp() {
-    return getLastLine("/etc/hosts").split("\t")[0]
-}
-
-async function RegisterToWorker() {
-    try {
-        func = await loadCode(process.env.CODE_URI)
-    } catch(e) {
-        console.log(e)
-        process.exit(-1)
-    }
-    let target = process.env.WORK_HOST || "127.0.0.1:8001"
-    let WORKER_PROTO_PATH = __dirname + '/proto/worker/worker.proto';
-
-    let packageDefinition = protoLoader.loadSync(
-        WORKER_PROTO_PATH,
-        {
-            keepCase: true,
-            longs: String,
-            enums: String,
-            defaults: true,
-            oneofs: true
-        });
-    const protoDescriptor = grpc.loadPackageDefinition(packageDefinition);
-    let worker_proto = protoDescriptor.worker;
-    let client = new worker_proto.Worker(target,
-        grpc.credentials.createInsecure());
-    return new Promise((resolve, reject) => {
-        client.Register({
-            id: readId(),
-            addr: readIp(),
-            runtime: process.env.RUNTIME,
-            funcName: process.env.FUNC_NAME,
-            memory: parseInt(process.env.MEMORY),
-        }, function (err, response) {
-            if (err) {
-                reject(err)
-            }
-            resolve(response)
-        })
-    })
-}
-
 /**
  * Starts an RPC server that receives requests for the Greeter service at the
  * sample server port
  */
 async function main() {
     child = cp.fork('./server.js');
+    try {
+        func = await loadCode(process.env.CODE_URI)
+    } catch(e) {
+        console.log(e)
+        process.exit(-1)
+    }
     let server = new grpc.Server();
     root = await protobuf.load(PROTO_PATH);
     server.addService(container_proto.Container.service, {
@@ -208,11 +161,6 @@ async function main() {
         LoadCode: LoadCode,
         Stop: Stop
     });
-    RegisterToWorker().then((res) => {
-        console.log("register res %o", res)
-    }).catch((err) => {
-        console.log("get err %s", err)
-    })
     //start server.js
     server.bind('0.0.0.0:50051', grpc.ServerCredentials.createInsecure());
     server.start();

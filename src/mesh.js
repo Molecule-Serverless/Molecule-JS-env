@@ -34,7 +34,7 @@ exports.GetCallee = (meshData) => {
 
     if (meshData.application === undefined) {
         // Because the mesh center sync information to the instance need some time after the instance is init, so we need some protected strategy
-        return null
+        return undefined
     }
     let steps = meshData.application.stepChains
     let selfName = process.env.FUNC_NAME
@@ -45,20 +45,18 @@ exports.GetCallee = (meshData) => {
                 callee = steps[index + 1].functionName
                 break
             } else {
-                return null
+                return undefined
             }
         }
     }
     if (callee === "") {
-        return null // todo here maybe data mistake
+        return undefined // todo here maybe data mistake
     }
     if (meshData.functions != null) {
-        console.log("choose functions %o", meshData.functions)
         let calleeFunc = meshData.functions[callee]
         console.log("callee function %o", calleeFunc)
         let chosenPolicy =  process.env.POLICY || "simple"
-
-	console.log("policy.Policies:%s",policy.Policies)
+	    console.log("policy.Policies:%s",policy.Policies)
         return policy.Policies[chosenPolicy](calleeFunc)
     }
     return null

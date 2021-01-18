@@ -28,16 +28,21 @@ var SimplePolicy = (func) => {
             }
         }
         if (info == null) {
+            // no instances
             return null
         }
-        let chosenUrl = info.url
+        // now because of the special point of openstack, HTTP_PREFIX + info.url is not useful.
+        // let chosenUrl = HTTP_PREFIX + info.url
+        let chosenUrl = null;
         if (infos.hasOwnProperty(provider) && info.instances.length > 0) {
             // the internal instance is existed
             var rand = Math.floor(Math.random() * info.instances.length);
             chosenUrl = HTTP_PREFIX + info.instances[rand] + INVOKE_PATH
             console.log(chosenUrl)
         }
-
+        if (chosenUrl === null) {
+            return null;
+        }
         let method = func.method
         let query = new URL(chosenUrl)
         return new Information(query.hostname, query.port, query.pathname, method)

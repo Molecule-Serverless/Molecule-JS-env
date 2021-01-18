@@ -1,6 +1,10 @@
 const mesh = require('./mesh')
+const fs = require('fs');
 const config = require('./config.json')
 const opentracing = require("opentracing");
+var protoLoader = require('@grpc/proto-loader');
+var grpc = require('grpc');
+const protobuf = require("protobufjs");
 var express = require('express')
 var bodyParser = require('body-parser');
 const isEmpty = require('lodash.isempty');
@@ -9,7 +13,7 @@ var http = require('http');
 
 var app = express()
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({extended: false}));
 let tracer = null;
 let func = null;
 var meshData = {}
@@ -45,6 +49,14 @@ function getData(opts, data) {
         req.end()
     })
 }
+
+function sleep(time = 0) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve();
+        }, time);
+    })
+};
 
 async function handler(req) {
     // the function is a demo callee, get span from http headers
@@ -97,7 +109,33 @@ async function handler(req) {
         }, data)
         console.log("send result indirectly which is from %o", callee)
         finalResult = JSON.parse(response);
-    } else {
+    } else if (callee === null) {
+        console.log("callee need wait for instances")
+        let retryTime = 200
+        let i = 0
+        for (; i < retryTime; ++i) {
+            let retryCallee = mesh.GetCallee(meshData)
+            if (retryCallee) {
+                let data = result
+                // todo use mesh information to mapping transfer data
+                let response = await getData({
+                    hostname: retryCallee.hostname,
+                    port: retryCallee.port,
+                    path: retryCallee.path,
+                    method: retryCallee.method,
+                    headers: headers
+                }, data)
+                console.log("send result indirectly which is from %o", retryCallee)
+                finalResult = JSON.parse(response);
+                break
+            } else {
+                await sleep(50)
+            }
+        }
+        if (i === retryTime) {
+            finalResult = result
+        }
+    } else if (callee === undefined) {
         console.log("send result directly")
         finalResult = result
     }
@@ -105,6 +143,53 @@ async function handler(req) {
         span.finish()
     }
     return finalResult;
+}
+
+function getLastLine(filename) {
+    var data = fs.readFileSync(filename, 'utf8');
+    var lines = data.split("\n");
+    return lines[lines.length - 2]
+}
+
+function readId() {
+    return getLastLine("/etc/hosts").split("\t")[1]
+}
+
+function readIp() {
+    return getLastLine("/etc/hosts").split("\t")[0]
+}
+
+async function RegisterToWorker() {
+    let target = process.env.WORK_HOST || "127.0.0.1:8001"
+    let WORKER_PROTO_PATH = __dirname + '/proto/worker/worker.proto';
+
+    let packageDefinition = protoLoader.loadSync(
+        WORKER_PROTO_PATH,
+        {
+            keepCase: true,
+            longs: String,
+            enums: String,
+            defaults: true,
+            oneofs: true
+        });
+    const protoDescriptor = grpc.loadPackageDefinition(packageDefinition);
+    let worker_proto = protoDescriptor.worker;
+    let client = new worker_proto.Worker(target,
+        grpc.credentials.createInsecure());
+    return new Promise((resolve, reject) => {
+        client.Register({
+            id: readId(),
+            addr: readIp(),
+            runtime: process.env.RUNTIME,
+            funcName: process.env.FUNC_NAME,
+            memory: parseInt(process.env.MEMORY),
+        }, function (err, response) {
+            if (err) {
+                reject(err)
+            }
+            resolve(response)
+        })
+    })
 }
 
 
@@ -125,6 +210,11 @@ function main() {
 
     app.listen(40041, function () {
         console.log('Example app listening on port 40041');
+        RegisterToWorker().then((res) => {
+            console.log("register res %o", res)
+        }).catch((err) => {
+            console.log("get err %s", err)
+        })
     })
 }
 
