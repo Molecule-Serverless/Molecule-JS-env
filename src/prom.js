@@ -1,4 +1,4 @@
-const client = require('prom-client');
+const client = require('prom-client')
 const register = client.register
 
 exports.qps = new client.Counter({
@@ -9,9 +9,9 @@ exports.qps = new client.Counter({
 
 exports.metrics = async (req, res) => {
     try {
-        res.set('Content-Type', register.contentType);
-        res.end(await register.metrics());
+        res.set('Content-Type', register.contentType)
+        res.end(await register.metrics())
     } catch (ex) {
-        res.status(500).end(ex);
+        res.status(500).end(ex)
     }
 }

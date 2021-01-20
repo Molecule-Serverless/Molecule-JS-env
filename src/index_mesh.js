@@ -1,12 +1,12 @@
-var PROTO_PATH = __dirname + '/proto/container/container.proto';
-var grpc = require('grpc');
-var protoLoader = require('@grpc/proto-loader');
-const protobuf = require("protobufjs");
-const request = require('superagent');
-const fs = require('fs');
-const admZip = require('adm-zip');
-const opentracing = require("opentracing");
-const cp = require('child_process');
+var PROTO_PATH = __dirname + '/proto/container/container.proto'
+var grpc = require('grpc')
+var protoLoader = require('@grpc/proto-loader')
+const protobuf = require("protobufjs")
+const request = require('superagent')
+const fs = require('fs')
+const admZip = require('adm-zip')
+const opentracing = require("opentracing")
+const cp = require('child_process')
 let child = null
 let packageDefinition = protoLoader.loadSync(
     PROTO_PATH,
@@ -16,14 +16,14 @@ let packageDefinition = protoLoader.loadSync(
         enums: String,
         defaults: true,
         oneofs: true
-    });
-const protoDescriptor = grpc.loadPackageDefinition(packageDefinition);
-let container_proto = protoDescriptor.container;
-let func = null;
-let root = null;
+    })
+const protoDescriptor = grpc.loadPackageDefinition(packageDefinition)
+let container_proto = protoDescriptor.container
+let func = null
+let root = null
 
 async function test() {
-    let root = await protobuf.load(PROTO_PATH);
+    let root = await protobuf.load(PROTO_PATH)
     let invokeResponse = root.lookupType("container.InvokeResponse")
     let Code = root.lookupEnum("container.InvokeResponse.Code")
     let resp = invokeResponse.create({code: Code.values.NOT_READY})
@@ -47,8 +47,8 @@ async function Invoke(call, callback) {
         return
     }
     try {
-        console.log("payload:%s", call.request.payload.toString());
-        let payload = JSON.parse(call.request.payload.toString());
+        console.log("payload:%s", call.request.payload.toString())
+        let payload = JSON.parse(call.request.payload.toString())
         let output = await func(payload)
         let resp = invokeResponse.create({
             code: Code.values.OK,
@@ -68,14 +68,14 @@ async function Invoke(call, callback) {
 function SetEnvs(call, callback) {
     let setEnvsResponse = root.lookupType("container.SetEnvsRequest")
     let Code = root.lookupEnum("container.SetEnvsResponse.Code")
-    let envs = call.request.env;
-    let iter = envs[Symbol.iterator]();
+    let envs = call.request.env
+    let iter = envs[Symbol.iterator]()
     for (let pair of iter) {
-        const keyAndValue = pair.split('=');
+        const keyAndValue = pair.split('=')
         if (keyAndValue.length !== 2) {
             continue
         }
-        process.env[keyAndValue[0]] = keyAndValue[1];
+        process.env[keyAndValue[0]] = keyAndValue[1]
     }
     let resp = setEnvsResponse.create({
         code: Code.values.OK
@@ -90,16 +90,16 @@ function loadCode(url) {
         request
             .get(url)
             .on('error', function (e) {
-                console.log("request get error %o", e);
+                console.log("request get error %o", e)
                 reject(e)
             })
             .pipe(fs.createWriteStream(zipFile))
             .on('finish', function () {
-                console.log('finished dowloading');
-                var zip = new admZip(zipFile);
-                console.log('start unzip');
-                zip.extractAllTo(targetPath, true);
-                console.log('finished unzip');
+                console.log('finished dowloading')
+                var zip = new admZip(zipFile)
+                console.log('start unzip')
+                zip.extractAllTo(targetPath, true)
+                console.log('finished unzip')
                 try {
                     let initFunc = require('/tmp/code/index.js').handler
                     if (!initFunc) {
@@ -137,7 +137,7 @@ function LoadCode(call, callback) {
 function Stop(call, callback) {
     let StopResponse = root.lookupType("container.StopResponse")
     let Code = root.lookupEnum("container.StopResponse.Code")
-    let resp = StopResponse.create({code: Code.values.OK});
+    let resp = StopResponse.create({code: Code.values.OK})
     callback(null, resp)
 }
 
@@ -146,25 +146,33 @@ function Stop(call, callback) {
  * sample server port
  */
 async function main() {
-    child = cp.fork('./server.js');
+    child = cp.fork('./server.js')
+    child.on('exit', function (code) {
+        console.log('express closed with code:%o', code)
+        process.exit(0)
+    })
+    process.on('SIGTERM', () => {
+        console.log('main process get SIGTERM')
+        child.kill('SIGTERM')
+    })
     try {
         func = await loadCode(process.env.CODE_URI)
     } catch(e) {
         console.log(e)
         process.exit(-1)
     }
-    let server = new grpc.Server();
-    root = await protobuf.load(PROTO_PATH);
+    let server = new grpc.Server()
+    root = await protobuf.load(PROTO_PATH)
     server.addService(container_proto.Container.service, {
         Invoke: Invoke,
         SetEnvs: SetEnvs,
         LoadCode: LoadCode,
         Stop: Stop
-    });
+    })
     //start server.js
-    server.bind('0.0.0.0:50051', grpc.ServerCredentials.createInsecure());
-    server.start();
+    server.bind('0.0.0.0:50051', grpc.ServerCredentials.createInsecure())
+    server.start()
 }
 
 
-main();
+main()

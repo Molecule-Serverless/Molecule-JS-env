@@ -1,14 +1,14 @@
-const info = require('./info');
-const trace = require('./trace');
-const config = require('./config');
+const info = require('./info')
+const trace = require('./trace')
+const config = require('./config')
 const policy = require('./policy')
 var funcName = process.env.FUNC_NAME
 
 exports.InitMesh = (meshData) => {
     // todo init a struct for get info or a interface to get info
-    info.watch(config, meshData);
+    info.watch(config, meshData)
     return trace.InitTracer(config)
-};
+}
 
 exports.GetAppName = (meshData) => {
     if (meshData.application === undefined) {

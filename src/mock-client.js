@@ -1,7 +1,7 @@
-var PROTO_PATH = __dirname + '/proto/container/container.proto';
-var grpc = require('grpc');
-var protoLoader = require('@grpc/proto-loader');
-const protobuf = require("protobufjs");
+var PROTO_PATH = __dirname + '/proto/container/container.proto'
+var grpc = require('grpc')
+var protoLoader = require('@grpc/proto-loader')
+const protobuf = require("protobufjs")
 
 var packageDefinition = protoLoader.loadSync(
     PROTO_PATH,
@@ -11,12 +11,12 @@ var packageDefinition = protoLoader.loadSync(
         enums: String,
         defaults: true,
         oneofs: true
-    });
-const protoDescriptor = grpc.loadPackageDefinition(packageDefinition);
-var container_proto = protoDescriptor.container;
+    })
+const protoDescriptor = grpc.loadPackageDefinition(packageDefinition)
+var container_proto = protoDescriptor.container
 
 var client = new container_proto.Container("127.0.0.1:50051",
-    grpc.credentials.createInsecure());
+    grpc.credentials.createInsecure())
 
 let funcName = "testFunc"
 
@@ -54,8 +54,8 @@ async function test() {
                 reject(err)
             }
             resolve(response)
-        });
-    });
+        })
+    })
     console.log(invokeResponse)
     console.log(invokeResponse.output.toString())
 }

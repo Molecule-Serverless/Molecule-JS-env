@@ -10,10 +10,10 @@ info.watch(config, metaData)
 function sleep(time = 0) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve();
-        }, time);
+            resolve()
+        }, time)
     })
-};
+}
 async function test() {
     while(true) {
         await sleep(1000)

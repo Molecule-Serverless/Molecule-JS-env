@@ -1,9 +1,9 @@
-const PROTO_PATH = __dirname + "/proto/discovery/";
+const PROTO_PATH = __dirname + "/proto/discovery/"
 const DISCOVERY_PATH = PROTO_PATH + "discovery.proto"
 const MODEL_PATH = PROTO_PATH + "model.proto"
-const grpc = require('grpc');
-const protobuf = require("protobufjs");
-const protoLoader = require('@grpc/proto-loader');
+const grpc = require('grpc')
+const protobuf = require("protobufjs")
+const protoLoader = require('@grpc/proto-loader')
 const packageDefinition = protoLoader.loadSync(
     [DISCOVERY_PATH, MODEL_PATH],
     {
@@ -12,14 +12,14 @@ const packageDefinition = protoLoader.loadSync(
         enums: String,
         defaults: true,
         oneofs: true
-    });
-const discovery = grpc.loadPackageDefinition(packageDefinition).mesh.discovery;
-const model = grpc.loadPackageDefinition(packageDefinition).mesh.model;
+    })
+const discovery = grpc.loadPackageDefinition(packageDefinition).mesh.discovery
+const model = grpc.loadPackageDefinition(packageDefinition).mesh.model
 exports.watch = (config, meshData) => {
     console.log("start watch")
     let client = new discovery.DiscoveryServer(config.info.target,
-        grpc.credentials.createInsecure());
-    let call = client.XDS();
+        grpc.credentials.createInsecure())
+    let call = client.XDS()
     let funcData = {
         "instance": {
             "provider" :    process.env.PROVIDER,
@@ -53,7 +53,7 @@ exports.watch = (config, meshData) => {
                         .then(function (root) {
                             let resource = res.resources[0]
                             let application = root.lookupType("mesh.model.Application")
-                            let message = application.decode(resource.value);
+                            let message = application.decode(resource.value)
                             meshData.application = message
                             // after get application message, get function info
                             let steps = meshData.application.stepChains
@@ -101,7 +101,7 @@ exports.watch = (config, meshData) => {
                             arrays: true,   // populates empty arrays (repeated fields) even if defaults=false
                             objects: true,  // populates empty objects (map fields) even if defaults=false
                             oneofs: true    // includes virtual oneof fields set to the present field's name
-                        });
+                        })
                         meshData.functions[funcObject.name] = funcObject
                         console.log(funcObject)
                     }
@@ -113,13 +113,13 @@ exports.watch = (config, meshData) => {
                 console.log("resource type has not supported")
             }
         }
-    });
+    })
     call.on('end', function () {
-        console.log('Server ended call');
-    });
+        console.log('Server ended call')
+    })
     call.on('error', function (e) {
-        console.log(e);
-    });
+        console.log(e)
+    })
     call.write(funcData)
-};
+}
 
