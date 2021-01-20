@@ -4,10 +4,10 @@ const HTTP_PREFIX = 'http://'
 // Information is the return struct for all policy
 class Information {
     constructor(hostname, port, path, method) {
-        this.hostname = hostname;
+        this.hostname = hostname
         this.port = port
-        this.path = path;
-        this.method = method;
+        this.path = path
+        this.method = method
     }
 }
 
@@ -33,15 +33,15 @@ var SimplePolicy = (func) => {
         }
         // now because of the special point of openstack, HTTP_PREFIX + info.url is not useful.
         // let chosenUrl = HTTP_PREFIX + info.url
-        let chosenUrl = null;
+        let chosenUrl = null
         if (infos.hasOwnProperty(provider) && info.instances.length > 0) {
             // the internal instance is existed
-            var rand = Math.floor(Math.random() * info.instances.length);
+            var rand = Math.floor(Math.random() * info.instances.length)
             chosenUrl = HTTP_PREFIX + info.instances[rand] + INVOKE_PATH
             console.log(chosenUrl)
         }
         if (chosenUrl === null) {
-            return null;
+            return null
         }
         let method = func.method
         let query = new URL(chosenUrl)

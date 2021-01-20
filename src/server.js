@@ -1,21 +1,23 @@
 const mesh = require('./mesh')
-const fs = require('fs');
+const fs = require('fs')
 const config = require('./config.json')
-const opentracing = require("opentracing");
-var protoLoader = require('@grpc/proto-loader');
-var grpc = require('grpc');
-const protobuf = require("protobufjs");
+const opentracing = require("opentracing")
+var protoLoader = require('@grpc/proto-loader')
+var grpc = require('grpc')
+const protobuf = require("protobufjs")
 var express = require('express')
-var bodyParser = require('body-parser');
-const isEmpty = require('lodash.isempty');
+var bodyParser = require('body-parser')
+const isEmpty = require('lodash.isempty')
 const prom = require('./prom')
-var http = require('http');
+var http = require('http')
+var gracefulShutdown = require('http-graceful-shutdown')
+
 
 var app = express()
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
-let tracer = null;
-let func = null;
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: false}))
+let tracer = null
+let func = null
 var meshData = {}
 
 // getData assume we will send data to the next step function, now we igonre the param
@@ -53,10 +55,10 @@ function getData(opts, data) {
 function sleep(time = 0) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve();
-        }, time);
+            resolve()
+        }, time)
     })
-};
+}
 
 async function handler(req) {
     // the function is a demo callee, get span from http headers
@@ -66,17 +68,17 @@ async function handler(req) {
         let appName = mesh.GetAppName(meshData)
         if (appName != null) {
             console.log("start span as the first one")
-            span = tracer.startSpan(appName);
+            span = tracer.startSpan(appName)
         }
 
     } else {
-        span = tracer.extract(opentracing.FORMAT_HTTP_HEADERS, req.headers);
+        span = tracer.extract(opentracing.FORMAT_HTTP_HEADERS, req.headers)
     }
     let headers = {}
     let localSpan = null
     if (span != null) {
-        localSpan = tracer.startSpan(process.env.FUNC_NAME || "A", {childOf: span});
-        tracer.inject(span, opentracing.FORMAT_HTTP_HEADERS, headers);
+        localSpan = tracer.startSpan(process.env.FUNC_NAME || "A", {childOf: span})
+        tracer.inject(span, opentracing.FORMAT_HTTP_HEADERS, headers)
         console.log("headers after inject %o", headers)
     }
     let finalResult = null
@@ -86,7 +88,7 @@ async function handler(req) {
             result = await func({})
         } else {
             console.log("req body: %s", req.body)
-            result = await func(req.body);
+            result = await func(req.body)
         }
     } else {
         console.log("function does not init")
@@ -108,7 +110,7 @@ async function handler(req) {
             headers: headers
         }, data)
         console.log("send result indirectly which is from %o", callee)
-        finalResult = JSON.parse(response);
+        finalResult = JSON.parse(response)
     } else if (callee === null) {
         console.log("callee need wait for instances")
         let retryTime = 200
@@ -126,7 +128,7 @@ async function handler(req) {
                     headers: headers
                 }, data)
                 console.log("send result indirectly which is from %o", retryCallee)
-                finalResult = JSON.parse(response);
+                finalResult = JSON.parse(response)
                 break
             } else {
                 await sleep(50)
@@ -142,12 +144,12 @@ async function handler(req) {
     if (span != null && isFirst) {
         span.finish()
     }
-    return finalResult;
+    return finalResult
 }
 
 function getLastLine(filename) {
-    var data = fs.readFileSync(filename, 'utf8');
-    var lines = data.split("\n");
+    var data = fs.readFileSync(filename, 'utf8')
+    var lines = data.split("\n")
     return lines[lines.length - 2]
 }
 
@@ -161,7 +163,7 @@ function readIp() {
 
 async function RegisterToWorker() {
     let target = process.env.WORK_HOST || "127.0.0.1:8001"
-    let WORKER_PROTO_PATH = __dirname + '/proto/worker/worker.proto';
+    let WORKER_PROTO_PATH = __dirname + '/proto/worker/worker.proto'
 
     let packageDefinition = protoLoader.loadSync(
         WORKER_PROTO_PATH,
@@ -171,11 +173,11 @@ async function RegisterToWorker() {
             enums: String,
             defaults: true,
             oneofs: true
-        });
-    const protoDescriptor = grpc.loadPackageDefinition(packageDefinition);
-    let worker_proto = protoDescriptor.worker;
+        })
+    const protoDescriptor = grpc.loadPackageDefinition(packageDefinition)
+    let worker_proto = protoDescriptor.worker
     let client = new worker_proto.Worker(target,
-        grpc.credentials.createInsecure());
+        grpc.credentials.createInsecure())
     return new Promise((resolve, reject) => {
         client.Register({
             id: readId(),
@@ -206,16 +208,17 @@ function main() {
         res.json(result)
         prom.qps.inc()
     })
-    app.get('/metrics', prom.metrics);
+    app.get('/metrics', prom.metrics)
 
-    app.listen(40041, function () {
-        console.log('Example app listening on port 40041');
+    server = app.listen(40041, function () {
+        console.log('Example app listening on port 40041')
         RegisterToWorker().then((res) => {
             console.log("register res %o", res)
         }).catch((err) => {
             console.log("get err %s", err)
         })
     })
+    gracefulShutdown(server)
 }
 
 main()
