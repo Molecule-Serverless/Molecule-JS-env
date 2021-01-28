@@ -15,6 +15,16 @@ const packageDefinition = protoLoader.loadSync(
     })
 const discovery = grpc.loadPackageDefinition(packageDefinition).mesh.discovery
 const model = grpc.loadPackageDefinition(packageDefinition).mesh.model
+
+function getRelatedFunction(app) {
+    let functions = new Set()
+    for (const [key, step] of Object.entries(app.steps)) {
+        if (step.function) {
+            functions.add(step.function.functionName)
+        }
+    }
+    return [...functions]
+}
 exports.watch = (config, meshData) => {
     console.log("start watch")
     let client = new discovery.DiscoveryServer(config.info.target,
@@ -55,12 +65,10 @@ exports.watch = (config, meshData) => {
                             let application = root.lookupType("mesh.model.Application")
                             let message = application.decode(resource.value)
                             meshData.application = message
+                            console.log("get application %o", meshData.application)
                             // after get application message, get function info
-                            let steps = meshData.application.stepChains
-                            let funcNames = []
-                            for (let step of steps) {
-                               funcNames.push(step.functionName)
-                            }
+                            // todo implement getRelatedFunction() with more clean information
+                            let funcNames = getRelatedFunction(meshData.application)
                             protobuf.load(DISCOVERY_PATH).then(function (root) {
                                 let requestType = root.lookupType("mesh.discovery.XDSRequest")
                                 let payload = {
