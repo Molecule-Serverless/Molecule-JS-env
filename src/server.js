@@ -11,6 +11,7 @@ const isEmpty = require('lodash.isempty')
 const prom = require('./prom')
 var http = require('http')
 var gracefulShutdown = require('http-graceful-shutdown')
+const STEP_NAME_KEY = 'step-name'
 
 
 var app = express()
@@ -19,38 +20,6 @@ app.use(bodyParser.urlencoded({extended: false}))
 let tracer = null
 let func = null
 var meshData = {}
-
-// getData assume we will send data to the next step function, now we igonre the param
-function getData(opts, data) {
-    let finalData = "{}"
-    let needPost = true
-    if (needPost) {
-        finalData = JSON.stringify(data)
-        opts.headers["Content-Type"] = 'application/json'
-        opts.headers['Content-Length'] = finalData.length
-    }
-    return new Promise(function (resolve, reject) {
-        let req = http.request(opts, (res) => {
-            console.log('req in')
-            let returnData = ''
-            res.on('data', function (d) {
-                console.log('get data')
-                returnData += d
-            })
-            res.on('end', function (date) {
-                resolve(returnData.toString())
-            })
-        })
-        req.on('error', error => {
-            console.error(error)
-            reject(error)
-        })
-        if (needPost) {
-            req.write(finalData)
-        }
-        req.end()
-    })
-}
 
 function sleep(time = 0) {
     return new Promise((resolve, reject) => {
@@ -62,21 +31,12 @@ function sleep(time = 0) {
 
 async function handler(req) {
     // the function is a demo callee, get span from http headers
-    let span = null
-    let isFirst = mesh.IsFirst(meshData)
-    if (isFirst) {
-        let appName = mesh.GetAppName(meshData)
-        if (appName != null) {
-            console.log("start span as the first one")
-            span = tracer.startSpan(appName)
-        }
-
-    } else {
-        span = tracer.extract(opentracing.FORMAT_HTTP_HEADERS, req.headers)
-    }
+    let span = tracer.extract(opentracing.FORMAT_HTTP_HEADERS, req.headers)
+    console.log(req.headers)
+    let stepName = req.headers[STEP_NAME_KEY]
     let headers = {}
     let localSpan = null
-    if (span != null) {
+    if (span !== null) {
         localSpan = tracer.startSpan(process.env.FUNC_NAME || "A", {childOf: span})
         tracer.inject(span, opentracing.FORMAT_HTTP_HEADERS, headers)
         console.log("headers after inject %o", headers)
@@ -94,37 +54,48 @@ async function handler(req) {
         console.log("function does not init")
         return ""
     }
-    if (localSpan != null) {
+    if (localSpan !== null) {
         localSpan.finish()
     }
-    let callee = mesh.GetCallee(meshData)
+    let callee = await mesh.GetCallee(meshData, stepName, result, localSpan, span)
     console.log("get callee %o", callee)
-    if (callee) {
+    if (!callee) {
+        console.log("send result directly %o", result)
+        finalResult = result
+    } else if (callee.information) {
         let data = result
+        if (callee.result) {
+            data = callee.result
+        }
+        headers[STEP_NAME_KEY] = callee.stepName
         // todo use mesh information to mapping transfer data
-        let response = await getData({
-            hostname: callee.hostname,
-            port: callee.port,
-            path: callee.path,
-            method: callee.method,
+        let response = await mesh.GetData({
+            hostname: callee.information.hostname,
+            port: callee.information.port,
+            path: callee.information.path,
+            method: callee.information.method,
             headers: headers
         }, data)
         console.log("send result indirectly which is from %o", callee)
         finalResult = JSON.parse(response)
-    } else if (callee === null) {
+    } else if (callee.information === null) {
         console.log("callee need wait for instances")
         let retryTime = 200
         let i = 0
         for (; i < retryTime; ++i) {
-            let retryCallee = mesh.GetCallee(meshData)
-            if (retryCallee) {
+            let retryCallee = await mesh.GetCallee(meshData, stepName, result)
+            if (retryCallee && retryCallee.information) {
                 let data = result
+                if (retryCallee.result) {
+                    data = retryCallee.result
+                }
+                headers[STEP_NAME_KEY] = retryCallee.stepName
                 // todo use mesh information to mapping transfer data
-                let response = await getData({
-                    hostname: retryCallee.hostname,
-                    port: retryCallee.port,
-                    path: retryCallee.path,
-                    method: retryCallee.method,
+                let response = await mesh.GetData({
+                    hostname: retryCallee.information.hostname,
+                    port: retryCallee.information.port,
+                    path: retryCallee.information.path,
+                    method: retryCallee.information.method,
                     headers: headers
                 }, data)
                 console.log("send result indirectly which is from %o", retryCallee)
@@ -137,12 +108,13 @@ async function handler(req) {
         if (i === retryTime) {
             finalResult = result
         }
-    } else if (callee === undefined) {
-        console.log("send result directly")
-        finalResult = result
-    }
-    if (span != null && isFirst) {
-        span.finish()
+    } else if (callee.information === undefined) {
+        // end
+        if (callee.result) {
+            finalResult = callee.result;
+        } else {
+            finalResult = result;
+        }
     }
     return finalResult
 }
