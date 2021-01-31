@@ -182,11 +182,7 @@ async function executeParallelCall(meshData, target, result, span) {
             headers[STEP_NAME_KEY] = callee.stepName
             try {
                 let response = await GetData({
-                    hostname: callee.information.hostname,
-                    port: callee.information.port,
-                    path: callee.information.path,
-                    method: callee.information.method,
-                    protocol: callee.information.protocol,
+                    ...callee.information,
                     headers: headers
                 }, data)
                 console.log(response)
@@ -216,12 +212,7 @@ async function executeParallelCall(meshData, target, result, span) {
                 // todo use mesh information to mapping transfer data
                 headers[STEP_NAME_KEY] = callee.stepName
                 let response = await GetData({
-                    hostname: retryCallee.information.hostname,
-                    port: retryCallee.information.port,
-                    path: retryCallee.information.path,
-                    path: retryCallee.information.path,
-                    method: retryCallee.information.method,
-                    protocol: retryCallee.information.protocol,
+                    ...retryCallee.information,
                     headers: headers
                 }, data)
                 console.log(response)
