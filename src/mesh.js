@@ -9,6 +9,7 @@ const grpc = require('grpc')
 const protobuf = require("protobufjs")
 const opentracing = require("opentracing")
 const http = require('http')
+const https = require('https')
 const STEP_NAME_KEY = 'step-name'
 
 // Information is the return struct for all policy
@@ -37,7 +38,7 @@ function sleep(time = 0) {
 }
 
 // getData assume we will send data to the next step function, now we igonre the param
-let GetData = (opts, data) => {
+GetData = (opts, data) => {
     let finalData = "{}"
     let needPost = true
     if (needPost) {
@@ -47,7 +48,11 @@ let GetData = (opts, data) => {
     }
     opts.timeout = 1000
     return new Promise(function (resolve, reject) {
-        let req = http.request(opts, (res) => {
+        let method = http
+        if (opts.protocol === 'https:') {
+            method = https
+        }
+        let req = method.request(opts, (res) => {
             console.log('req in')
             let returnData = ''
             res.on('data', function (d) {
@@ -180,8 +185,8 @@ async function executeParallelCall(meshData, target, result, span) {
                     hostname: callee.information.hostname,
                     port: callee.information.port,
                     path: callee.information.path,
-                    path: callee.information.path,
                     method: callee.information.method,
+                    protocol: callee.information.protocol,
                     headers: headers
                 }, data)
                 console.log(response)
@@ -216,6 +221,7 @@ async function executeParallelCall(meshData, target, result, span) {
                     path: retryCallee.information.path,
                     path: retryCallee.information.path,
                     method: retryCallee.information.method,
+                    protocol: retryCallee.information.protocol,
                     headers: headers
                 }, data)
                 console.log(response)
