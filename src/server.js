@@ -70,11 +70,7 @@ async function handler(req) {
         headers[STEP_NAME_KEY] = callee.stepName
         // todo use mesh information to mapping transfer data
         let response = await mesh.GetData({
-            hostname: callee.information.hostname,
-            port: callee.information.port,
-            path: callee.information.path,
-            method: callee.information.method,
-            protocol: callee.information.protocol,
+            ...callee.information,
             headers: headers
         }, data)
         console.log("send result indirectly which is from %o", callee)
@@ -93,11 +89,7 @@ async function handler(req) {
                 headers[STEP_NAME_KEY] = retryCallee.stepName
                 // todo use mesh information to mapping transfer data
                 let response = await mesh.GetData({
-                    hostname: retryCallee.information.hostname,
-                    port: retryCallee.information.port,
-                    path: retryCallee.information.path,
-                    method: retryCallee.information.method,
-                    protocol: retryCallee.information.protocol,
+                    ...retryCallee.information,
                     headers: headers
                 }, data)
                 console.log("send result indirectly which is from %o", retryCallee)
