@@ -74,6 +74,7 @@ async function handler(req) {
             port: callee.information.port,
             path: callee.information.path,
             method: callee.information.method,
+            protocol: callee.information.protocol,
             headers: headers
         }, data)
         console.log("send result indirectly which is from %o", callee)
@@ -96,6 +97,7 @@ async function handler(req) {
                     port: retryCallee.information.port,
                     path: retryCallee.information.path,
                     method: retryCallee.information.method,
+                    protocol: retryCallee.information.protocol,
                     headers: headers
                 }, data)
                 console.log("send result indirectly which is from %o", retryCallee)
@@ -180,8 +182,8 @@ function main() {
         res.json(result)
         prom.qps.inc()
     })
+    prom.qps.inc(0)
     app.get('/metrics', prom.metrics)
-
     server = app.listen(40041, function () {
         console.log('Example app listening on port 40041')
         RegisterToWorker().then((res) => {
