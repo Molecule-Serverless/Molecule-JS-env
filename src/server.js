@@ -12,6 +12,7 @@ const prom = require('./prom')
 var http = require('http')
 var gracefulShutdown = require('http-graceful-shutdown')
 const STEP_NAME_KEY = 'step-name'
+const APP_NAME_KEY = 'app-name'
 
 
 var app = express()
@@ -34,6 +35,7 @@ async function handler(req) {
     let span = tracer.extract(opentracing.FORMAT_HTTP_HEADERS, req.headers)
     console.log(req.headers)
     let stepName = req.headers[STEP_NAME_KEY]
+    let applicationName = req.headers[APP_NAME_KEY]
     let headers = {}
     let localSpan = null
     if (span !== null) {
@@ -57,7 +59,7 @@ async function handler(req) {
     if (localSpan !== null) {
         localSpan.finish()
     }
-    let callee = await mesh.GetCallee(meshData, stepName, result, localSpan, span)
+    let callee = await mesh.GetCallee(meshData, applicationName, stepName, result, localSpan, span)
     console.log("get callee %o", callee)
     if (!callee) {
         console.log("send result directly %o", result)
@@ -68,6 +70,7 @@ async function handler(req) {
             data = callee.result
         }
         headers[STEP_NAME_KEY] = callee.stepName
+        headers[APP_NAME_KEY] = applicationName
         // todo use mesh information to mapping transfer data
         let response = await mesh.GetData({
             ...callee.information,
@@ -80,13 +83,15 @@ async function handler(req) {
         let retryTime = 200
         let i = 0
         for (; i < retryTime; ++i) {
-            let retryCallee = await mesh.GetCallee(meshData, stepName, result)
+            let retryCallee = await mesh.GetCallee(meshData, applicationName, stepName, result, localSpan, span)
+            console.log("get retry callee %o", retryCallee)
             if (retryCallee && retryCallee.information) {
                 let data = result
                 if (retryCallee.result) {
                     data = retryCallee.result
                 }
                 headers[STEP_NAME_KEY] = retryCallee.stepName
+                headers[APP_NAME_KEY] = applicationName
                 // todo use mesh information to mapping transfer data
                 let response = await mesh.GetData({
                     ...retryCallee.information,
@@ -94,6 +99,9 @@ async function handler(req) {
                 }, data)
                 console.log("send result indirectly which is from %o", retryCallee)
                 finalResult = JSON.parse(response)
+                break
+            } else if (retryCallee.information === undefined) {
+                finalResult = retryCallee.result
                 break
             } else {
                 await sleep(50)

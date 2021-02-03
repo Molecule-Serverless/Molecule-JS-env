@@ -18,6 +18,7 @@ SimplePolicy = (func) => {
     let infos = func.infos
     let provider = process.env.PROVIDER
     let protocol = 'http:'
+    let chosenUrl = null
     console.log("provider: %s", provider)
 
     if (infos != null) {
@@ -26,10 +27,12 @@ SimplePolicy = (func) => {
         if (infos.hasOwnProperty(provider)) {
             // the internal instance is existed
             info = infos[provider]
+            chosenUrl = info.internalUrl
         } else {
             // choose the first one
             for (let key of Object.keys(infos)) {
                 info = infos[key]
+                chosenUrl = info.url
                 break
             }
         }
@@ -37,7 +40,6 @@ SimplePolicy = (func) => {
             // no instances
             return null
         }
-        let chosenUrl = info.url
         if (infos.hasOwnProperty(provider) && info.instances.length > 0) {
             // the internal instance is existed
             console.log("simple policy 2")
@@ -45,7 +47,7 @@ SimplePolicy = (func) => {
             chosenUrl = HTTP_PREFIX + info.instances[rand] + INVOKE_PATH
             console.log(chosenUrl)
         }
-        if (info.url.startsWith(HTTPS_PREFIX)) {
+        if (chosenUrl.startsWith(HTTPS_PREFIX)) {
             protocol = 'https:'
         }
         let method = func.method
