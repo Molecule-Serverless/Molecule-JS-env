@@ -11,6 +11,7 @@ const opentracing = require("opentracing")
 const http = require('http')
 const https = require('https')
 const STEP_NAME_KEY = 'step-name'
+const APP_NAME_KEY = 'app-name'
 
 // Information is the return struct for all policy
 class CalleeInformation {
@@ -165,11 +166,11 @@ async function executeCondition(conditions, result) {
     })
 }
 
-async function executeParallelCall(meshData, target, result, span) {
+async function executeParallelCall(meshData, app, target, result, span) {
     return new Promise(async (resolve, reject) => {
         let localSpan = tracer.startSpan(target, {childOf: span})
         let headers = {}
-        let callee = await GetCallee(meshData, target, result, localSpan, span)
+        let callee = await GetCallee(meshData, app.name, target, result, localSpan, span)
         console.log("parallel callee: %o", callee)
         if (callee && callee.information) {
             let data = result
@@ -180,6 +181,7 @@ async function executeParallelCall(meshData, target, result, span) {
             tracer.inject(span, opentracing.FORMAT_HTTP_HEADERS, headers)
             // todo use mesh information to mapping transfer data
             headers[STEP_NAME_KEY] = callee.stepName
+            headers[APP_NAME_KEY] = app.name
             try {
                 let response = await GetData({
                     ...callee.information,
@@ -196,7 +198,7 @@ async function executeParallelCall(meshData, target, result, span) {
             let RetryTime = 50;
             let retryCallee = null;
             for (let time = 0; time < RetryTime; time++) {
-                retryCallee = await GetCallee(meshData, target, result, localSpan, span)
+                retryCallee = await GetCallee(meshData, app.name, target, result, localSpan, span)
                 if (retryCallee && retryCallee.information) {
                     break
                 } else {
@@ -211,6 +213,7 @@ async function executeParallelCall(meshData, target, result, span) {
                 tracer.inject(span, opentracing.FORMAT_HTTP_HEADERS, headers)
                 // todo use mesh information to mapping transfer data
                 headers[STEP_NAME_KEY] = callee.stepName
+                headers[APP_NAME_KEY] = app.name
                 let response = await GetData({
                     ...retryCallee.information,
                     headers: headers
@@ -227,19 +230,19 @@ async function executeParallelCall(meshData, target, result, span) {
     })
 }
 
-async function executeParallel(meshData, steps, parallelStepName, result, span) {
+async function executeParallel(meshData, app, parallelStepName, result, span) {
     console.log("start parallel call")
-    return executeParallelCall(meshData, parallelStepName, result, span)
+    return executeParallelCall(meshData, app, parallelStepName, result, span)
 }
 
 // executeBranch will do ParallelStep, ConditionStep or EndStep work
-async function executeBranch(meshData, steps, step, result, localSpan, span) {
+async function executeBranch(meshData, app, stepName, result, localSpan, span) {
     console.log("in executeBranch")
     let localResult = result;
     return new Promise(async (resolve, reject) => {
         console.log("at 1")
-        console.log("step: %o", step)
-        let next = step
+        console.log("step: %o", app.steps[stepName])
+        let next = app.steps[stepName]
         while (next !== null) {
             console.log("at 3")
             if (!next) {
@@ -253,7 +256,7 @@ async function executeBranch(meshData, steps, step, result, localSpan, span) {
                     resolve({stepName: next.stepName, function: next.function.functionName, result: localResult})
                     return
                 } else {
-                    next = steps[next.function.nextStep]
+                    next = app.steps[next.function.nextStep]
                     continue
                 }
             } else if (next.condition) {
@@ -262,7 +265,7 @@ async function executeBranch(meshData, steps, step, result, localSpan, span) {
                 let conditionSpan = tracer.startSpan(next.stepName, {childOf: span})
                 let nextName = await executeCondition(next.condition.conditions, localResult)
                 conditionSpan.finish()
-                next = steps[nextName]
+                next = app.steps[nextName]
                 console.log("next function: %o", next)
                 continue
             } else if (next.parallel) {
@@ -273,12 +276,12 @@ async function executeBranch(meshData, steps, step, result, localSpan, span) {
                     let targets = next.parallel.targets
                     let promises = []
                     for (let i = 0; i < targets.length; ++i) {
-                        promises.push(executeParallel(meshData, steps, targets[i], localResult, parallelSpan))
+                        promises.push(executeParallel(meshData, app, targets[i], localResult, parallelSpan))
                     }
                     localResult = await Promise.all(promises)
                     parallelSpan.finish()
                     console.log("parallel result: %o", localResult)
-                    next = steps[next.parallel.nextStep]
+                    next = app.steps[next.parallel.nextStep]
                     continue
                 } catch (e) {
                     console.log("error in executeBranch parallel: %o", e)
@@ -297,19 +300,29 @@ async function executeBranch(meshData, steps, step, result, localSpan, span) {
 
 // GetCallee will give all of getData information which is from mesh control plane
 // stepName is now stepName
-GetCallee = async (meshData, stepName, result, localSpan, span) => {
+GetCallee = async (meshData, applicationName, stepName, result, localSpan, span) => {
     console.log("in Get Callee")
     return new Promise(async (resolve, reject) => {
-        if (meshData.application === undefined) {
+        if (!meshData.applications) {
             // Because the mesh center sync information to the instance need some time after the instance is init, so we need some protected strategy
-            resolve(undefined)
+            info.CallADS([applicationName], meshData)
+            resolve(new CalleeInformation(stepName, null, result))
             return
         }
-        let steps = meshData.application.steps
-        let step = steps[stepName]
+        let application = meshData.applications[applicationName]
+        console.log("application choose %o", application)
+        if (application === undefined) {
+            meshData.applications[applicationName] = null
+            info.CallADS([applicationName], meshData)
+            resolve(new CalleeInformation(stepName, null, result))
+            return
+        } else if(application === null) {
+            resolve(new CalleeInformation(stepName, null, result))
+            return
+        }
         let callee = null
         try {
-            callee = await executeBranch(meshData, steps, step, result, localSpan, span)
+            callee = await executeBranch(meshData, application, stepName, result, localSpan, span)
         } catch (e) {
             console.log("GetCallee get error: %o", e)
         }
@@ -330,7 +343,7 @@ GetCallee = async (meshData, stepName, result, localSpan, span) => {
             resolve(new CalleeInformation(callee.stepName, policy.Policies[chosenPolicy](calleeFunc), callee.result))
             return
         }
-        resolve(new CalleeInformation(callee.stepName,null, callee.result))
+        resolve(new CalleeInformation(callee.stepName, null, callee.result))
     })
 }
 
