@@ -49,7 +49,8 @@ async function handler(req) {
         if (isEmpty(req.body)) {
             result = await func({})
         } else {
-            console.log("req body: %s", req.body)
+            //console.log("req body: %s", req.body)
+            console.log("req body: %o", req.body)
             result = await func(req.body)
         }
     } else {
