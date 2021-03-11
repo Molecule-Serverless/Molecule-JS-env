@@ -46,8 +46,17 @@ exports.CallADS = (applicationsName, meshData) => {
 
 exports.watch = (config, meshData) => {
     console.log("start watch")
-    client = new discovery.DiscoveryServer(config.info.target,
-        grpc.credentials.createInsecure())
+    let target = process.env.MESH
+    if (target) {
+        client = new discovery.DiscoveryServer(target,
+            grpc.credentials.createInsecure())
+        console.log("create discovery server from env")
+    } else {
+        client = new discovery.DiscoveryServer(config.info.target,
+            grpc.credentials.createInsecure())
+        console.log("create discovery server from env")
+    }
+
     call = client.XDS()
     call.on('data', function (res) {
             switch (res.resourceType) {
