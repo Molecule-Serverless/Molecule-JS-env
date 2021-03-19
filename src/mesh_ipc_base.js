@@ -49,6 +49,7 @@ GetData = (opts, data) => {
         opts.headers['Content-Length'] = finalData.length
     }
     opts.timeout = 1000
+    console.log("GetData's opts: %o\n", opts)
     return new Promise(function (resolve, reject) {
         let method = http
         if (opts.protocol === 'https:') {
@@ -56,6 +57,8 @@ GetData = (opts, data) => {
         }
         let req = method.request(opts, (res) => {
             console.log('req in')
+            console.log(`STATUS: ${res.statusCode}`)
+            console.log(`HEADERS: ${JSON.stringify(res.headers)}`)
             let returnData = ''
             res.on('data', function (d) {
                 console.log('get data')

@@ -49,7 +49,8 @@ async function handler(req) {
     */
 
     /* By Dd: we simply use the environment to get the trace inject info */
-    headers = process.env.TRACER_INJECT
+    //headers = process.env.TRACER_INJECT
+    headers = {'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'}
 
     let finalResult = null
     let result = null
@@ -68,7 +69,6 @@ async function handler(req) {
     if (localSpan !== null) {
         localSpan.finish()
     }
-
     let callee = await mesh.GetCallee(meshData, applicationName, stepName, result, localSpan, span)
     console.log("get callee %o", callee)
     if (!callee) {
@@ -82,10 +82,21 @@ async function handler(req) {
         headers[STEP_NAME_KEY] = callee.stepName
         headers[APP_NAME_KEY] = applicationName
         // todo use mesh information to mapping transfer data
-        let response = await mesh.GetData({
-            ...callee.information,
-            headers: headers
-        }, data)
+	 let response = null
+	 var beginTime = process.hrtime();
+        try {
+       	 //let response = await mesh.GetData({
+       	 response = await mesh.GetData({
+       	     ...callee.information,
+       	     headers: headers
+       	 }, data)
+    	}catch(e) {
+		console.log("[Dd] got error on Getdata")
+    		console.log(e)
+   	 }
+	var endTime = process.hrtime(beginTime);
+	var interval = parseInt(endTime[0] * 1e6 + endTime[1]*1e-3);
+	console.log('[Results] callee comm (round-trip) + exe (callee) costs: ', interval, 'us' )
         console.log("send result indirectly which is from %o", callee)
         console.log("response: %o", response)
         finalResult = JSON.parse(response)
@@ -192,12 +203,18 @@ function main() {
     })
     //tracer = mesh.InitMesh(meshData)
     app.get('/invoke', async (req, res) => {
+	var beginTime = process.hrtime();
         let result = await handler(req)
+	var endTime = process.hrtime(beginTime);
+	var interval = parseInt(endTime[0] * 1e6 + endTime[1]*1e-3);
+	console.log('[Results] exe (handler) costs: ', interval, 'us' )
         console.log("result:%o", result)
         res.json(result)
     })
-    server = app.listen(40041, function () {
-        console.log('Example app listening on port 40041')
+    //server = app.listen(40041, function () {
+    server = app.listen(process.env.PORT, function () {
+        //console.log('Example app listening on port 40041')
+        console.log('Example app listening on port %s', process.env.PORT)
         //RegisterToWorker().then((res) => {
         //    console.log("register res %o", res)
         //}).catch((err) => {
