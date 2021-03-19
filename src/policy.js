@@ -124,3 +124,5 @@ exports.Policies = {
     "simple": SimplePolicy,
     "mixed": MixedPolicy
 }
+
+exports.Information = Information

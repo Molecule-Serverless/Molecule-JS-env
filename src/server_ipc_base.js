@@ -1,4 +1,4 @@
-const mesh = require('./mesh')
+const mesh = require('./mesh_ipc_base')
 const fs = require('fs')
 const config = require('./config.json')
 const opentracing = require("opentracing")
@@ -8,7 +8,6 @@ const protobuf = require("protobufjs")
 var express = require('express')
 var bodyParser = require('body-parser')
 const isEmpty = require('lodash.isempty')
-const prom = require('./prom')
 var http = require('http')
 var gracefulShutdown = require('http-graceful-shutdown')
 const STEP_NAME_KEY = 'step-name'
@@ -32,17 +31,26 @@ function sleep(time = 0) {
 
 async function handler(req) {
     // the function is a demo callee, get span from http headers
-    let span = tracer.extract(opentracing.FORMAT_HTTP_HEADERS, req.headers)
+
+    let span = null
+    //let span = tracer.extract(opentracing.FORMAT_HTTP_HEADERS, req.headers)
+
     console.log(req.headers)
     let stepName = req.headers[STEP_NAME_KEY]
     let applicationName = req.headers[APP_NAME_KEY]
     let headers = {}
     let localSpan = null
+    /*
     if (span !== null) {
         localSpan = tracer.startSpan(process.env.FUNC_NAME || "A", {childOf: span})
         tracer.inject(span, opentracing.FORMAT_HTTP_HEADERS, headers)
         console.log("headers after inject %o", headers)
     }
+    */
+
+    /* By Dd: we simply use the environment to get the trace inject info */
+    headers = process.env.TRACER_INJECT
+
     let finalResult = null
     let result = null
     if (func) {
@@ -60,6 +68,7 @@ async function handler(req) {
     if (localSpan !== null) {
         localSpan.finish()
     }
+
     let callee = await mesh.GetCallee(meshData, applicationName, stepName, result, localSpan, span)
     console.log("get callee %o", callee)
     if (!callee) {
@@ -77,9 +86,12 @@ async function handler(req) {
             ...callee.information,
             headers: headers
         }, data)
-        console.log("send result indirectly which is from callee: %o", callee)
+        console.log("send result indirectly which is from %o", callee)
+        console.log("response: %o", response)
         finalResult = JSON.parse(response)
     } else if (callee.information === null) {
+        console.log("error callee.info is null\n")
+	    /*
         console.log("callee need wait for instances")
         let retryTime = 200
         let i = 0
@@ -98,7 +110,7 @@ async function handler(req) {
                     ...retryCallee.information,
                     headers: headers
                 }, data)
-                console.log("send result indirectly which is from callee: %o", retryCallee)
+                console.log("send result indirectly which is from %o", retryCallee)
                 finalResult = JSON.parse(response)
                 break
             } else if (retryCallee.information === undefined) {
@@ -111,6 +123,7 @@ async function handler(req) {
         if (i === retryTime) {
             finalResult = result
         }
+	*/
     } else if (callee.information === undefined) {
         // end
         if (callee.result) {
@@ -118,6 +131,7 @@ async function handler(req) {
         } else {
             finalResult = result;
         }
+        console.log("end of a call: %o", finalResult)
     }
     return finalResult
 }
@@ -176,22 +190,19 @@ function main() {
         func = require(msg.target).handler
         console.log("function init at express")
     })
-    tracer = mesh.InitMesh(meshData)
+    //tracer = mesh.InitMesh(meshData)
     app.get('/invoke', async (req, res) => {
         let result = await handler(req)
         console.log("result:%o", result)
         res.json(result)
-        prom.qps.inc()
     })
-    prom.qps.inc(0)
-    app.get('/metrics', prom.metrics)
     server = app.listen(40041, function () {
         console.log('Example app listening on port 40041')
-        RegisterToWorker().then((res) => {
-            console.log("register res %o", res)
-        }).catch((err) => {
-            console.log("get err %s", err)
-        })
+        //RegisterToWorker().then((res) => {
+        //    console.log("register res %o", res)
+        //}).catch((err) => {
+        //    console.log("get err %s", err)
+        //})
     })
     gracefulShutdown(server)
 }
