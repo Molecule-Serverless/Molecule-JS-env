@@ -17,6 +17,8 @@
 #define FIFO_PATH_LEN 66
 #define MAX_MSG_LEN 4096
 #define FIFO_DEBUG 1
+//#define FIFO_PATH_TEMPLATE "/tmp/ipc_fifo_server-%d"
+#define FIFO_PATH_TEMPLATE "/env/ipc_fifo_server-%d"
 
 /* Helper Functions */
 void throw(const char* message) {
@@ -29,7 +31,7 @@ void throw(const char* message) {
 int _fifo_client_setup(int uuid) {
 	char fifo_path[FIFO_PATH_LEN]="";
 	int fifo_fd;
-	sprintf(fifo_path, "/tmp/ipc_fifo_server-%d", uuid);
+	sprintf(fifo_path, FIFO_PATH_TEMPLATE, uuid);
 	if (mkfifo(fifo_path, 0666) > 0) {
 		throw("Error creating FIFO in server\n");
 	}
@@ -48,7 +50,7 @@ int _fifo_server_setup(int uuid) {
 	/* It always assume the client is alreay setup */
 	int fifo_fd;
 
-	sprintf(fifo_path, "/tmp/ipc_fifo_server-%d", uuid);
+	sprintf(fifo_path, FIFO_PATH_TEMPLATE, uuid);
 
 	/* Open a fifo */
 	if ((fifo_fd = open(fifo_path, O_RDONLY)) <0){

@@ -33,3 +33,25 @@ in the second term:
 
 You should see the results then.
 
+### FIFO-IPC in two different containers
+
+start two containers, both use:
+
+	./docker_run_dd-heteroIPC.sh in /src dir.
+
+Note: ensure the script does not bind a port (or change the port number manually)
+
+in the first container:
+
+	export IPCTest=IPCTestClient
+	node .
+
+in the second container:
+
+	export IPCTest=IPCTestServer
+	node .
+
+
+You should see the results then.
+
+Explained: It does not change much to support the two-container cases. This is because we update the FIFO_PATH in ipc.c to use /env path, this is a shared dir for both two containers.
