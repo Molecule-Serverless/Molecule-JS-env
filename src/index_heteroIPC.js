@@ -170,6 +170,23 @@ async function main() {
     /* 1. boot here */
     console.log("Node.JS runtime for Molecule-serverless started\n")
 
+	
+    /* For IPC Test only==================Begin====================*/
+    	if ("IPCTestClient" === process.env.IPCTest) {
+		console.log('IPC Test client start\n')
+		conn = addon.IPCClientSetup(0xbeef)
+		addon.IPCSend(conn, "Hello, I am client")
+	}
+    	if ("IPCTestServer" === process.env.IPCTest) {
+		console.log('IPC Test server start\n')
+		conn = addon.IPCServerSetup(0xbeef)
+		msg = addon.IPCRecv(conn)
+		console.log('server recv msg from client: %s', msg)
+	}
+	return
+
+    /* For IPC Test only==================End====================*/
+
     /* 2. start a client server */
     child = cp.fork('./server_ipc_base.js')
     child.on('exit', function (code) {

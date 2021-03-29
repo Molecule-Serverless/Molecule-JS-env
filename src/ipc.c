@@ -26,7 +26,7 @@ void throw(const char* message) {
 
 
 /* FIFO-based IPC */
-int _fifo_server_setup(int uuid) {
+int _fifo_client_setup(int uuid) {
 	char fifo_path[FIFO_PATH_LEN]="";
 	int fifo_fd;
 	sprintf(fifo_path, "/tmp/ipc_fifo_server-%d", uuid);
@@ -35,18 +35,23 @@ int _fifo_server_setup(int uuid) {
 	}
 
 	/* Open a fifo */
-	if ((fifo_fd = open(fifo_path, O_RDONLY)) <0){
+	if ((fifo_fd = open(fifo_path, O_WRONLY)) <0){
 		throw("Error opening FIFO in server\n");
 	}
 
 	return fifo_fd;
 }
 
-int _fifo_client_setup(char* fifo_path) {
-	/* It always assume the server is alreay setup */
+//int _fifo_server_setup(char* fifo_path) {
+int _fifo_server_setup(int uuid) {
+	char fifo_path[FIFO_PATH_LEN]="";
+	/* It always assume the client is alreay setup */
 	int fifo_fd;
+
+	sprintf(fifo_path, "/tmp/ipc_fifo_server-%d", uuid);
+
 	/* Open a fifo */
-	if ((fifo_fd = open(fifo_path, O_WRONLY)) <0){
+	if ((fifo_fd = open(fifo_path, O_RDONLY)) <0){
 		throw("Error opening FIFO in client\n");
 	}
 	return fifo_fd;
@@ -130,6 +135,126 @@ static napi_value FIFO_server_setup(napi_env env, napi_callback_info info) {
   	return ret;
 }
 
+//FIXME: some codes of client/serer setup could be merged into a common func
+static napi_value FIFO_client_setup(napi_env env, napi_callback_info info) {
+	int fd;
+	int uuid;
+
+	/* Get args */
+  	napi_status status;
+
+  	size_t argc = 1;
+  	napi_value args[1];
+  	status = napi_get_cb_info(env, info, &argc, args, NULL, NULL);
+  	assert(status == napi_ok);
+
+  	if (argc < 1) {
+  	  napi_throw_type_error(env, NULL, "Wrong number of arguments");
+  	  return NULL;
+  	}
+
+  	napi_valuetype valuetype0;
+  	status = napi_typeof(env, args[0], &valuetype0);
+  	assert(status == napi_ok);
+
+	if (valuetype0 != napi_number) {
+    		napi_throw_type_error(env, NULL, "Wrong arguments");
+    		return NULL;
+	}
+
+	status = napi_get_value_int32(env, args[0], &uuid);
+	assert(status == napi_ok);
+
+#ifdef FIFO_DEBUG
+	fprintf(stderr, "[%s] uuid: %d\n", __func__, uuid);
+	//uuid = 0xbeef;
+#endif
+	fd = _fifo_client_setup(uuid);
+
+  	napi_value ret;
+  	status = napi_create_int32(env, fd, &ret);
+  	assert(status == napi_ok);
+
+  	return ret;
+}
+
+static napi_value FIFO_write(napi_env env, napi_callback_info info) {
+	int fd;
+	char buf[MAX_MSG_LEN];
+	size_t bufsize = MAX_MSG_LEN;
+	size_t result;
+
+	/* Get args */
+  	napi_status status;
+
+  	size_t argc = 2;
+  	napi_value args[2];
+  	status = napi_get_cb_info(env, info, &argc, args, NULL, NULL);
+  	assert(status == napi_ok);
+
+  	if (argc < 2) {
+  	  napi_throw_type_error(env, NULL, "Wrong number of arguments");
+  	  return NULL;
+  	}
+
+	status = napi_get_value_int32(env, args[0], &fd);
+	assert(status == napi_ok);
+
+	status = napi_get_value_string_utf8(env, args[1], buf, bufsize, &result);
+	assert(status == napi_ok);
+	assert(result <= bufsize);
+
+#ifdef FIFO_DEBUG
+	fprintf(stderr, "[%s] result size: %d\n", __func__, result);
+	fprintf(stderr, "[%s] buf writeen: %s\n", __func__, buf);
+	//uuid = 0xbeef;
+#endif
+	result = _fifo_write(fd, buf, result);
+
+  	napi_value ret;
+  	status = napi_create_int32(env, result, &ret);
+  	assert(status == napi_ok);
+
+  	return ret;
+}
+
+static napi_value FIFO_read(napi_env env, napi_callback_info info) {
+	int fd;
+	char buf[MAX_MSG_LEN];
+	size_t bufsize = MAX_MSG_LEN;
+	size_t result;
+
+	/* Get args */
+  	napi_status status;
+
+  	size_t argc = 1;
+  	napi_value args[1];
+  	status = napi_get_cb_info(env, info, &argc, args, NULL, NULL);
+  	assert(status == napi_ok);
+
+  	if (argc < 1) {
+  	  napi_throw_type_error(env, NULL, "Wrong number of arguments");
+  	  return NULL;
+  	}
+
+	status = napi_get_value_int32(env, args[0], &fd);
+	assert(status == napi_ok);
+
+	result = _fifo_read(fd, buf, bufsize);
+	assert(result <= bufsize);
+
+#ifdef FIFO_DEBUG
+	fprintf(stderr, "[%s] result size: %d\n", __func__, result);
+	fprintf(stderr, "[%s] buf readed: %s\n", __func__, buf);
+	//uuid = 0xbeef;
+#endif
+
+  	napi_value ret;
+  	status = napi_create_string_utf8(env, buf, result, &ret);
+  	assert(status == napi_ok);
+
+  	return ret;
+}
 
 static napi_value Add(napi_env env, napi_callback_info info) {
   napi_status status;
@@ -177,6 +302,17 @@ static napi_value Add(napi_env env, napi_callback_info info) {
 
 napi_value Init(napi_env env, napi_value exports) {
   napi_status status;
+  napi_property_descriptor IPCDescriptors[] = {
+  	DECLARE_NAPI_METHOD("add", Add), //demo: add
+	DECLARE_NAPI_METHOD("fifo_server_setup", FIFO_server_setup), //fifo: server_setup
+	DECLARE_NAPI_METHOD("fifo_client_setup", FIFO_client_setup), //fifo: client_setup
+	DECLARE_NAPI_METHOD("fifo_read", FIFO_read), //fifo: read
+	DECLARE_NAPI_METHOD("fifo_write", FIFO_write)  //fifo: write
+  };
+  status = napi_define_properties(env, exports,
+		  sizeof(IPCDescriptors) / sizeof(IPCDescriptors[0]), &IPCDescriptors);
+  assert(status == napi_ok);
+#if 0
   /* Demo: Add */
   napi_property_descriptor addDescriptor = DECLARE_NAPI_METHOD("add", Add);
   status = napi_define_properties(env, exports, 1, &addDescriptor);
@@ -186,6 +322,21 @@ napi_value Init(napi_env env, napi_value exports) {
   napi_property_descriptor fifoServerSetupDescriptor = DECLARE_NAPI_METHOD("fifo_server_setup", FIFO_server_setup);
   status = napi_define_properties(env, exports, 2, &fifoServerSetupDescriptor);
   assert(status == napi_ok);
+
+  napi_property_descriptor fifoClientSetupDescriptor = DECLARE_NAPI_METHOD("fifo_client_setup", FIFO_client_setup);
+  status = napi_define_properties(env, exports, 3, &fifoClientSetupDescriptor);
+  assert(status == napi_ok);
+#endif
+
+  /*
+  napi_property_descriptor fifoReadDescriptor = DECLARE_NAPI_METHOD("fifo_read", FIFO_read);
+  status = napi_define_properties(env, exports, 4, &fifoReadDescriptor);
+  assert(status == napi_ok);
+
+  napi_property_descriptor fifoWriteDescriptor = DECLARE_NAPI_METHOD("fifo_write", FIFO_write);
+  status = napi_define_properties(env, exports, 5, &fifoWriteDescriptor);
+  assert(status == napi_ok);
+  */
 
   return exports;
 }
