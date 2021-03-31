@@ -10,5 +10,5 @@
 docker run --rm -it -p 12302:40041 -v $(pwd)/../../molecule-benchmarks/:/home -v $(pwd)/../../molecule-js-env/src/:/env -w /env --entrypoint=/env/scripts/local_server.sh ddnirvana/molecule-js-env:v3-node14.16.0
 
 ### To run in a bash shell, uncomment the following command
-#docker run --rm -it -p 12301:40041 -v $(pwd)/../../molecule-benchmarks/:/home -v $(pwd)/../../molecule-js-env/src/:/env --entrypoint=/bin/bash ddnirvana/molecule-js-env:v3-node14.16.0
+#docker run --rm -it -p 12302:40041 -v $(pwd)/../../molecule-benchmarks/:/home -v $(pwd)/../../molecule-js-env/src/:/env --entrypoint=/bin/bash ddnirvana/molecule-js-env:v3-node14.16.0
 
