@@ -7,6 +7,30 @@ Two Dockerfiles:
 
 ## Demos
 
+### How to run a single IPC demo
+
+Prepare three terminals (or three tabs if you use tmux)
+
+First, you should download molecule-js-env and molecule-benchmarks from gitlab, in a same directory
+
+1st terminal:
+
+	cd PATH-to-molecule-js-env/src
+	./scripts/docker_run-IPC-client.sh
+
+2nd terminal:
+
+	cd PATH-to-molecule-js-env/src
+	./scripts/docker_run-IPC-server.sh
+
+3rd terminal:
+
+	cd PATH-to-molecule-benchmarks/
+	./test_ipc.sh
+
+You should see results on both three terminals if success.
+
+
 ### FIFO-IPC in a single container
 
 start a container use:
