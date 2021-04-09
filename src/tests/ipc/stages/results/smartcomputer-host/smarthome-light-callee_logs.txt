@@ -1,0 +1,435 @@
+Node.JS runtime for Molecule-serverless started
+
+Example app listening on port 40041
+{ target: [32m'/home/src/light/index.js'[39m }
+function init at express
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'light'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'324'[39m,
+  host: [32m'172.17.0.1:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.2441dc71-17c2-459f-be40-87af0cdccc81'[39m,
+    timestamp: [32m'2021-04-09T02:52:16Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.a172c4fd-9557-472b-af78-1a2bbc905ace'[39m
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m3182[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: [32m'1.0'[39m,
+  response: [32m'light switch: ON'[39m,
+  userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+  sessionAttributes: {}
+}
+[Results] exe (handler) costs:  [33m5513[39m us
+result:{
+  version: [32m'1.0'[39m,
+  response: [32m'light switch: ON'[39m,
+  userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+  sessionAttributes: {}
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'light'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'324'[39m,
+  host: [32m'172.17.0.1:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.83ea44b1-3504-4bbf-9304-db42841635ba'[39m,
+    timestamp: [32m'2021-04-09T02:52:16Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.1c21f4b3-af6c-4a3b-8d67-a68cf3c39910'[39m
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m2712[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: [32m'1.0'[39m,
+  response: [32m'light switch: ON'[39m,
+  userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+  sessionAttributes: {}
+}
+[Results] exe (handler) costs:  [33m5283[39m us
+result:{
+  version: [32m'1.0'[39m,
+  response: [32m'light switch: ON'[39m,
+  userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+  sessionAttributes: {}
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'light'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'324'[39m,
+  host: [32m'172.17.0.1:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.518b5ee3-7dd0-4fa3-9cf8-cad767e29cb9'[39m,
+    timestamp: [32m'2021-04-09T02:52:16Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.9a50bf27-1c4a-4e81-b194-0e8d4c04b3ac'[39m
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m2767[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: [32m'1.0'[39m,
+  response: [32m'light switch: ON'[39m,
+  userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+  sessionAttributes: {}
+}
+[Results] exe (handler) costs:  [33m5893[39m us
+result:{
+  version: [32m'1.0'[39m,
+  response: [32m'light switch: ON'[39m,
+  userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+  sessionAttributes: {}
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'light'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'324'[39m,
+  host: [32m'172.17.0.1:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.32d4372a-582d-4751-8ab7-20b95ca13871'[39m,
+    timestamp: [32m'2021-04-09T02:52:16Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.1e0ce699-e95b-45bf-95e4-4e4a05aac070'[39m
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m2746[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: [32m'1.0'[39m,
+  response: [32m'light switch: ON'[39m,
+  userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+  sessionAttributes: {}
+}
+[Results] exe (handler) costs:  [33m5887[39m us
+result:{
+  version: [32m'1.0'[39m,
+  response: [32m'light switch: ON'[39m,
+  userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+  sessionAttributes: {}
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'light'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'324'[39m,
+  host: [32m'172.17.0.1:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.18ac1e64-589f-4548-8959-a3eb993e9090'[39m,
+    timestamp: [32m'2021-04-09T02:52:16Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.6cb16f88-8385-44b3-9567-ea5cf5f591ce'[39m
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m2797[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: [32m'1.0'[39m,
+  response: [32m'light switch: ON'[39m,
+  userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+  sessionAttributes: {}
+}
+[Results] exe (handler) costs:  [33m5734[39m us
+result:{
+  version: [32m'1.0'[39m,
+  response: [32m'light switch: ON'[39m,
+  userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+  sessionAttributes: {}
+}

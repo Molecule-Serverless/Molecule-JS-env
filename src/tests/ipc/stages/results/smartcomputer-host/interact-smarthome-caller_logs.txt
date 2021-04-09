@@ -1,0 +1,645 @@
+Node.JS runtime for Molecule-serverless started
+
+Example app listening on port 40041
+{ target: [32m'/home/src/interact/index.js'[39m }
+function init at express
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'59'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.5457795a-1cdc-446b-b41f-a0ac2dfd850b'[39m,
+    timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f8e59aff-c1b3-4d3d-a8c2-8ef4270442ed'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m4433[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'smarthome'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.5457795a-1cdc-446b-b41f-a0ac2dfd850b'[39m,
+      timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.f8e59aff-c1b3-4d3d-a8c2-8ef4270442ed'[39m,
+      attributes: {}
+    }
+  }
+}
+GetData's opts: {
+  hostname: [32m'172.17.0.1'[39m,
+  port: [32m'12302'[39m,
+  path: [32m'/invoke'[39m,
+  method: [32m'GET'[39m,
+  protocol: [32m'http:'[39m,
+  headers: {
+    [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+    [32m'step-name'[39m: [32m'smarthome'[39m,
+    [32m'app-name'[39m: [32m'alexa_v2'[39m,
+    [32m'Content-Type'[39m: [32m'application/json'[39m,
+    [32m'Content-Length'[39m: [33m440[39m
+  },
+  timeout: [33m1000[39m
+}
+
+req in
+STATUS: 200
+HEADERS: {"x-powered-by":"Express","content-type":"application/json; charset=utf-8","content-length":"324","etag":"W/\"144-ddjikiKN41aJHMRL2V1Q9+pYXqs\"","date":"Fri, 09 Apr 2021 02:51:44 GMT","connection":"close"}
+get data
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m48154[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'smarthome'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.5457795a-1cdc-446b-b41f-a0ac2dfd850b'[39m,
+      timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.f8e59aff-c1b3-4d3d-a8c2-8ef4270442ed'[39m,
+      attributes: {}
+    }
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.b57dd52d-7980-423e-90f3-987753833239","timestamp":"2021-04-09T02:51:44Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.57a6a998-6df7-40ac-9a97-4b7323bf5829"}}'[39m
+[Results] exe (handler) costs:  [33m56162[39m us
+result:{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.b57dd52d-7980-423e-90f3-987753833239'[39m,
+    timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.57a6a998-6df7-40ac-9a97-4b7323bf5829'[39m
+  }
+}
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'59'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.f5c3780a-19a7-4096-a6b8-9362a9cb3131'[39m,
+    timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.291a730d-62b3-4416-ba54-27f8eb6799ef'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m3209[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'smarthome'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.f5c3780a-19a7-4096-a6b8-9362a9cb3131'[39m,
+      timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.291a730d-62b3-4416-ba54-27f8eb6799ef'[39m,
+      attributes: {}
+    }
+  }
+}
+GetData's opts: {
+  hostname: [32m'172.17.0.1'[39m,
+  port: [32m'12302'[39m,
+  path: [32m'/invoke'[39m,
+  method: [32m'GET'[39m,
+  protocol: [32m'http:'[39m,
+  headers: {
+    [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+    [32m'step-name'[39m: [32m'smarthome'[39m,
+    [32m'app-name'[39m: [32m'alexa_v2'[39m,
+    [32m'Content-Type'[39m: [32m'application/json'[39m,
+    [32m'Content-Length'[39m: [33m440[39m
+  },
+  timeout: [33m1000[39m
+}
+
+req in
+STATUS: 200
+HEADERS: {"x-powered-by":"Express","content-type":"application/json; charset=utf-8","content-length":"324","etag":"W/\"144-hbRYIhCNMAt/4Nnz9lCuHZR8TQw\"","date":"Fri, 09 Apr 2021 02:51:44 GMT","connection":"close"}
+get data
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m15333[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'smarthome'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.f5c3780a-19a7-4096-a6b8-9362a9cb3131'[39m,
+      timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.291a730d-62b3-4416-ba54-27f8eb6799ef'[39m,
+      attributes: {}
+    }
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.58423c4d-bcab-4e18-bac5-10b6c42b4bb3","timestamp":"2021-04-09T02:51:44Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.9ba92d6d-223e-4ca7-aaea-2626aea630c4"}}'[39m
+[Results] exe (handler) costs:  [33m22590[39m us
+result:{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.58423c4d-bcab-4e18-bac5-10b6c42b4bb3'[39m,
+    timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.9ba92d6d-223e-4ca7-aaea-2626aea630c4'[39m
+  }
+}
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'59'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.bb5382d5-fbb0-43d6-954b-a1850f642294'[39m,
+    timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.6c83b81c-4403-470e-af80-3cc17ccc257d'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m2691[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'smarthome'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.bb5382d5-fbb0-43d6-954b-a1850f642294'[39m,
+      timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.6c83b81c-4403-470e-af80-3cc17ccc257d'[39m,
+      attributes: {}
+    }
+  }
+}
+GetData's opts: {
+  hostname: [32m'172.17.0.1'[39m,
+  port: [32m'12302'[39m,
+  path: [32m'/invoke'[39m,
+  method: [32m'GET'[39m,
+  protocol: [32m'http:'[39m,
+  headers: {
+    [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+    [32m'step-name'[39m: [32m'smarthome'[39m,
+    [32m'app-name'[39m: [32m'alexa_v2'[39m,
+    [32m'Content-Type'[39m: [32m'application/json'[39m,
+    [32m'Content-Length'[39m: [33m440[39m
+  },
+  timeout: [33m1000[39m
+}
+
+req in
+STATUS: 200
+HEADERS: {"x-powered-by":"Express","content-type":"application/json; charset=utf-8","content-length":"324","etag":"W/\"144-2NEZgRpJ6BAKv/Vye9b88c66kGI\"","date":"Fri, 09 Apr 2021 02:51:44 GMT","connection":"close"}
+get data
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m11840[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'smarthome'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.bb5382d5-fbb0-43d6-954b-a1850f642294'[39m,
+      timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.6c83b81c-4403-470e-af80-3cc17ccc257d'[39m,
+      attributes: {}
+    }
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.e4c552ac-cbbe-47e3-b754-317c938d6156","timestamp":"2021-04-09T02:51:44Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.792fb034-4a2d-41dd-9c5f-718462b122b7"}}'[39m
+[Results] exe (handler) costs:  [33m18281[39m us
+result:{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.e4c552ac-cbbe-47e3-b754-317c938d6156'[39m,
+    timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.792fb034-4a2d-41dd-9c5f-718462b122b7'[39m
+  }
+}
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'59'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.9cfb18da-7634-4ec4-a5e6-1eb61e5d4cf2'[39m,
+    timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.78794707-c765-4229-8bf0-ddd03578ed24'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m1973[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'smarthome'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.9cfb18da-7634-4ec4-a5e6-1eb61e5d4cf2'[39m,
+      timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.78794707-c765-4229-8bf0-ddd03578ed24'[39m,
+      attributes: {}
+    }
+  }
+}
+GetData's opts: {
+  hostname: [32m'172.17.0.1'[39m,
+  port: [32m'12302'[39m,
+  path: [32m'/invoke'[39m,
+  method: [32m'GET'[39m,
+  protocol: [32m'http:'[39m,
+  headers: {
+    [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+    [32m'step-name'[39m: [32m'smarthome'[39m,
+    [32m'app-name'[39m: [32m'alexa_v2'[39m,
+    [32m'Content-Type'[39m: [32m'application/json'[39m,
+    [32m'Content-Length'[39m: [33m440[39m
+  },
+  timeout: [33m1000[39m
+}
+
+req in
+STATUS: 200
+HEADERS: {"x-powered-by":"Express","content-type":"application/json; charset=utf-8","content-length":"324","etag":"W/\"144-v+5zbjBD0TSXaJFUD5GLV74CQGs\"","date":"Fri, 09 Apr 2021 02:51:44 GMT","connection":"close"}
+get data
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m13675[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'smarthome'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.9cfb18da-7634-4ec4-a5e6-1eb61e5d4cf2'[39m,
+      timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.78794707-c765-4229-8bf0-ddd03578ed24'[39m,
+      attributes: {}
+    }
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.95e7e92b-4dd4-48bf-9489-b514113c46ea","timestamp":"2021-04-09T02:51:44Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.58aebf84-686c-41a9-997a-010a9382ff0f"}}'[39m
+[Results] exe (handler) costs:  [33m19406[39m us
+result:{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.95e7e92b-4dd4-48bf-9489-b514113c46ea'[39m,
+    timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.58aebf84-686c-41a9-997a-010a9382ff0f'[39m
+  }
+}
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'59'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.7a3de2e5-91f8-4e5c-a04e-eb0fca3680e1'[39m,
+    timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.c8909b78-131d-4d35-9f48-feb9c6bc343a'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m1959[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'smarthome'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.7a3de2e5-91f8-4e5c-a04e-eb0fca3680e1'[39m,
+      timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.c8909b78-131d-4d35-9f48-feb9c6bc343a'[39m,
+      attributes: {}
+    }
+  }
+}
+GetData's opts: {
+  hostname: [32m'172.17.0.1'[39m,
+  port: [32m'12302'[39m,
+  path: [32m'/invoke'[39m,
+  method: [32m'GET'[39m,
+  protocol: [32m'http:'[39m,
+  headers: {
+    [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+    [32m'step-name'[39m: [32m'smarthome'[39m,
+    [32m'app-name'[39m: [32m'alexa_v2'[39m,
+    [32m'Content-Type'[39m: [32m'application/json'[39m,
+    [32m'Content-Length'[39m: [33m440[39m
+  },
+  timeout: [33m1000[39m
+}
+
+req in
+STATUS: 200
+HEADERS: {"x-powered-by":"Express","content-type":"application/json; charset=utf-8","content-length":"324","etag":"W/\"144-8yiRFAAEQLj1BZuyGUlZjvbTp4c\"","date":"Fri, 09 Apr 2021 02:51:44 GMT","connection":"close"}
+get data
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m12070[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'smarthome'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.7a3de2e5-91f8-4e5c-a04e-eb0fca3680e1'[39m,
+      timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.c8909b78-131d-4d35-9f48-feb9c6bc343a'[39m,
+      attributes: {}
+    }
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.423e5a5f-2197-4c5d-b265-213bb536cc57","timestamp":"2021-04-09T02:51:44Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.39953906-4edc-45f0-8b89-00edd0ff41bd"}}'[39m
+[Results] exe (handler) costs:  [33m17804[39m us
+result:{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.423e5a5f-2197-4c5d-b265-213bb536cc57'[39m,
+    timestamp: [32m'2021-04-09T02:51:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.39953906-4edc-45f0-8b89-00edd0ff41bd'[39m
+  }
+}
