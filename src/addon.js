@@ -27,7 +27,21 @@ function IPCRecv(conn) {
 	return buf 
 }
 
+function IPCInit(uuid)
+{
+	fd = ipc.fifo_ipc_init(uuid);
+	return fd
+}
+
+function IPCConnect(uuid)
+{
+	fd = ipc.fifo_ipc_connect(uuid)
+	return fd
+}
+
 exports.IPCClientSetup = IPCClientSetup
 exports.IPCServerSetup = IPCServerSetup
 exports.IPCSend = IPCSend
 exports.IPCRecv = IPCRecv
+exports.IPCInit = IPCInit
+exports.IPCConnect = IPCConnect
