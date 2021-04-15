@@ -233,7 +233,7 @@ async function main() {
         app.use(urlencoded({extended: false}))
         app.get('/invoke', async (req, res)=>{
             console.log("get into invoke\n")
-            ret = func(req)
+            ret = await func(req)
             if(has_next)
             {
                 before_sending_time = get_microsecond()
@@ -243,8 +243,12 @@ async function main() {
                 result = JSON.parse(result)
                 console.log("caller receive result\n")
                 assert(result.source === 'next')
-                console.log("caller after_receiving: %ld, before sending: %ld",after_recving_time, before_sending_time)
-                //TODO: how to return the result to client?
+                console.log("caller after_receiving: ", after_recving_time, "before_sending: ",  before_sending_time)
+                // console.log("caller after_receiving: ")
+                // console.log(after_recving_time)
+                // console.log("caller before sending: ")
+                // console.log(before_sending_time)
+                // //TODO: how to return the result to client?
                 res.json(result)
             }
             else
@@ -281,7 +285,7 @@ async function main() {
         {
             next_fifo = addon.IPCConnect(parseInt(config_json.next_fifo))
         }
-        console.log("Calee init successfully\n")
+        console.log("Callee init successfully\n")
         while(true)
         {
             msg = addon.IPCRecv(self_fifo)
@@ -298,8 +302,8 @@ async function main() {
             console.log(msg)
             if(msg.source === 'prev')
             {
-                console.log("calee get message\n")
-                ret = func(msg.data)
+                console.log("callee get message\n")
+                ret = await func(msg.data)
                 if(has_next)
                 {
                     before_sending_time = get_microsecond()
@@ -307,7 +311,7 @@ async function main() {
                         source: 'prev',
                         data: ret
                     }))
-                    console.log("callee after_receiving: %ld, before_sending: %ld", after_recving_time, before_sending_time)
+                    console.log("callee after_receiving: ", after_recving_time, "before_sending: ",  before_sending_time)
                 }
                 else
                 {
@@ -317,7 +321,7 @@ async function main() {
                         source: 'next',
                         data: ret
                     }))
-                    console.log("callee after_receiving: %ld, before_sending: %ld", after_recving_time, before_sending_time)
+                    console.log("callee after_receiving: ", after_recving_time, "before_sending: ", before_sending_time)
                 }
             }
             else if(msg.source === 'next')
