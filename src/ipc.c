@@ -353,7 +353,7 @@ static napi_value FIFO_write(napi_env env, napi_callback_info info) {
 
 static napi_value FIFO_read(napi_env env, napi_callback_info info) {
 	int fd;
-	char buf[MAX_MSG_LEN];
+	char buf[MAX_MSG_LEN] = {0};
 	size_t bufsize = MAX_MSG_LEN;
 	size_t result;
 
