@@ -20,8 +20,12 @@
 //#define FIFO_PATH_TEMPLATE "/tmp/ipc_fifo_server-%d"
 #define FIFO_PATH_TEMPLATE "/env/ipc_fifo_server-%d"
 
+/*Dd: add for smartcomputers */
+#include <global_syscall_protocol.h>
+#include <global_syscall_interfaces.h>
+
 /* Helper Functions */
-void throw(const char* message) {
+void addon_throw(const char* message) {
 	perror(message);
 	exit(EXIT_FAILURE);
 }
@@ -34,13 +38,13 @@ int _fifo_ipc_init(int uuid)
 	sprintf(fifo_path, FIFO_PATH_TEMPLATE, uuid);
 	if(mkfifo(fifo_path, 0666) > 0)
 	{
-		throw("Error when fifo init\n");
+		addon_throw("Error when fifo init\n");
 	}
 	int read_fifo_fd;
 	printf("_fifo_ipc_init before open\n");
 	if((read_fifo_fd = open(fifo_path, O_RDONLY)) < 0)
 	{
-		throw("Error opening FIFO for read when fifo init\n");
+		addon_throw("Error opening FIFO for read when fifo init\n");
 	}
 	printf("_fifo_ipc_init after open\n");
 #ifdef FIFO_DEBUG
@@ -79,12 +83,12 @@ int _fifo_client_setup(int uuid) {
 	int fifo_fd;
 	sprintf(fifo_path, FIFO_PATH_TEMPLATE, uuid);
 	if (mkfifo(fifo_path, 0666) > 0) {
-		throw("Error creating FIFO in server\n");
+		addon_throw("Error creating FIFO in server\n");
 	}
 
 	/* Open a fifo */
 	if ((fifo_fd = open(fifo_path, O_WRONLY)) <0){
-		throw("Error opening FIFO in server\n");
+		addon_throw("Error opening FIFO in server\n");
 	}
 
 	return fifo_fd;
@@ -100,7 +104,7 @@ int _fifo_server_setup(int uuid) {
 
 	/* Open a fifo */
 	if ((fifo_fd = open(fifo_path, O_RDONLY)) <0){
-		throw("Error opening FIFO in client\n");
+		addon_throw("Error opening FIFO in client\n");
 	}
 	return fifo_fd;
 }
@@ -147,6 +151,7 @@ static napi_value FIFO_ipc_init(napi_env env, napi_callback_info info)
 {
 	int fd;
 	int uuid;
+	int global_fifo;
 
 	napi_status status;
 	size_t argc = 1;
@@ -175,8 +180,33 @@ static napi_value FIFO_ipc_init(napi_env env, napi_callback_info info)
 	fprintf(stderr, "[%s] uuid: %d\n", __func__, uuid);
 #endif
 	fd = _fifo_ipc_init(uuid);
+
+	//Dd: add for smartcomputers
+	global_fifo = global_fifo_init(uuid); //register localFIFO to global
+
 	napi_value ret;
+	//status = napi_create_int32(env, fd, &ret);
 	status = napi_create_int32(env, fd, &ret);
+	assert(status == napi_ok);
+
+	return ret;
+}
+
+static napi_value addon_register_self_global(napi_env env, napi_callback_info info)
+{
+	int fd;
+	int uuid;
+	int global_fifo;
+
+	napi_status status;
+	size_t argc = 1;
+
+	//Dd: add for smartcomputers
+	register_self_global(GLOBAL_OS_PORT); //server always use the default globalOS
+
+	napi_value ret;
+	//status = napi_create_int32(env, fd, &ret);
+	status = napi_create_int32(env, 0, &ret);
 	assert(status == napi_ok);
 
 	return ret;
@@ -442,6 +472,7 @@ napi_value Init(napi_env env, napi_value exports) {
 	DECLARE_NAPI_METHOD("fifo_read", FIFO_read), //fifo: read
 	DECLARE_NAPI_METHOD("fifo_write", FIFO_write),  //fifo: write
 	DECLARE_NAPI_METHOD("fifo_ipc_init", FIFO_ipc_init),
+	DECLARE_NAPI_METHOD("register_self_global", addon_register_self_global),
 	DECLARE_NAPI_METHOD("fifo_ipc_connect", FIFO_ipc_connect)
   };
   status = napi_define_properties(env, exports,

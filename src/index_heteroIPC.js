@@ -220,6 +220,7 @@ async function main() {
         console.log(config_path)
         config_json = Read_Config(config_path)
         //FIXME: uuid should read from config file later
+	addon.RegisterSelfGlobal()
         self_fifo = addon.IPCInit(parseInt(config_json.self_fifo))
         //only first container need to get request from network
         let app = express()

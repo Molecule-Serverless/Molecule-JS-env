@@ -1,0 +1,106 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Arguments	common/arguments.h	/^typedef struct Arguments {$/;"	s
+Arguments	common/arguments.h	/^} Arguments;$/;"	t	typeref:struct:Arguments
+BLOCK_USR1	common/signals.h	8;"	d
+BLOCK_USR2	common/signals.h	9;"	d
+BUFFER_SIZE	common/sockets.h	10;"	d
+BUILD_PATH	common/process.c	12;"	d	file:
+Benchmarks	common/benchmarks.h	/^typedef struct Benchmarks {$/;"	s
+Benchmarks	common/benchmarks.h	/^} Benchmarks;$/;"	t	typeref:struct:Benchmarks
+DEFAULT_MESSAGE_SIZE	common/arguments.h	4;"	d
+Direction	common/sockets.h	/^typedef enum Direction { SEND, RECEIVE } Direction;$/;"	g
+Direction	common/sockets.h	/^typedef enum Direction { SEND, RECEIVE } Direction;$/;"	t	typeref:enum:Direction
+FIFO_PATH	fifo/client.c	9;"	d	file:
+FIFO_PATH	fifo/server.c	10;"	d	file:
+IGNORE_USR1	common/signals.h	6;"	d
+IGNORE_USR2	common/signals.h	7;"	d
+IPC_BENCH_ARGUMENTS_H	common/arguments.h	2;"	d
+IPC_BENCH_BENCHMARKS_H	common/benchmarks.h	2;"	d
+IPC_BENCH_COMMON_H	common/common.h	2;"	d
+IPC_BENCH_PARENT_H	common/parent.h	2;"	d
+IPC_BENCH_PROCESS_H	common/process.h	2;"	d
+IPC_BENCH_SIGNALS_H	common/signals.h	2;"	d
+IPC_BENCH_UTILITY_H	common/utility.h	2;"	d
+NOTIFY	common/signals.h	12;"	d
+RECEIVE	common/sockets.h	/^typedef enum Direction { SEND, RECEIVE } Direction;$/;"	e	enum:Direction
+SEND	common/sockets.h	/^typedef enum Direction { SEND, RECEIVE } Direction;$/;"	e	enum:Direction
+SOCKETS_H	common/sockets.h	2;"	d
+WAIT	common/signals.h	11;"	d
+__USE_GNU	common/utility.c	8;"	d	file:
+bench_t	common/benchmarks.h	/^typedef unsigned long long bench_t;$/;"	t
+benchmark	common/benchmarks.c	/^void benchmark(Benchmarks* bench) {$/;"	f
+check_flag	common/arguments.c	/^int check_flag(const char *flag, int argc, char *argv[]) {$/;"	f
+cleanup	fifo/client.c	/^void cleanup(FILE *stream, void *buffer) {$/;"	f
+cleanup	fifo/server.c	/^void cleanup(FILE* stream, void* buffer) {$/;"	f
+client_once	common/signals.c	/^void client_once(int operation) {$/;"	f
+communicate	fifo/client.c	/^void communicate(FILE *stream,$/;"	f
+communicate	fifo/server.c	/^void communicate(FILE* stream,$/;"	f
+copy_arguments	common/process.c	/^void copy_arguments(char *arguments[], int argc, char *argv[]) {$/;"	f
+count	common/arguments.h	/^	int count;$/;"	m	struct:Arguments
+current_milliseconds	common/utility.c	/^int current_milliseconds() {$/;"	f
+evaluate	common/benchmarks.c	/^void evaluate(Benchmarks* bench, Arguments* args) {$/;"	f
+false	common/arguments.c	9;"	d	file:
+find_build_path	common/process.c	/^char *find_build_path() {$/;"	f
+generate_key	common/utility.c	/^int generate_key(const char* path) {$/;"	f
+get_socket_flags	common/sockets.c	/^int get_socket_flags(int socket_fd) {$/;"	f
+globalOS	common/arguments.h	/^	int globalOS;$/;"	m	struct:Arguments
+main	fifo/client.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	fifo/fifo.c	/^int main(int argc, char* argv[]) {$/;"	f
+main	fifo/server.c	/^int main(int argc, char* argv[]) {$/;"	f
+maximum	common/benchmarks.h	/^	bench_t maximum;$/;"	m	struct:Benchmarks
+minimum	common/benchmarks.h	/^	bench_t minimum;$/;"	m	struct:Benchmarks
+notify_client	common/signals.c	/^void notify_client() {$/;"	f
+notify_globalOS	common/signals.c	/^void notify_globalOS(int osID) {$/;"	f
+notify_server	common/signals.c	/^void notify_server() {$/;"	f
+now	common/benchmarks.c	/^bench_t now() {$/;"	f
+nsleep	common/utility.c	/^void nsleep(int nanoseconds) {$/;"	f
+open_fifo	fifo/client.c	/^FILE *open_fifo(struct sigaction *signal_action) {$/;"	f
+open_fifo	fifo/server.c	/^FILE* open_fifo() {$/;"	f
+parse_arguments	common/arguments.c	/^void parse_arguments(Arguments *arguments, int argc, char *argv[]) {$/;"	f
+pin_thread	common/utility.c	/^void pin_thread(int where) {$/;"	f
+print_error	common/utility.c	/^void print_error(const char* message) {$/;"	f
+print_usage	common/arguments.c	/^void print_usage() {$/;"	f
+receive	common/sockets.c	/^int receive(int connection, void* buffer, int size, int busy_waiting) {$/;"	f
+server_once	common/signals.c	/^void server_once(int operation) {$/;"	f
+set_io_flag	common/sockets.c	/^int set_io_flag(int socket_fd, int flag) {$/;"	f
+set_socket_both_buffer_sizes	common/sockets.c	/^void set_socket_both_buffer_sizes(int socket_fd) {$/;"	f
+set_socket_both_timeouts	common/sockets.c	/^void set_socket_both_timeouts(int socket_fd, int seconds, int microseconds) {$/;"	f
+set_socket_buffer_size	common/sockets.c	/^void set_socket_buffer_size(int socket_fd, Direction direction) {$/;"	f
+set_socket_flags	common/sockets.c	/^void set_socket_flags(int socket_fd, int flags) {$/;"	f
+set_socket_non_blocking	common/sockets.c	/^int set_socket_non_blocking(int socket_fd) {$/;"	f
+set_socket_timeout	common/sockets.c	/^void set_socket_timeout(int socket_fd, timeval* timeout, Direction direction) {$/;"	f
+setup_benchmarks	common/benchmarks.c	/^void setup_benchmarks(Benchmarks* bench) {$/;"	f
+setup_blocked_signals	common/signals.c	/^void setup_blocked_signals(struct sigaction *signal_action, int flags) {$/;"	f
+setup_client_signals	common/signals.c	/^void setup_client_signals(struct sigaction *signal_action) {$/;"	f
+setup_ignored_signals	common/signals.c	/^void setup_ignored_signals(struct sigaction *signal_action, int flags) {$/;"	f
+setup_parent	common/parent.c	/^void setup_parent(char* name, int argc, char* argv[]) {$/;"	f
+setup_parent_signals	common/signals.c	/^void setup_parent_signals() {$/;"	f
+setup_server_signals	common/signals.c	/^void setup_server_signals(struct sigaction *signal_action) {$/;"	f
+setup_signals	common/signals.c	/^void setup_signals(struct sigaction *signal_action, int flags) {$/;"	f
+signal_handler	common/signals.c	/^void signal_handler(int signal_number) {$/;"	f
+single_start	common/benchmarks.h	/^	bench_t single_start;$/;"	m	struct:Benchmarks
+size	common/arguments.h	/^	int size;$/;"	m	struct:Arguments
+socket_buffer_size	common/sockets.c	/^int socket_buffer_size(int socket_fd, Direction direction) {$/;"	f
+socket_is_non_blocking	common/sockets.c	/^bool socket_is_non_blocking(int socket_fd) {$/;"	f
+socket_timeout	common/sockets.c	/^timeval socket_timeout(int socket_fd, Direction direction) {$/;"	f
+socket_timeout_seconds	common/sockets.c	/^double socket_timeout_seconds(int socket_fd, Direction direction) {$/;"	f
+squared_sum	common/benchmarks.h	/^	bench_t squared_sum;$/;"	m	struct:Benchmarks
+start_child	common/process.c	/^pid_t start_child(char *name, int argc, char *argv[]) {$/;"	f
+start_children	common/process.c	/^void start_children(char *prefix, int argc, char *argv[]) {$/;"	f
+start_process	common/process.c	/^pid_t start_process(char *argv[]) {$/;"	f
+sum	common/benchmarks.h	/^	bench_t sum;$/;"	m	struct:Benchmarks
+terminate	common/utility.c	/^void terminate(const char* message) {$/;"	f
+throw	common/utility.c	/^void throw(const char* message) {$/;"	f
+timeval	common/sockets.c	/^typedef struct timeval timeval;$/;"	t	typeref:struct:timeval	file:
+timeval	common/sockets.h	/^typedef struct timeval timeval;$/;"	t	typeref:struct:timeval
+timeval_to_milliseconds	common/utility.c	/^int timeval_to_milliseconds(const struct timeval* time) {$/;"	f
+total_start	common/benchmarks.h	/^	bench_t total_start;$/;"	m	struct:Benchmarks
+true	common/arguments.c	8;"	d	file:
+unset_socket_non_blocking	common/sockets.c	/^int unset_socket_non_blocking(int socket_fd) {$/;"	f
+wait_for_signal	common/signals.c	/^void wait_for_signal(struct sigaction *signal_action) {$/;"	f
+warn	common/utility.c	/^void warn(const char* message) {$/;"	f

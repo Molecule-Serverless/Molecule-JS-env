@@ -33,6 +33,12 @@ function IPCInit(uuid)
 	return fd
 }
 
+function RegisterSelfGlobal()
+{
+	global_pid = ipc.register_self_global()
+	return global_pid
+}
+
 function IPCConnect(uuid)
 {
 	fd = ipc.fifo_ipc_connect(uuid)
@@ -45,3 +51,4 @@ exports.IPCSend = IPCSend
 exports.IPCRecv = IPCRecv
 exports.IPCInit = IPCInit
 exports.IPCConnect = IPCConnect
+exports.RegisterSelfGlobal = RegisterSelfGlobal
