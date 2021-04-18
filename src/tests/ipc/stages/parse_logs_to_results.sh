@@ -7,10 +7,10 @@ DUMP_FILE=$2
 
 function parse_logs(){
 	echo "Test-case: $1"
-	echo "Caller results:"
-	cat $LOG_DIR/$1-callee_logs.txt | grep "exe (handler)"
 	echo "Callee results:"
-	cat $LOG_DIR/$1-caller_logs.txt | grep "callee comm"
+	cat $LOG_DIR/$1-callee_logs.txt |  sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" |  grep "exe (handler)" | awk '{print $5}'
+	echo "Caller results:"
+	cat $LOG_DIR/$1-caller_logs.txt | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | grep "callee comm" | awk '{print $9}'
 	echo ""
 }
 
