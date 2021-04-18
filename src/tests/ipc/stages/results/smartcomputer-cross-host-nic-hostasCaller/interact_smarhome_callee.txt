@@ -1,0 +1,2965 @@
+Node.JS runtime for Molecule-serverless started
+
+Example app listening on port 40041
+{ target: [32m'/home/src/smarthome/index.js'[39m }
+function init at express
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.1a23ee19-cc9a-421c-88dd-eed033db6100'[39m,
+    timestamp: [32m'2021-04-18T08:06:41Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.22a27fc1-2526-4eff-886e-dd9aa41473b8'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m18959[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.67bf545c-5dbb-424f-9de7-ef74d108ff60'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.23db6929-d19b-42bb-a460-d052235d2567'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.17155871-be34-4e7c-bda1-73b1f7fa578e'[39m,
+      timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.23db6929-d19b-42bb-a460-d052235d2567'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.17155871-be34-4e7c-bda1-73b1f7fa578e'[39m,
+      timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.23db6929-d19b-42bb-a460-d052235d2567'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.17155871-be34-4e7c-bda1-73b1f7fa578e'[39m,
+    timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.23db6929-d19b-42bb-a460-d052235d2567'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m46011[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.17155871-be34-4e7c-bda1-73b1f7fa578e'[39m,
+    timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.23db6929-d19b-42bb-a460-d052235d2567'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.41a4f7c1-9beb-4969-89c1-7123e37f9fbe'[39m,
+    timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.53432b82-dd54-41d8-9e4c-51f717e03152'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m4214[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.f668e162-d46f-4a4c-8083-baf320c42ce8'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.16adda4f-646f-47fc-ba85-f9ac94bbdec6'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.be537b20-1816-4794-965c-70ce7c45f7ed'[39m,
+      timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.16adda4f-646f-47fc-ba85-f9ac94bbdec6'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.be537b20-1816-4794-965c-70ce7c45f7ed'[39m,
+      timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.16adda4f-646f-47fc-ba85-f9ac94bbdec6'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.be537b20-1816-4794-965c-70ce7c45f7ed'[39m,
+    timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.16adda4f-646f-47fc-ba85-f9ac94bbdec6'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m13523[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.be537b20-1816-4794-965c-70ce7c45f7ed'[39m,
+    timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.16adda4f-646f-47fc-ba85-f9ac94bbdec6'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.a44a8bf0-09f1-49d7-9096-f9b57e60432d'[39m,
+    timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.cbcc0f72-9451-4ec2-a632-131d40316f5e'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3911[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.ea93e0e9-25a3-4699-87b8-d70f5b141ac2'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.d062219c-5ac2-413d-b9ce-cb3637dd9fa0'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.656022df-29eb-4c43-b2ff-a64dd06e9df7'[39m,
+      timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.d062219c-5ac2-413d-b9ce-cb3637dd9fa0'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.656022df-29eb-4c43-b2ff-a64dd06e9df7'[39m,
+      timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.d062219c-5ac2-413d-b9ce-cb3637dd9fa0'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.656022df-29eb-4c43-b2ff-a64dd06e9df7'[39m,
+    timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.d062219c-5ac2-413d-b9ce-cb3637dd9fa0'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m12837[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.656022df-29eb-4c43-b2ff-a64dd06e9df7'[39m,
+    timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.d062219c-5ac2-413d-b9ce-cb3637dd9fa0'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.1bea4edb-7535-4e2e-aabe-fffc92e2fb7c'[39m,
+    timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.682a4e75-a290-4cf6-956d-a0a2e5d0a208'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3916[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.29bbfccd-9594-40ab-86ce-1fd1a8191856'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.afe912ae-f98c-421f-a9f2-0c0852be4a5f'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.5b0309bb-e2bb-4dc2-86ac-4287a3c3e811'[39m,
+      timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.afe912ae-f98c-421f-a9f2-0c0852be4a5f'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.5b0309bb-e2bb-4dc2-86ac-4287a3c3e811'[39m,
+      timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.afe912ae-f98c-421f-a9f2-0c0852be4a5f'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.5b0309bb-e2bb-4dc2-86ac-4287a3c3e811'[39m,
+    timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.afe912ae-f98c-421f-a9f2-0c0852be4a5f'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m12659[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.5b0309bb-e2bb-4dc2-86ac-4287a3c3e811'[39m,
+    timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.afe912ae-f98c-421f-a9f2-0c0852be4a5f'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.8ed701dd-8ea6-434e-a6af-055a9ebff0d7'[39m,
+    timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.58052891-7524-43c1-87d4-b5aa395367e0'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3774[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.c9807acf-6657-40bb-9d7e-6f351dc99538'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.cbeae07d-6a8b-4de3-bf7d-b8b2db4c29a1'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.b51406be-d5f7-4382-b28d-4319f77efc09'[39m,
+      timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.cbeae07d-6a8b-4de3-bf7d-b8b2db4c29a1'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.b51406be-d5f7-4382-b28d-4319f77efc09'[39m,
+      timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.cbeae07d-6a8b-4de3-bf7d-b8b2db4c29a1'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.b51406be-d5f7-4382-b28d-4319f77efc09'[39m,
+    timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.cbeae07d-6a8b-4de3-bf7d-b8b2db4c29a1'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m12308[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.b51406be-d5f7-4382-b28d-4319f77efc09'[39m,
+    timestamp: [32m'2021-04-18T08:06:42Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.cbeae07d-6a8b-4de3-bf7d-b8b2db4c29a1'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.814e8aa8-2a9f-4483-9d3c-261fe9be6ca8'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.0431812f-5122-4bfc-aa29-4c30ef626964'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3770[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.f121462d-34ba-4ed9-92bd-cb6d027f4a7c'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.6bfffe2c-6ef7-4a6c-9791-d64f359c093d'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.4b410381-5cd3-4781-a82d-c2b0bff56ddc'[39m,
+      timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.6bfffe2c-6ef7-4a6c-9791-d64f359c093d'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.4b410381-5cd3-4781-a82d-c2b0bff56ddc'[39m,
+      timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.6bfffe2c-6ef7-4a6c-9791-d64f359c093d'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.4b410381-5cd3-4781-a82d-c2b0bff56ddc'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.6bfffe2c-6ef7-4a6c-9791-d64f359c093d'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m12274[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.4b410381-5cd3-4781-a82d-c2b0bff56ddc'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.6bfffe2c-6ef7-4a6c-9791-d64f359c093d'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.af991dad-1e59-447b-a0a9-e1cd90a00a6c'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f3a41076-ec86-4df9-85c0-4304191ef46b'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3625[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.66cc5631-2e27-491a-b2ac-b6522518d18c'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.646e7ab8-6acf-4121-b513-bb872968bef9'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.4d128d8a-b49d-4978-9d2d-90b7ff7f2c3a'[39m,
+      timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.646e7ab8-6acf-4121-b513-bb872968bef9'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.4d128d8a-b49d-4978-9d2d-90b7ff7f2c3a'[39m,
+      timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.646e7ab8-6acf-4121-b513-bb872968bef9'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.4d128d8a-b49d-4978-9d2d-90b7ff7f2c3a'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.646e7ab8-6acf-4121-b513-bb872968bef9'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m12096[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.4d128d8a-b49d-4978-9d2d-90b7ff7f2c3a'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.646e7ab8-6acf-4121-b513-bb872968bef9'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.7cfebf24-59a5-4f36-97d0-a45e703db42e'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.fbda1ae7-ac89-4437-9ae5-aa8b11d13adf'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3540[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.8574af40-6749-41db-b5c7-bf0d9dd963e1'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.efe79d8d-216b-4fe3-b823-588053aa8e40'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.cb2df4d6-7639-4d22-955e-84f123c37039'[39m,
+      timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.efe79d8d-216b-4fe3-b823-588053aa8e40'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.cb2df4d6-7639-4d22-955e-84f123c37039'[39m,
+      timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.efe79d8d-216b-4fe3-b823-588053aa8e40'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.cb2df4d6-7639-4d22-955e-84f123c37039'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.efe79d8d-216b-4fe3-b823-588053aa8e40'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m11903[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.cb2df4d6-7639-4d22-955e-84f123c37039'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.efe79d8d-216b-4fe3-b823-588053aa8e40'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.d65ee708-c9ae-4007-9668-c7f918577d80'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.5814ecf0-2c22-4cc0-acf7-78f4acd52f1b'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3382[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.a3ca3d62-94e7-4d2b-9a57-201f0668c954'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.bb253d39-657a-4dd9-8088-c0e3058fb3fc'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.f665bc4f-ecac-4708-8834-26c15e188d15'[39m,
+      timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.bb253d39-657a-4dd9-8088-c0e3058fb3fc'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.f665bc4f-ecac-4708-8834-26c15e188d15'[39m,
+      timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.bb253d39-657a-4dd9-8088-c0e3058fb3fc'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.f665bc4f-ecac-4708-8834-26c15e188d15'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.bb253d39-657a-4dd9-8088-c0e3058fb3fc'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m11802[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.f665bc4f-ecac-4708-8834-26c15e188d15'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.bb253d39-657a-4dd9-8088-c0e3058fb3fc'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.832f9249-3fdf-4410-bd92-5481b01eeb90'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.5c4a521b-7bac-4e32-9e6b-9e7fec43697e'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3303[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.750004f8-e5c1-4cfb-8928-8bdb33fedb29'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.1eadcb89-5a3d-4eed-ab51-0d09472d3b07'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.cc60f758-d3a3-447c-99f2-6fc8aa53cafe'[39m,
+      timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.1eadcb89-5a3d-4eed-ab51-0d09472d3b07'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.cc60f758-d3a3-447c-99f2-6fc8aa53cafe'[39m,
+      timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.1eadcb89-5a3d-4eed-ab51-0d09472d3b07'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.cc60f758-d3a3-447c-99f2-6fc8aa53cafe'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.1eadcb89-5a3d-4eed-ab51-0d09472d3b07'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m11805[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.cc60f758-d3a3-447c-99f2-6fc8aa53cafe'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.1eadcb89-5a3d-4eed-ab51-0d09472d3b07'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c39888cc-8bd1-4796-93fe-2422e3aa66e4'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.9dca62ad-f48a-4f29-a287-478359b14959'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3551[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.fbb49ec9-8035-4841-80b4-063f0eb854c0'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.6df4e055-980d-4b36-b4ba-bf175bf8d703'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.29fff6ae-8966-414b-810d-367b674dd6f2'[39m,
+      timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.6df4e055-980d-4b36-b4ba-bf175bf8d703'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.29fff6ae-8966-414b-810d-367b674dd6f2'[39m,
+      timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.6df4e055-980d-4b36-b4ba-bf175bf8d703'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.29fff6ae-8966-414b-810d-367b674dd6f2'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.6df4e055-980d-4b36-b4ba-bf175bf8d703'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m11831[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.29fff6ae-8966-414b-810d-367b674dd6f2'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.6df4e055-980d-4b36-b4ba-bf175bf8d703'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.bfee2ff9-ea9a-4bc9-b2cf-cbaee57ca256'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.1c291f2c-7c6e-492a-9d93-cda6e920d48f'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3513[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.67ed68e0-b1f8-4a0f-83b2-3fec974e881c'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.6e89a650-1a7f-4c84-9bde-843726723373'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.94802ec8-55cd-4a38-ad4c-cd66825147a7'[39m,
+      timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.6e89a650-1a7f-4c84-9bde-843726723373'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.94802ec8-55cd-4a38-ad4c-cd66825147a7'[39m,
+      timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.6e89a650-1a7f-4c84-9bde-843726723373'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.94802ec8-55cd-4a38-ad4c-cd66825147a7'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.6e89a650-1a7f-4c84-9bde-843726723373'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m11810[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.94802ec8-55cd-4a38-ad4c-cd66825147a7'[39m,
+    timestamp: [32m'2021-04-18T08:06:43Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.6e89a650-1a7f-4c84-9bde-843726723373'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.bae09683-cc31-46a1-9fbe-bf3cd90813dc'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.7043a6de-f9a2-49be-9a10-7bcd41908f61'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3345[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.8ef1dafa-c04a-479b-9de4-e916209f6de2'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.1e33866d-bb6f-47e3-9c3c-4cdb8807618c'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.43b02cdb-7d4d-498b-a13f-bd06ce1ebf32'[39m,
+      timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.1e33866d-bb6f-47e3-9c3c-4cdb8807618c'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.43b02cdb-7d4d-498b-a13f-bd06ce1ebf32'[39m,
+      timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.1e33866d-bb6f-47e3-9c3c-4cdb8807618c'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.43b02cdb-7d4d-498b-a13f-bd06ce1ebf32'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.1e33866d-bb6f-47e3-9c3c-4cdb8807618c'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m11872[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.43b02cdb-7d4d-498b-a13f-bd06ce1ebf32'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.1e33866d-bb6f-47e3-9c3c-4cdb8807618c'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.77bd4d95-71a4-4d81-8e83-59a5457409b7'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.21b6631e-4387-40ea-b73f-2bf77952d9b4'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3425[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.829f5112-1900-4d84-896d-c29c6b71e15c'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.551c0c40-08a8-4575-8d3e-c1acd3dc00ed'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.c7382910-0531-468c-b627-0178c20f1671'[39m,
+      timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.551c0c40-08a8-4575-8d3e-c1acd3dc00ed'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.c7382910-0531-468c-b627-0178c20f1671'[39m,
+      timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.551c0c40-08a8-4575-8d3e-c1acd3dc00ed'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c7382910-0531-468c-b627-0178c20f1671'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.551c0c40-08a8-4575-8d3e-c1acd3dc00ed'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m15907[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c7382910-0531-468c-b627-0178c20f1671'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.551c0c40-08a8-4575-8d3e-c1acd3dc00ed'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.b8b38281-85de-4936-92a7-b51383648ef0'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.5f852ed3-06e3-4d80-a3fd-7b939c2369ad'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3315[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.42b6b33c-82a7-4b80-bd56-b6d3f8c06528'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.ed14eb7b-385d-4ae0-9607-67aefc533504'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.137a44e6-34cc-416e-9995-6d9a4c12fb47'[39m,
+      timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.ed14eb7b-385d-4ae0-9607-67aefc533504'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.137a44e6-34cc-416e-9995-6d9a4c12fb47'[39m,
+      timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.ed14eb7b-385d-4ae0-9607-67aefc533504'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.137a44e6-34cc-416e-9995-6d9a4c12fb47'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.ed14eb7b-385d-4ae0-9607-67aefc533504'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m11316[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.137a44e6-34cc-416e-9995-6d9a4c12fb47'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.ed14eb7b-385d-4ae0-9607-67aefc533504'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.7b6a5a33-073a-44c0-9311-8c504f04452d'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.6bee2681-3b0c-4a73-9725-c6e158c029fa'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3222[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.71c8e390-1677-4d8d-902e-1e17de2b4e00'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.2fa5df6f-14e8-4f07-9e97-17cdf7cb82a5'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.dcd43dcf-5884-4a5c-bf2c-a8e7455d3478'[39m,
+      timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.2fa5df6f-14e8-4f07-9e97-17cdf7cb82a5'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.dcd43dcf-5884-4a5c-bf2c-a8e7455d3478'[39m,
+      timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.2fa5df6f-14e8-4f07-9e97-17cdf7cb82a5'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.dcd43dcf-5884-4a5c-bf2c-a8e7455d3478'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2fa5df6f-14e8-4f07-9e97-17cdf7cb82a5'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m11316[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.dcd43dcf-5884-4a5c-bf2c-a8e7455d3478'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2fa5df6f-14e8-4f07-9e97-17cdf7cb82a5'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.8d7483d5-8387-4260-ae9a-ab09f497edc4'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.a64b45d2-b25a-40f8-93f3-97f9159dc937'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3368[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.91164595-30b9-4cb4-84c4-61d4b2850996'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.d377f6be-97aa-46af-8774-bf815138445b'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.e42d71a2-381b-48ca-942b-8fe1b223fd44'[39m,
+      timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.d377f6be-97aa-46af-8774-bf815138445b'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.e42d71a2-381b-48ca-942b-8fe1b223fd44'[39m,
+      timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.d377f6be-97aa-46af-8774-bf815138445b'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.e42d71a2-381b-48ca-942b-8fe1b223fd44'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.d377f6be-97aa-46af-8774-bf815138445b'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m23617[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.e42d71a2-381b-48ca-942b-8fe1b223fd44'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.d377f6be-97aa-46af-8774-bf815138445b'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.33cde5c5-aaf9-45b4-a237-689eb76ab61c'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.e2db7d8f-5eac-447b-89fe-e7a9e9f852fb'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3090[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.e7120854-da86-47fb-953f-e732e77f9e5a'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.22fffd87-9d07-48a9-9f96-b306ce711f34'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.cc0329da-50d6-4e7d-8f29-119846899324'[39m,
+      timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.22fffd87-9d07-48a9-9f96-b306ce711f34'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.cc0329da-50d6-4e7d-8f29-119846899324'[39m,
+      timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.22fffd87-9d07-48a9-9f96-b306ce711f34'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.cc0329da-50d6-4e7d-8f29-119846899324'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.22fffd87-9d07-48a9-9f96-b306ce711f34'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m10362[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.cc0329da-50d6-4e7d-8f29-119846899324'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.22fffd87-9d07-48a9-9f96-b306ce711f34'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.5da203fc-d7bf-4389-ade5-996d0636157c'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.ae06290c-aadd-45d8-9e44-502ae7934f13'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m2865[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.7bd7ca10-2c0c-4736-8578-ed8cad705aaf'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.d389f11a-49aa-4d55-a558-a475cf348593'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.fc977cbd-2953-4986-8216-3bb899b751cf'[39m,
+      timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.d389f11a-49aa-4d55-a558-a475cf348593'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.fc977cbd-2953-4986-8216-3bb899b751cf'[39m,
+      timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.d389f11a-49aa-4d55-a558-a475cf348593'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.fc977cbd-2953-4986-8216-3bb899b751cf'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.d389f11a-49aa-4d55-a558-a475cf348593'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m9869[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.fc977cbd-2953-4986-8216-3bb899b751cf'[39m,
+    timestamp: [32m'2021-04-18T08:06:44Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.d389f11a-49aa-4d55-a558-a475cf348593'[39m
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'smarthome'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'440'[39m,
+  host: [32m'192.168.120.2:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.832caf35-03b2-4e23-b9d6-4229ed9027ad'[39m,
+    timestamp: [32m'2021-04-18T08:06:45Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.34372e38-bb5e-4a5d-a8f5-0b31ca80f90f'[39m,
+    attributes: {}
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m3045[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.6a374c0f-a59e-4cb2-b959-07cc85b5afa1'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.57465d7d-cdd5-4b8c-a962-74bd39b1d2da'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.6ba5e179-4ec3-4bad-9595-67d4efbe8780'[39m,
+      timestamp: [32m'2021-04-18T08:06:45Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.57465d7d-cdd5-4b8c-a962-74bd39b1d2da'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.6ba5e179-4ec3-4bad-9595-67d4efbe8780'[39m,
+      timestamp: [32m'2021-04-18T08:06:45Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.57465d7d-cdd5-4b8c-a962-74bd39b1d2da'[39m
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.6ba5e179-4ec3-4bad-9595-67d4efbe8780'[39m,
+    timestamp: [32m'2021-04-18T08:06:45Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.57465d7d-cdd5-4b8c-a962-74bd39b1d2da'[39m
+  }
+}
+[Results] exe (handler) costs:  [33m9797[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.6ba5e179-4ec3-4bad-9595-67d4efbe8780'[39m,
+    timestamp: [32m'2021-04-18T08:06:45Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.57465d7d-cdd5-4b8c-a962-74bd39b1d2da'[39m
+  }
+}
