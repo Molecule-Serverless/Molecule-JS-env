@@ -203,6 +203,7 @@ async function main() {
 
     try
     {
+	console.log(process.env.CODE_PATH)
         func = await loadCode_local(process.env.CODE_PATH)
     }catch(e)
     {
