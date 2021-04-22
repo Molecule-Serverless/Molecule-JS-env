@@ -18,12 +18,16 @@
 #define MAX_MSG_LEN 4096
 // #define FIFO_DEBUG 1
 //#define FIFO_PATH_TEMPLATE "/tmp/ipc_fifo_server-%d"
-#define FIFO_PATH_TEMPLATE "/env/ipc_fifo_server-%d"
-
+#undef FIFO_PATH_TEMPLATE
+// #ifndef FIFO_PATH_TEMPLATE
+#define FIFO_PATH_TEMPLATE "/tmp/fifo_dir/ipc_fifo_id-%d"
+// #endif
 /*Dd: add for smartcomputers */
 #include <global_syscall_protocol.h>
 #include <global_syscall_interfaces.h>
+#include <chos/errno.h>
 
+//FIXME: caution! : in the nodejs napi, fifo_read using local _fifo_read while fifo_write using global_fifo_write
 /* Helper Functions */
 void addon_throw(const char* message) {
 	perror(message);
@@ -42,7 +46,7 @@ int _fifo_ipc_init(int uuid)
 	}
 	int read_fifo_fd;
 	printf("_fifo_ipc_init before open\n");
-	if((read_fifo_fd = open(fifo_path, O_RDONLY)) < 0)
+	if((read_fifo_fd = open(fifo_path, O_RDWR)) < 0)
 	{
 		addon_throw("Error opening FIFO for read when fifo init\n");
 	}
@@ -142,6 +146,7 @@ int _fifo_write(int fifo_fd, char*buf, int len){
 }
 
 
+
 /* SHM-based IPC */
 
 
@@ -182,7 +187,7 @@ static napi_value FIFO_ipc_init(napi_env env, napi_callback_info info)
 	fd = _fifo_ipc_init(uuid);
 
 	//Dd: add for smartcomputers
-	global_fifo = global_fifo_init(uuid); //register localFIFO to global
+	global_fifo = global_fifo_init_uuid(uuid,uuid); //register localFIFO to global
 
 	napi_value ret;
 	//status = napi_create_int32(env, fd, &ret);
@@ -245,7 +250,18 @@ static napi_value FIFO_ipc_connect(napi_env env, napi_callback_info info)
 	fprintf(stderr, "[%s] uuid: %d\n", __func__, uuid);
 #endif
 
-	fd =_fifo_ipc_connect(uuid);
+	// fd =_fifo_ipc_connect(uuid);
+	fd = global_fifo_connect(uuid);
+	int retry_time = 60;
+	while(retry_time && fd == -1)
+	{
+		sleep(1);
+		fd = global_fifo_connect(uuid);
+	}
+	if(fd == -1)
+	{
+		fprintf(stderr, "global_fifo_connect failed, retry 60 times, uuid: %d\n", uuid);
+	}
 	napi_value ret;
 	status = napi_create_int32(env, fd, &ret);
 	assert(status == napi_ok);
@@ -364,6 +380,8 @@ static napi_value FIFO_write(napi_env env, napi_callback_info info) {
 	assert(status == napi_ok);
 
 	status = napi_get_value_string_utf8(env, args[1], buf, bufsize, &result);
+	buf[result] = '\0';
+	result += 1;
 	assert(status == napi_ok);
 	assert(result <= bufsize);
 
@@ -372,7 +390,10 @@ static napi_value FIFO_write(napi_env env, napi_callback_info info) {
 	fprintf(stderr, "[%s] buf writeen: %s\n", __func__, buf);
 	//uuid = 0xbeef;
 #endif
-	result = _fifo_write(fd, buf, result);
+	// result = _fifo_write(fd, buf, result);
+	printf("before global fifo write, buf: %s, result: %d, strlen: %d\n", buf, result, strlen(buf));
+	result = global_fifo_write(fd, buf, result);
+	printf("global fifo write result: %d, buf: %s >\n", result, buf);
 
   	napi_value ret;
   	status = napi_create_int32(env, result, &ret);
@@ -404,6 +425,13 @@ static napi_value FIFO_read(napi_env env, napi_callback_info info) {
 	assert(status == napi_ok);
 
 	result = _fifo_read(fd, buf, bufsize);
+	printf("fifo_read result: %d, buf: %s >\n", result, buf);
+	// //FIXME: fifo read just using local _fifo_read rather than global_fifo_read?
+	// result = global_fifo_read(fd, buf, bufsize);
+	// if(result == -EFIFOLOCAL)
+	// {
+	// 	result = _fifo_read()
+	// }
 	assert(result <= bufsize);
 
 #ifdef FIFO_DEBUG

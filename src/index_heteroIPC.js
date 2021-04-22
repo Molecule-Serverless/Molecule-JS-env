@@ -220,7 +220,7 @@ async function main() {
         console.log(config_path)
         config_json = Read_Config(config_path)
         //FIXME: uuid should read from config file later
-	addon.RegisterSelfGlobal()
+	    addon.RegisterSelfGlobal()
         self_fifo = addon.IPCInit(parseInt(config_json.self_fifo))
         //only first container need to get request from network
         let app = express()
@@ -276,6 +276,7 @@ async function main() {
     else
     {
         console.log("IPC Test Callee Start\n")
+        addon.RegisterSelfGlobal()
         config_path = process.env.CONFIG_PATH
         console.log(config_path)
         config_json = Read_Config(config_path)
@@ -290,8 +291,9 @@ async function main() {
         while(true)
         {
             msg = addon.IPCRecv(self_fifo)
+            console.log("callee receive msg: %s", msg)
             after_recving_time = get_microsecond()
-            if(msg != null)
+            if(msg != "")
             {
                 msg = JSON.parse(msg)
             }
