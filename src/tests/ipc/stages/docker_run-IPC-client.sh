@@ -8,7 +8,7 @@
 MOLECULE_ENV_HOME=$(pwd)/../../../../
 NAME=$2
 ### To run in a bash shell, uncomment the following command
-docker run --rm --name $NAME -it -p 12301:40041 -v /tmp/fifo_dir:/tmp/fifo_dir -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_ipc_caller.sh ddnirvana/molecule-js-env:v3-node14.16.0 $1
+docker run --rm --name $NAME --ipc=host -d -it -p 12301:40041 -v /tmp/fifo_dir/:/tmp/fifo_dir -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_ipc_caller.sh ddnirvana/molecule-js-env:v3-node14.16.0 $1
 
 #tests/ipc/stages/interact-smarthome/
 

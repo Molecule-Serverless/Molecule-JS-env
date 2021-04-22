@@ -380,8 +380,6 @@ static napi_value FIFO_write(napi_env env, napi_callback_info info) {
 	assert(status == napi_ok);
 
 	status = napi_get_value_string_utf8(env, args[1], buf, bufsize, &result);
-	buf[result] = '\0';
-	result += 1;
 	assert(status == napi_ok);
 	assert(result <= bufsize);
 
@@ -391,7 +389,6 @@ static napi_value FIFO_write(napi_env env, napi_callback_info info) {
 	//uuid = 0xbeef;
 #endif
 	// result = _fifo_write(fd, buf, result);
-	printf("before global fifo write, buf: %s, result: %d, strlen: %d\n", buf, result, strlen(buf));
 	result = global_fifo_write(fd, buf, result);
 	printf("global fifo write result: %d, buf: %s >\n", result, buf);
 

@@ -3,7 +3,9 @@
 
 docker stop $(docker ps -aq)
 
-./docker_run-IPC-client.sh tests/ipc/stages/front-interact front_interact
+./docker_run-IPC-client.sh tests/ipc/stages/front-interact front_interact_caller
+
+./docker_run-IPC-server.sh tests/ipc/stages/front-interact front_interact_callee 12305
 
 ./docker_run-IPC-server.sh tests/ipc/stages/interact-smarthome  interact_smarthome 12302
 
@@ -13,7 +15,9 @@ docker stop $(docker ps -aq)
 
 ./test_ipc.sh
 
-docker logs front-interact | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > front-interact_logs.txt
+docker logs front_interact_caller | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > front-interact_caller_logs.txt
+
+docker logs front_interact_callee | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > front-interact__callee_logs.txt
 
 docker logs interact-smarthome | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > interact-smarthome_logs.txt
 

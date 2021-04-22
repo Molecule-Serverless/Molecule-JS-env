@@ -49,7 +49,7 @@ int register_self_global(int os_port) //return a global pid
 	shm_uuid = self_global_id;
 	sprintf(shmid_string, "/tmp/fifo_dir/shm-%d", shm_uuid);
 	segment_key = generate_key(shmid_string);
-	segment_id = shmget(segment_key, 4096, IPC_CREAT | 0666);
+	segment_id = shmget(segment_key, 4096, 0666);
 
 	fprintf(stderr, "[%s] shmid_string:%s segment_id: %d\n", __func__, shmid_string, segment_key);
 
