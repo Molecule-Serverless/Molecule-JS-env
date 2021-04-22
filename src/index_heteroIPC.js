@@ -241,7 +241,7 @@ async function main() {
                 result = addon.IPCRecv(self_fifo)
                 after_recving_time = get_microsecond()
                 result = JSON.parse(result)
-                console.log("caller receive result\n")
+                // console.log("caller receive result\n")
                 assert(result.source === 'next')
                 console.log("caller after_receiving: ", after_recving_time, "before_sending: ",  before_sending_time)
                 // console.log("caller after_receiving: ")
@@ -290,7 +290,7 @@ async function main() {
         {
             msg = addon.IPCRecv(self_fifo)
             after_recving_time = get_microsecond()
-            if(msg != null)
+            if(msg != "")
             {
                 msg = JSON.parse(msg)
             }
@@ -302,7 +302,7 @@ async function main() {
             console.log(msg)
             if(msg.source === 'prev')
             {
-                console.log("callee get message\n")
+                // console.log("callee get message\n")
                 ret = await func(msg.data)
                 if(has_next)
                 {
@@ -315,7 +315,7 @@ async function main() {
                 }
                 else
                 {
-                    console.log("callee return result")
+                    // console.log("callee return result")
                     before_sending_time = get_microsecond()
                     addon.IPCSend(prev_fifo,JSON.stringify({
                         source: 'next',
@@ -326,7 +326,7 @@ async function main() {
             }
             else if(msg.source === 'next')
             {
-                addon.IPCSend(prev_fifo, msg)
+                addon.IPCSend(prev_fifo, JSON.stringify(msg))
             }
             else
             {
