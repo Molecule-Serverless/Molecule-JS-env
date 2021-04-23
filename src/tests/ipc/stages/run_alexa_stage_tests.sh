@@ -29,13 +29,13 @@ docker stop $(docker ps -aq)
 run_test front-interact
 
 # 2. interact-smarthome
-# run_test interact-smarthome
+run_test interact-smarthome
 
 # # # 3. smarthome-door
-# run_test smarthome-door
+run_test smarthome-door
 
 # # # 4. smarthome-light
-# run_test smarthome-light
+run_test smarthome-light
 
 ##Clean
 docker stop $(docker ps -aq)
