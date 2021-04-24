@@ -201,6 +201,9 @@ function main() {
         func = require(msg.target).handler
         console.log("function init at express")
     })
+	var print_count = 0;
+	var results_log= [];
+
     //tracer = mesh.InitMesh(meshData)
     app.get('/invoke', async (req, res) => {
 	var beginTime = process.hrtime();
@@ -209,7 +212,13 @@ function main() {
         //console.log("result:%o", result)
         res.json(result)
 	var interval = parseInt(endTime[0] * 1e6 + endTime[1]*1e-3);
-	console.log('[Results] exe (handler) costs: ', interval, 'us' )
+	results_log.push(interval);
+	print_count = print_count +1;
+	if (print_count % 5 === 0){
+		for (var r_i =5; r_i>0; r_i--) {
+			console.log('[Results] exe (handler) costs: ', results_log[print_count - r_i], 'us' )
+		}
+	}
     })
     //server = app.listen(40041, function () {
     server = app.listen(process.env.PORT, function () {
