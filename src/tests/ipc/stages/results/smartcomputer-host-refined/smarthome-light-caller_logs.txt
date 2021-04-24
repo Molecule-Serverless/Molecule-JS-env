@@ -43,11 +43,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m4494[39m us
+smarthome exe costs:  [33m4065[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.634ec27d-e806-4a11-9c36-685085a32baa'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.850083dc-856a-4bdf-88ea-6e9666076c11'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -59,7 +59,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.8b45881a-c1c7-4ed8-854b-fe47ac13fa40'[39m,
+      _id: [32m'SessionID.3bbc171f-1442-4fa5-81aa-9910d1d7db8d'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -68,15 +68,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.05f8dc36-ce19-41a9-86eb-799799416adb'[39m,
-      timestamp: [32m'2021-04-24T12:06:18Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.d260ca7a-0c6e-4fb2-be0b-92e68b31b968'[39m,
+      timestamp: [32m'2021-04-24T14:21:57Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.8b45881a-c1c7-4ed8-854b-fe47ac13fa40'[39m
+      sessionId: [32m'SessionID.3bbc171f-1442-4fa5-81aa-9910d1d7db8d'[39m
     }
   }
 }
@@ -95,19 +95,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.05f8dc36-ce19-41a9-86eb-799799416adb'[39m,
-      timestamp: [32m'2021-04-24T12:06:18Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.d260ca7a-0c6e-4fb2-be0b-92e68b31b968'[39m,
+      timestamp: [32m'2021-04-24T14:21:57Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.8b45881a-c1c7-4ed8-854b-fe47ac13fa40'[39m
+      sessionId: [32m'SessionID.3bbc171f-1442-4fa5-81aa-9910d1d7db8d'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m38974[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m30613[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -121,20 +121,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.05f8dc36-ce19-41a9-86eb-799799416adb'[39m,
-      timestamp: [32m'2021-04-24T12:06:18Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.d260ca7a-0c6e-4fb2-be0b-92e68b31b968'[39m,
+      timestamp: [32m'2021-04-24T14:21:57Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.8b45881a-c1c7-4ed8-854b-fe47ac13fa40'[39m
+      sessionId: [32m'SessionID.3bbc171f-1442-4fa5-81aa-9910d1d7db8d'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m49515[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -175,11 +174,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m1879[39m us
+smarthome exe costs:  [33m2402[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.1c4db8d2-6edd-4626-bdbb-a9eddd455c45'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.23b30eb6-ad96-4516-8eb1-701d2ef9e054'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -191,7 +190,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.773d36a1-c149-40fc-b682-28625ece5116'[39m,
+      _id: [32m'SessionID.8f543667-6a85-4c2a-8235-0cdc42702180'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -200,15 +199,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.1f0d37e6-9fe6-40e6-825a-98ad6554fffa'[39m,
-      timestamp: [32m'2021-04-24T12:06:19Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.2783797b-7885-4580-b11e-7d9e202e8638'[39m,
+      timestamp: [32m'2021-04-24T14:21:58Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.773d36a1-c149-40fc-b682-28625ece5116'[39m
+      sessionId: [32m'SessionID.8f543667-6a85-4c2a-8235-0cdc42702180'[39m
     }
   }
 }
@@ -227,19 +226,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.1f0d37e6-9fe6-40e6-825a-98ad6554fffa'[39m,
-      timestamp: [32m'2021-04-24T12:06:19Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.2783797b-7885-4580-b11e-7d9e202e8638'[39m,
+      timestamp: [32m'2021-04-24T14:21:58Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.773d36a1-c149-40fc-b682-28625ece5116'[39m
+      sessionId: [32m'SessionID.8f543667-6a85-4c2a-8235-0cdc42702180'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m10014[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m11598[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -253,20 +252,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.1f0d37e6-9fe6-40e6-825a-98ad6554fffa'[39m,
-      timestamp: [32m'2021-04-24T12:06:19Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.2783797b-7885-4580-b11e-7d9e202e8638'[39m,
+      timestamp: [32m'2021-04-24T14:21:58Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.773d36a1-c149-40fc-b682-28625ece5116'[39m
+      sessionId: [32m'SessionID.8f543667-6a85-4c2a-8235-0cdc42702180'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m16605[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -307,11 +305,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m2434[39m us
+smarthome exe costs:  [33m2395[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.d30873c9-3128-4f45-bf5e-be9855145e52'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.0606dade-f7a4-4d8c-bf4c-0a942a76cf0c'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -323,7 +321,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.5e4e465d-2210-493e-8078-e8be7ad022c2'[39m,
+      _id: [32m'SessionID.b5b894c0-a727-4bf5-9c47-82f20efb998b'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -332,15 +330,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.15438b65-02ac-4ae1-8b19-649440ac27a9'[39m,
-      timestamp: [32m'2021-04-24T12:06:20Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.515a0645-6d3c-443a-862f-fc942444f5dc'[39m,
+      timestamp: [32m'2021-04-24T14:21:59Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.5e4e465d-2210-493e-8078-e8be7ad022c2'[39m
+      sessionId: [32m'SessionID.b5b894c0-a727-4bf5-9c47-82f20efb998b'[39m
     }
   }
 }
@@ -359,19 +357,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.15438b65-02ac-4ae1-8b19-649440ac27a9'[39m,
-      timestamp: [32m'2021-04-24T12:06:20Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.515a0645-6d3c-443a-862f-fc942444f5dc'[39m,
+      timestamp: [32m'2021-04-24T14:21:59Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.5e4e465d-2210-493e-8078-e8be7ad022c2'[39m
+      sessionId: [32m'SessionID.b5b894c0-a727-4bf5-9c47-82f20efb998b'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m10627[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9912[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -385,20 +383,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.15438b65-02ac-4ae1-8b19-649440ac27a9'[39m,
-      timestamp: [32m'2021-04-24T12:06:20Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.515a0645-6d3c-443a-862f-fc942444f5dc'[39m,
+      timestamp: [32m'2021-04-24T14:21:59Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.5e4e465d-2210-493e-8078-e8be7ad022c2'[39m
+      sessionId: [32m'SessionID.b5b894c0-a727-4bf5-9c47-82f20efb998b'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m19519[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -439,11 +436,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m2411[39m us
+smarthome exe costs:  [33m2437[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.06f21d3c-0517-43b8-8921-9d63643a0800'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.0d0c4645-3161-4980-9fae-400efec60443'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -455,7 +452,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.7429068d-2d39-4e9e-97e1-e38bd42c13e0'[39m,
+      _id: [32m'SessionID.458f5397-1e39-49da-84f8-cac30408e808'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -464,15 +461,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.06340401-6809-4424-a881-5d31c9aa79b2'[39m,
-      timestamp: [32m'2021-04-24T12:06:21Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.16ee0f2e-bce8-4e37-a1cb-f4366fffc3b0'[39m,
+      timestamp: [32m'2021-04-24T14:22:00Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.7429068d-2d39-4e9e-97e1-e38bd42c13e0'[39m
+      sessionId: [32m'SessionID.458f5397-1e39-49da-84f8-cac30408e808'[39m
     }
   }
 }
@@ -491,19 +488,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.06340401-6809-4424-a881-5d31c9aa79b2'[39m,
-      timestamp: [32m'2021-04-24T12:06:21Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.16ee0f2e-bce8-4e37-a1cb-f4366fffc3b0'[39m,
+      timestamp: [32m'2021-04-24T14:22:00Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.7429068d-2d39-4e9e-97e1-e38bd42c13e0'[39m
+      sessionId: [32m'SessionID.458f5397-1e39-49da-84f8-cac30408e808'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m10513[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m10242[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -517,20 +514,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.06340401-6809-4424-a881-5d31c9aa79b2'[39m,
-      timestamp: [32m'2021-04-24T12:06:21Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.16ee0f2e-bce8-4e37-a1cb-f4366fffc3b0'[39m,
+      timestamp: [32m'2021-04-24T14:22:00Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.7429068d-2d39-4e9e-97e1-e38bd42c13e0'[39m
+      sessionId: [32m'SessionID.458f5397-1e39-49da-84f8-cac30408e808'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m19582[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -571,11 +567,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m2426[39m us
+smarthome exe costs:  [33m2333[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.2f07d6cd-638d-428b-8490-3f68faecd912'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.92ba4461-1f1c-46c9-88b7-51ae6d20b56a'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -587,7 +583,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.ac0eae25-9a78-4108-ba6f-29227dd051fc'[39m,
+      _id: [32m'SessionID.24c9e588-dca3-4ab4-8c62-45d3d26eedce'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -596,15 +592,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.1e710009-5b77-44f4-a30b-bf3f3fcaff69'[39m,
-      timestamp: [32m'2021-04-24T12:06:22Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.a736d2c1-754f-4424-b164-5770b3476ca0'[39m,
+      timestamp: [32m'2021-04-24T14:22:01Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.ac0eae25-9a78-4108-ba6f-29227dd051fc'[39m
+      sessionId: [32m'SessionID.24c9e588-dca3-4ab4-8c62-45d3d26eedce'[39m
     }
   }
 }
@@ -623,19 +619,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.1e710009-5b77-44f4-a30b-bf3f3fcaff69'[39m,
-      timestamp: [32m'2021-04-24T12:06:22Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.a736d2c1-754f-4424-b164-5770b3476ca0'[39m,
+      timestamp: [32m'2021-04-24T14:22:01Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.ac0eae25-9a78-4108-ba6f-29227dd051fc'[39m
+      sessionId: [32m'SessionID.24c9e588-dca3-4ab4-8c62-45d3d26eedce'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m10119[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9912[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -649,20 +645,24 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.1e710009-5b77-44f4-a30b-bf3f3fcaff69'[39m,
-      timestamp: [32m'2021-04-24T12:06:22Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.a736d2c1-754f-4424-b164-5770b3476ca0'[39m,
+      timestamp: [32m'2021-04-24T14:22:01Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.ac0eae25-9a78-4108-ba6f-29227dd051fc'[39m
+      sessionId: [32m'SessionID.24c9e588-dca3-4ab4-8c62-45d3d26eedce'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m18838[39m us
+[Results] exe (handler) costs:  [33m41557[39m us
+[Results] exe (handler) costs:  [33m20711[39m us
+[Results] exe (handler) costs:  [33m18577[39m us
+[Results] exe (handler) costs:  [33m18657[39m us
+[Results] exe (handler) costs:  [33m18300[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -703,11 +703,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m2321[39m us
+smarthome exe costs:  [33m1734[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.6419d3b6-f87e-460d-b08c-a466455901a5'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.e34533b5-3d1c-4919-a70f-7c052d424399'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -719,7 +719,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.ea948710-b6fb-43ad-bc3c-e6870ab54286'[39m,
+      _id: [32m'SessionID.6e502e03-b0a9-48af-978e-a2e70a5558bb'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -728,15 +728,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.eae3ff42-0b9c-4d33-ac23-29e0e0f07d05'[39m,
-      timestamp: [32m'2021-04-24T12:06:23Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.28f04d67-e198-4308-9cec-59acf28ed1a6'[39m,
+      timestamp: [32m'2021-04-24T14:22:02Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.ea948710-b6fb-43ad-bc3c-e6870ab54286'[39m
+      sessionId: [32m'SessionID.6e502e03-b0a9-48af-978e-a2e70a5558bb'[39m
     }
   }
 }
@@ -755,19 +755,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.eae3ff42-0b9c-4d33-ac23-29e0e0f07d05'[39m,
-      timestamp: [32m'2021-04-24T12:06:23Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.28f04d67-e198-4308-9cec-59acf28ed1a6'[39m,
+      timestamp: [32m'2021-04-24T14:22:02Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.ea948710-b6fb-43ad-bc3c-e6870ab54286'[39m
+      sessionId: [32m'SessionID.6e502e03-b0a9-48af-978e-a2e70a5558bb'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m8802[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m10085[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -781,20 +781,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.eae3ff42-0b9c-4d33-ac23-29e0e0f07d05'[39m,
-      timestamp: [32m'2021-04-24T12:06:23Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.28f04d67-e198-4308-9cec-59acf28ed1a6'[39m,
+      timestamp: [32m'2021-04-24T14:22:02Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.ea948710-b6fb-43ad-bc3c-e6870ab54286'[39m
+      sessionId: [32m'SessionID.6e502e03-b0a9-48af-978e-a2e70a5558bb'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m17324[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -835,11 +834,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m2905[39m us
+smarthome exe costs:  [33m3012[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.dbce7d90-9c1a-44f4-94f6-8f555f27e3d3'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.653e67bc-41a5-4b92-aaf7-a544f05c9fa5'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -851,7 +850,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.5b956dd7-06db-41bb-802f-a1d61c99eb6c'[39m,
+      _id: [32m'SessionID.c5283dba-5cd5-483a-89f3-3572f74b75a4'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -860,15 +859,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.16b6e0bb-2814-42cb-9577-04633ad94400'[39m,
-      timestamp: [32m'2021-04-24T12:06:24Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.a3f43453-f722-43d4-a178-43290c61f32d'[39m,
+      timestamp: [32m'2021-04-24T14:22:03Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.5b956dd7-06db-41bb-802f-a1d61c99eb6c'[39m
+      sessionId: [32m'SessionID.c5283dba-5cd5-483a-89f3-3572f74b75a4'[39m
     }
   }
 }
@@ -887,19 +886,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.16b6e0bb-2814-42cb-9577-04633ad94400'[39m,
-      timestamp: [32m'2021-04-24T12:06:24Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.a3f43453-f722-43d4-a178-43290c61f32d'[39m,
+      timestamp: [32m'2021-04-24T14:22:03Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.5b956dd7-06db-41bb-802f-a1d61c99eb6c'[39m
+      sessionId: [32m'SessionID.c5283dba-5cd5-483a-89f3-3572f74b75a4'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m8616[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m11074[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -913,20 +912,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.16b6e0bb-2814-42cb-9577-04633ad94400'[39m,
-      timestamp: [32m'2021-04-24T12:06:24Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.a3f43453-f722-43d4-a178-43290c61f32d'[39m,
+      timestamp: [32m'2021-04-24T14:22:03Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.5b956dd7-06db-41bb-802f-a1d61c99eb6c'[39m
+      sessionId: [32m'SessionID.c5283dba-5cd5-483a-89f3-3572f74b75a4'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m17765[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -967,11 +965,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m2962[39m us
+smarthome exe costs:  [33m3053[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.abb09cc6-be95-4bf1-bc54-e2e346e81fa3'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.faf59184-6e44-436d-ae8a-86491160408d'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -983,7 +981,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.dfbf269b-d4de-4505-8883-34b439e3b0b0'[39m,
+      _id: [32m'SessionID.b77bfb0e-22bb-4b25-afa8-27e8a2782512'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -992,15 +990,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.c74d1d99-5feb-4dcd-ae32-77a54f438af5'[39m,
-      timestamp: [32m'2021-04-24T12:06:25Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.1fea5278-4517-4bb2-a5d7-4e320d6310f9'[39m,
+      timestamp: [32m'2021-04-24T14:22:04Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.dfbf269b-d4de-4505-8883-34b439e3b0b0'[39m
+      sessionId: [32m'SessionID.b77bfb0e-22bb-4b25-afa8-27e8a2782512'[39m
     }
   }
 }
@@ -1019,19 +1017,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.c74d1d99-5feb-4dcd-ae32-77a54f438af5'[39m,
-      timestamp: [32m'2021-04-24T12:06:25Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.1fea5278-4517-4bb2-a5d7-4e320d6310f9'[39m,
+      timestamp: [32m'2021-04-24T14:22:04Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.dfbf269b-d4de-4505-8883-34b439e3b0b0'[39m
+      sessionId: [32m'SessionID.b77bfb0e-22bb-4b25-afa8-27e8a2782512'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m7946[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9233[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -1045,20 +1043,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.c74d1d99-5feb-4dcd-ae32-77a54f438af5'[39m,
-      timestamp: [32m'2021-04-24T12:06:25Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.1fea5278-4517-4bb2-a5d7-4e320d6310f9'[39m,
+      timestamp: [32m'2021-04-24T14:22:04Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.dfbf269b-d4de-4505-8883-34b439e3b0b0'[39m
+      sessionId: [32m'SessionID.b77bfb0e-22bb-4b25-afa8-27e8a2782512'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m17344[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -1099,11 +1096,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m2241[39m us
+smarthome exe costs:  [33m2399[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.b94b30bc-03b0-4e28-96ee-3e0d39ab2abe'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.47edd452-9a2c-45ac-b4fe-53e4c84cc4ed'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -1115,7 +1112,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.145da891-d90f-49c8-b52d-511537b1946d'[39m,
+      _id: [32m'SessionID.4cd0f658-b58a-43b5-829f-842257662bf7'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -1124,15 +1121,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.50546eb7-520a-4d5a-8063-2f85fca703e7'[39m,
-      timestamp: [32m'2021-04-24T12:06:27Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.8221a8d8-35ea-45f3-80d0-5959c064f024'[39m,
+      timestamp: [32m'2021-04-24T14:22:05Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.145da891-d90f-49c8-b52d-511537b1946d'[39m
+      sessionId: [32m'SessionID.4cd0f658-b58a-43b5-829f-842257662bf7'[39m
     }
   }
 }
@@ -1151,19 +1148,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.50546eb7-520a-4d5a-8063-2f85fca703e7'[39m,
-      timestamp: [32m'2021-04-24T12:06:27Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.8221a8d8-35ea-45f3-80d0-5959c064f024'[39m,
+      timestamp: [32m'2021-04-24T14:22:05Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.145da891-d90f-49c8-b52d-511537b1946d'[39m
+      sessionId: [32m'SessionID.4cd0f658-b58a-43b5-829f-842257662bf7'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m11739[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m12093[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -1177,20 +1174,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.50546eb7-520a-4d5a-8063-2f85fca703e7'[39m,
-      timestamp: [32m'2021-04-24T12:06:27Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.8221a8d8-35ea-45f3-80d0-5959c064f024'[39m,
+      timestamp: [32m'2021-04-24T14:22:05Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.145da891-d90f-49c8-b52d-511537b1946d'[39m
+      sessionId: [32m'SessionID.4cd0f658-b58a-43b5-829f-842257662bf7'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m20391[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -1231,11 +1227,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m2268[39m us
+smarthome exe costs:  [33m2452[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.1d5fccf3-fbf3-4d84-85a5-f0678cea8b69'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.ac68ffe5-4120-426d-81bb-7476dc24c3c3'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -1247,7 +1243,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.355a3de7-853b-4381-8f6b-555009796935'[39m,
+      _id: [32m'SessionID.392d1b89-a74d-42d3-ad8e-071d3d358029'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -1256,15 +1252,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.575a9c1b-ab56-4151-8bbf-7d54927d772d'[39m,
-      timestamp: [32m'2021-04-24T12:06:28Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.ae15a665-a94d-4de2-a6e4-761d8847c1c4'[39m,
+      timestamp: [32m'2021-04-24T14:22:06Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.355a3de7-853b-4381-8f6b-555009796935'[39m
+      sessionId: [32m'SessionID.392d1b89-a74d-42d3-ad8e-071d3d358029'[39m
     }
   }
 }
@@ -1283,19 +1279,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.575a9c1b-ab56-4151-8bbf-7d54927d772d'[39m,
-      timestamp: [32m'2021-04-24T12:06:28Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.ae15a665-a94d-4de2-a6e4-761d8847c1c4'[39m,
+      timestamp: [32m'2021-04-24T14:22:06Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.355a3de7-853b-4381-8f6b-555009796935'[39m
+      sessionId: [32m'SessionID.392d1b89-a74d-42d3-ad8e-071d3d358029'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m8059[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m10223[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -1309,20 +1305,24 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.575a9c1b-ab56-4151-8bbf-7d54927d772d'[39m,
-      timestamp: [32m'2021-04-24T12:06:28Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.ae15a665-a94d-4de2-a6e4-761d8847c1c4'[39m,
+      timestamp: [32m'2021-04-24T14:22:06Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.355a3de7-853b-4381-8f6b-555009796935'[39m
+      sessionId: [32m'SessionID.392d1b89-a74d-42d3-ad8e-071d3d358029'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m16750[39m us
+[Results] exe (handler) costs:  [33m16557[39m us
+[Results] exe (handler) costs:  [33m20794[39m us
+[Results] exe (handler) costs:  [33m19227[39m us
+[Results] exe (handler) costs:  [33m21194[39m us
+[Results] exe (handler) costs:  [33m19158[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -1363,11 +1363,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m2279[39m us
+smarthome exe costs:  [33m2443[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.4d79b543-c3ee-409b-89de-c56b84a56b87'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.43e127e1-2411-442e-9091-8e9d105cfbe1'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -1379,7 +1379,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.924d0205-7217-4d78-9fdd-82571ee7c980'[39m,
+      _id: [32m'SessionID.af01071b-10a5-43aa-9af8-b61fdf56e816'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -1388,15 +1388,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.22f33403-aaae-457c-9780-ab64c752daa1'[39m,
-      timestamp: [32m'2021-04-24T12:06:29Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.95316fda-b0bf-4c1f-93e2-83fb1d91b609'[39m,
+      timestamp: [32m'2021-04-24T14:22:07Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.924d0205-7217-4d78-9fdd-82571ee7c980'[39m
+      sessionId: [32m'SessionID.af01071b-10a5-43aa-9af8-b61fdf56e816'[39m
     }
   }
 }
@@ -1415,19 +1415,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.22f33403-aaae-457c-9780-ab64c752daa1'[39m,
-      timestamp: [32m'2021-04-24T12:06:29Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.95316fda-b0bf-4c1f-93e2-83fb1d91b609'[39m,
+      timestamp: [32m'2021-04-24T14:22:07Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.924d0205-7217-4d78-9fdd-82571ee7c980'[39m
+      sessionId: [32m'SessionID.af01071b-10a5-43aa-9af8-b61fdf56e816'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m7834[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9767[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -1441,20 +1441,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.22f33403-aaae-457c-9780-ab64c752daa1'[39m,
-      timestamp: [32m'2021-04-24T12:06:29Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.95316fda-b0bf-4c1f-93e2-83fb1d91b609'[39m,
+      timestamp: [32m'2021-04-24T14:22:07Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.924d0205-7217-4d78-9fdd-82571ee7c980'[39m
+      sessionId: [32m'SessionID.af01071b-10a5-43aa-9af8-b61fdf56e816'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m16501[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -1495,11 +1494,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m2279[39m us
+smarthome exe costs:  [33m2328[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.cfcb59c2-6aeb-47a1-a13e-8cd866f5930e'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.719d1243-f7ef-4362-989d-397495958fa9'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -1511,7 +1510,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.154bf636-25e9-4392-97e4-b3ae93864cc6'[39m,
+      _id: [32m'SessionID.1df502f3-4344-44d9-8f7a-68527ac9bf0e'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -1520,15 +1519,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.8871ea70-5564-4921-a531-5e1aff0b19dd'[39m,
-      timestamp: [32m'2021-04-24T12:06:30Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.1d60201c-b6a1-41aa-a270-b2230bb1139e'[39m,
+      timestamp: [32m'2021-04-24T14:22:08Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.154bf636-25e9-4392-97e4-b3ae93864cc6'[39m
+      sessionId: [32m'SessionID.1df502f3-4344-44d9-8f7a-68527ac9bf0e'[39m
     }
   }
 }
@@ -1547,19 +1546,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.8871ea70-5564-4921-a531-5e1aff0b19dd'[39m,
-      timestamp: [32m'2021-04-24T12:06:30Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.1d60201c-b6a1-41aa-a270-b2230bb1139e'[39m,
+      timestamp: [32m'2021-04-24T14:22:08Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.154bf636-25e9-4392-97e4-b3ae93864cc6'[39m
+      sessionId: [32m'SessionID.1df502f3-4344-44d9-8f7a-68527ac9bf0e'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m6931[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9479[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -1573,20 +1572,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.8871ea70-5564-4921-a531-5e1aff0b19dd'[39m,
-      timestamp: [32m'2021-04-24T12:06:30Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.1d60201c-b6a1-41aa-a270-b2230bb1139e'[39m,
+      timestamp: [32m'2021-04-24T14:22:08Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.154bf636-25e9-4392-97e4-b3ae93864cc6'[39m
+      sessionId: [32m'SessionID.1df502f3-4344-44d9-8f7a-68527ac9bf0e'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m15561[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -1627,11 +1625,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m2288[39m us
+smarthome exe costs:  [33m2323[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.6ac4cb4d-b0a2-46a1-99b1-bc38130315cf'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.892cdb88-57b3-4d91-9333-cb8acae3a70c'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -1643,7 +1641,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.41fa31bd-4cc5-4a40-892e-2ce61506e3ed'[39m,
+      _id: [32m'SessionID.985a5d8a-781c-4f3c-a43c-417f171ef006'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -1652,15 +1650,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.53dd43c7-3ab8-42d6-bcbd-95e321ef4576'[39m,
-      timestamp: [32m'2021-04-24T12:06:31Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.d326e200-7cbf-4cb9-a15d-33373b36724b'[39m,
+      timestamp: [32m'2021-04-24T14:22:09Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.41fa31bd-4cc5-4a40-892e-2ce61506e3ed'[39m
+      sessionId: [32m'SessionID.985a5d8a-781c-4f3c-a43c-417f171ef006'[39m
     }
   }
 }
@@ -1679,19 +1677,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.53dd43c7-3ab8-42d6-bcbd-95e321ef4576'[39m,
-      timestamp: [32m'2021-04-24T12:06:31Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.d326e200-7cbf-4cb9-a15d-33373b36724b'[39m,
+      timestamp: [32m'2021-04-24T14:22:09Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.41fa31bd-4cc5-4a40-892e-2ce61506e3ed'[39m
+      sessionId: [32m'SessionID.985a5d8a-781c-4f3c-a43c-417f171ef006'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m9789[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9283[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -1705,20 +1703,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.53dd43c7-3ab8-42d6-bcbd-95e321ef4576'[39m,
-      timestamp: [32m'2021-04-24T12:06:31Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.d326e200-7cbf-4cb9-a15d-33373b36724b'[39m,
+      timestamp: [32m'2021-04-24T14:22:09Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.41fa31bd-4cc5-4a40-892e-2ce61506e3ed'[39m
+      sessionId: [32m'SessionID.985a5d8a-781c-4f3c-a43c-417f171ef006'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m19112[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -1759,11 +1756,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m1705[39m us
+smarthome exe costs:  [33m2370[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.61acf686-a5d1-43cb-a60e-5c0843b39bf5'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.00fa51d9-1f97-4da4-a72e-b0e0f9162d93'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -1775,7 +1772,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.78ce105f-5ede-4d4a-8be6-0d967caea249'[39m,
+      _id: [32m'SessionID.460868ff-808a-480b-aa25-34562cec33e6'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -1784,15 +1781,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.85e25b78-7753-41d3-8da9-1de5d3cbb75d'[39m,
-      timestamp: [32m'2021-04-24T12:06:32Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.b3857472-d44d-48ce-9fa1-e896c4ec6dc7'[39m,
+      timestamp: [32m'2021-04-24T14:22:10Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.78ce105f-5ede-4d4a-8be6-0d967caea249'[39m
+      sessionId: [32m'SessionID.460868ff-808a-480b-aa25-34562cec33e6'[39m
     }
   }
 }
@@ -1811,19 +1808,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.85e25b78-7753-41d3-8da9-1de5d3cbb75d'[39m,
-      timestamp: [32m'2021-04-24T12:06:32Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.b3857472-d44d-48ce-9fa1-e896c4ec6dc7'[39m,
+      timestamp: [32m'2021-04-24T14:22:10Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.78ce105f-5ede-4d4a-8be6-0d967caea249'[39m
+      sessionId: [32m'SessionID.460868ff-808a-480b-aa25-34562cec33e6'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m6835[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9794[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -1837,20 +1834,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.85e25b78-7753-41d3-8da9-1de5d3cbb75d'[39m,
-      timestamp: [32m'2021-04-24T12:06:32Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.b3857472-d44d-48ce-9fa1-e896c4ec6dc7'[39m,
+      timestamp: [32m'2021-04-24T14:22:10Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.78ce105f-5ede-4d4a-8be6-0d967caea249'[39m
+      sessionId: [32m'SessionID.460868ff-808a-480b-aa25-34562cec33e6'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m13327[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -1891,11 +1887,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m1663[39m us
+smarthome exe costs:  [33m2258[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.ec5d5faa-9e70-4a10-9e8d-4716be17f8ca'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.e5d0535d-8c5b-4ce1-9a1d-85a705a3f87c'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -1907,7 +1903,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.c54a519e-1dce-4b50-b6cb-d908e9f4d527'[39m,
+      _id: [32m'SessionID.f470d2ca-2e1a-40b0-b604-b335ad4d0db9'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -1916,15 +1912,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.97070e40-288b-43e3-b0af-9dcc8db71030'[39m,
-      timestamp: [32m'2021-04-24T12:06:33Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.881d94ab-767c-4f72-9275-d69a21ef26ec'[39m,
+      timestamp: [32m'2021-04-24T14:22:11Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.c54a519e-1dce-4b50-b6cb-d908e9f4d527'[39m
+      sessionId: [32m'SessionID.f470d2ca-2e1a-40b0-b604-b335ad4d0db9'[39m
     }
   }
 }
@@ -1943,19 +1939,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.97070e40-288b-43e3-b0af-9dcc8db71030'[39m,
-      timestamp: [32m'2021-04-24T12:06:33Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.881d94ab-767c-4f72-9275-d69a21ef26ec'[39m,
+      timestamp: [32m'2021-04-24T14:22:11Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.c54a519e-1dce-4b50-b6cb-d908e9f4d527'[39m
+      sessionId: [32m'SessionID.f470d2ca-2e1a-40b0-b604-b335ad4d0db9'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m10159[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9102[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -1969,20 +1965,24 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.97070e40-288b-43e3-b0af-9dcc8db71030'[39m,
-      timestamp: [32m'2021-04-24T12:06:33Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.881d94ab-767c-4f72-9275-d69a21ef26ec'[39m,
+      timestamp: [32m'2021-04-24T14:22:11Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.c54a519e-1dce-4b50-b6cb-d908e9f4d527'[39m
+      sessionId: [32m'SessionID.f470d2ca-2e1a-40b0-b604-b335ad4d0db9'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m16826[39m us
+[Results] exe (handler) costs:  [33m18707[39m us
+[Results] exe (handler) costs:  [33m18092[39m us
+[Results] exe (handler) costs:  [33m18993[39m us
+[Results] exe (handler) costs:  [33m18382[39m us
+[Results] exe (handler) costs:  [33m17382[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -2023,11 +2023,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m1691[39m us
+smarthome exe costs:  [33m2271[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.cd9d12a5-b8a3-4eef-a3f5-3356d0252935'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.196efdd1-d543-407b-8d25-bd3218832697'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -2039,7 +2039,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.ae65d468-fe3c-44fb-b1c8-be399340fdb3'[39m,
+      _id: [32m'SessionID.316d0428-73d6-4f68-bc7f-77b7cd9f8f86'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -2048,15 +2048,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.2fdd264f-e0dc-427a-849c-61b2ff87c0df'[39m,
-      timestamp: [32m'2021-04-24T12:06:34Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.f306a37e-95c8-433e-ac76-7a834947c4b5'[39m,
+      timestamp: [32m'2021-04-24T14:22:12Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.ae65d468-fe3c-44fb-b1c8-be399340fdb3'[39m
+      sessionId: [32m'SessionID.316d0428-73d6-4f68-bc7f-77b7cd9f8f86'[39m
     }
   }
 }
@@ -2075,19 +2075,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.2fdd264f-e0dc-427a-849c-61b2ff87c0df'[39m,
-      timestamp: [32m'2021-04-24T12:06:34Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.f306a37e-95c8-433e-ac76-7a834947c4b5'[39m,
+      timestamp: [32m'2021-04-24T14:22:12Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.ae65d468-fe3c-44fb-b1c8-be399340fdb3'[39m
+      sessionId: [32m'SessionID.316d0428-73d6-4f68-bc7f-77b7cd9f8f86'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m10881[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9692[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -2101,20 +2101,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.2fdd264f-e0dc-427a-849c-61b2ff87c0df'[39m,
-      timestamp: [32m'2021-04-24T12:06:34Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.f306a37e-95c8-433e-ac76-7a834947c4b5'[39m,
+      timestamp: [32m'2021-04-24T14:22:12Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.ae65d468-fe3c-44fb-b1c8-be399340fdb3'[39m
+      sessionId: [32m'SessionID.316d0428-73d6-4f68-bc7f-77b7cd9f8f86'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m16936[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -2155,11 +2154,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m1410[39m us
+smarthome exe costs:  [33m2242[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.3bf9410a-7728-4fa1-a699-f408794316ea'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.7266ff99-1d42-4bf4-b97c-71215d002203'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -2171,7 +2170,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.04482b63-3732-449c-8b8a-6e7c443b18b9'[39m,
+      _id: [32m'SessionID.0475d7ca-d96e-4868-a652-05437a355c35'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -2180,15 +2179,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.0190cfe8-1836-47a6-a809-cb702cd99a41'[39m,
-      timestamp: [32m'2021-04-24T12:06:35Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.d33166fe-3145-4066-b55d-f8cd8ae7760e'[39m,
+      timestamp: [32m'2021-04-24T14:22:13Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.04482b63-3732-449c-8b8a-6e7c443b18b9'[39m
+      sessionId: [32m'SessionID.0475d7ca-d96e-4868-a652-05437a355c35'[39m
     }
   }
 }
@@ -2207,19 +2206,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.0190cfe8-1836-47a6-a809-cb702cd99a41'[39m,
-      timestamp: [32m'2021-04-24T12:06:35Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.d33166fe-3145-4066-b55d-f8cd8ae7760e'[39m,
+      timestamp: [32m'2021-04-24T14:22:13Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.04482b63-3732-449c-8b8a-6e7c443b18b9'[39m
+      sessionId: [32m'SessionID.0475d7ca-d96e-4868-a652-05437a355c35'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m9227[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m8794[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -2233,20 +2232,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.0190cfe8-1836-47a6-a809-cb702cd99a41'[39m,
-      timestamp: [32m'2021-04-24T12:06:35Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.d33166fe-3145-4066-b55d-f8cd8ae7760e'[39m,
+      timestamp: [32m'2021-04-24T14:22:13Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.04482b63-3732-449c-8b8a-6e7c443b18b9'[39m
+      sessionId: [32m'SessionID.0475d7ca-d96e-4868-a652-05437a355c35'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m14891[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -2287,11 +2285,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m1682[39m us
+smarthome exe costs:  [33m2251[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.381db3ac-5be8-479d-bd6b-f77b81b5266f'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.4dee8f5b-2f9a-4c2b-95fd-488226e15b78'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -2303,7 +2301,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.a7f00552-28e5-4e1b-82df-832ae4ddf6bd'[39m,
+      _id: [32m'SessionID.45521044-e345-48b5-b6ef-a2ea42c2d6eb'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -2312,15 +2310,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.80ebd150-3085-42f1-9601-a0699bab5bc6'[39m,
-      timestamp: [32m'2021-04-24T12:06:36Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.162d9c1c-bd10-46b1-a552-5be33191bc65'[39m,
+      timestamp: [32m'2021-04-24T14:22:15Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.a7f00552-28e5-4e1b-82df-832ae4ddf6bd'[39m
+      sessionId: [32m'SessionID.45521044-e345-48b5-b6ef-a2ea42c2d6eb'[39m
     }
   }
 }
@@ -2339,19 +2337,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.80ebd150-3085-42f1-9601-a0699bab5bc6'[39m,
-      timestamp: [32m'2021-04-24T12:06:36Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.162d9c1c-bd10-46b1-a552-5be33191bc65'[39m,
+      timestamp: [32m'2021-04-24T14:22:15Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.a7f00552-28e5-4e1b-82df-832ae4ddf6bd'[39m
+      sessionId: [32m'SessionID.45521044-e345-48b5-b6ef-a2ea42c2d6eb'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m11410[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m10008[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -2365,20 +2363,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.80ebd150-3085-42f1-9601-a0699bab5bc6'[39m,
-      timestamp: [32m'2021-04-24T12:06:36Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.162d9c1c-bd10-46b1-a552-5be33191bc65'[39m,
+      timestamp: [32m'2021-04-24T14:22:15Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.a7f00552-28e5-4e1b-82df-832ae4ddf6bd'[39m
+      sessionId: [32m'SessionID.45521044-e345-48b5-b6ef-a2ea42c2d6eb'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m17350[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -2419,11 +2416,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m2327[39m us
+smarthome exe costs:  [33m2203[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.c8602ab3-e105-48a3-873e-e9cdfd0321e5'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.f2a3920c-24ab-4373-a3c9-43b565abd642'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -2435,7 +2432,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.0d82f038-f4eb-4b24-aa4a-9c15005e7d0a'[39m,
+      _id: [32m'SessionID.2dd7c1a3-b316-4a37-b305-168967566f38'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -2444,15 +2441,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.9ceae767-fdc2-4f85-b584-ebecfe0b6c59'[39m,
-      timestamp: [32m'2021-04-24T12:06:37Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.0ff17f29-4696-44e3-9ccb-efd83af29581'[39m,
+      timestamp: [32m'2021-04-24T14:22:16Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.0d82f038-f4eb-4b24-aa4a-9c15005e7d0a'[39m
+      sessionId: [32m'SessionID.2dd7c1a3-b316-4a37-b305-168967566f38'[39m
     }
   }
 }
@@ -2471,19 +2468,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.9ceae767-fdc2-4f85-b584-ebecfe0b6c59'[39m,
-      timestamp: [32m'2021-04-24T12:06:37Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.0ff17f29-4696-44e3-9ccb-efd83af29581'[39m,
+      timestamp: [32m'2021-04-24T14:22:16Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.0d82f038-f4eb-4b24-aa4a-9c15005e7d0a'[39m
+      sessionId: [32m'SessionID.2dd7c1a3-b316-4a37-b305-168967566f38'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m9541[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9217[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -2497,20 +2494,19 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.9ceae767-fdc2-4f85-b584-ebecfe0b6c59'[39m,
-      timestamp: [32m'2021-04-24T12:06:37Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.0ff17f29-4696-44e3-9ccb-efd83af29581'[39m,
+      timestamp: [32m'2021-04-24T14:22:16Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.0d82f038-f4eb-4b24-aa4a-9c15005e7d0a'[39m
+      sessionId: [32m'SessionID.2dd7c1a3-b316-4a37-b305-168967566f38'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m17813[39m us
 {
   host: [32m'127.0.0.1:12301'[39m,
   [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
@@ -2551,11 +2547,11 @@ in i18n request : {
     slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
   }
 }
-smarthome exe costs:  [33m1627[39m us
+smarthome exe costs:  [33m2299[39m us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
 enterRequest: SkillRequest {
   context: SkillContext {
-    _apiAccessToken: [32m'virtualAlexa.accessToken.2609d57d-a3f4-4ea9-8134-4b4f28acf9bc'[39m,
+    _apiAccessToken: [32m'virtualAlexa.accessToken.6fb143ff-f828-45fb-9dfa-4fe8bc4287c4'[39m,
     _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
     _interactionModel: [36m<ref *1>[39m InteractionModel {
       slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
@@ -2567,7 +2563,7 @@ enterRequest: SkillRequest {
     },
     _locale: [32m'en-US'[39m,
     _session: SkillSession {
-      _id: [32m'SessionID.c66341df-bbdd-4a7e-affe-59627cc01469'[39m,
+      _id: [32m'SessionID.875d5238-911e-4972-9b9b-39a286d224c4'[39m,
       _new: [33mtrue[39m,
       _attributes: {}
     }
@@ -2576,15 +2572,15 @@ enterRequest: SkillRequest {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.6833a214-1525-4681-af82-0948fb037cd8'[39m,
-      timestamp: [32m'2021-04-24T12:06:38Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.52b05642-8f25-4405-a84c-666b0fb9abca'[39m,
+      timestamp: [32m'2021-04-24T14:22:17Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.c66341df-bbdd-4a7e-affe-59627cc01469'[39m
+      sessionId: [32m'SessionID.875d5238-911e-4972-9b9b-39a286d224c4'[39m
     }
   }
 }
@@ -2603,19 +2599,19 @@ get callee CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.6833a214-1525-4681-af82-0948fb037cd8'[39m,
-      timestamp: [32m'2021-04-24T12:06:38Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.52b05642-8f25-4405-a84c-666b0fb9abca'[39m,
+      timestamp: [32m'2021-04-24T14:22:17Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.c66341df-bbdd-4a7e-affe-59627cc01469'[39m
+      sessionId: [32m'SessionID.875d5238-911e-4972-9b9b-39a286d224c4'[39m
     }
   }
 }
-[Results] callee comm (round-trip) + exe (callee) costs:  [33m9235[39m us
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9051[39m us
 send result indirectly which is from CalleeInformation {
   stepName: [32m'light'[39m,
   information: Information {
@@ -2629,17 +2625,21 @@ send result indirectly which is from CalleeInformation {
     context: { System: { application: { applicationId: [90mundefined[39m } } },
     request: {
       locale: [32m'en-US'[39m,
-      requestId: [32m'amzn1.echo-external.request.6833a214-1525-4681-af82-0948fb037cd8'[39m,
-      timestamp: [32m'2021-04-24T12:06:38Z'[39m,
+      requestId: [32m'amzn1.echo-external.request.52b05642-8f25-4405-a84c-666b0fb9abca'[39m,
+      timestamp: [32m'2021-04-24T14:22:17Z'[39m,
       type: [32m'LaunchRequest'[39m
     },
     version: [32m'1.0'[39m,
     session: {
       application: { applicationId: [90mundefined[39m },
       new: [33mtrue[39m,
-      sessionId: [32m'SessionID.c66341df-bbdd-4a7e-affe-59627cc01469'[39m
+      sessionId: [32m'SessionID.875d5238-911e-4972-9b9b-39a286d224c4'[39m
     }
   }
 }
 response: [32m'{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}'[39m
-[Results] exe (handler) costs:  [33m15659[39m us
+[Results] exe (handler) costs:  [33m18318[39m us
+[Results] exe (handler) costs:  [33m16937[39m us
+[Results] exe (handler) costs:  [33m18463[39m us
+[Results] exe (handler) costs:  [33m17246[39m us
+[Results] exe (handler) costs:  [33m17566[39m us
