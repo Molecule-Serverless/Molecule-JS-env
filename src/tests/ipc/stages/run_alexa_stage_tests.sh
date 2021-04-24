@@ -19,11 +19,15 @@ function run_test(){
 	docker logs ipc_stage_test_callee > $1-callee_logs.txt
 
 	##Clean
-	docker stop $(docker ps -aq)
+	#docker stop $(docker ps -aq)
+	docker stop ipc_stage_test_caller
+	docker stop ipc_stage_test_callee
 }
 
 ##Clean
-docker stop $(docker ps -aq)
+#docker stop $(docker ps -aq)
+	docker stop ipc_stage_test_caller
+	docker stop ipc_stage_test_callee
 
 # 1. front-end -> interact
 run_test front-interact
@@ -38,4 +42,4 @@ run_test smarthome-door
 run_test smarthome-light
 
 ##Clean
-docker stop $(docker ps -aq)
+#docker stop $(docker ps -aq)

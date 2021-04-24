@@ -206,10 +206,10 @@ function main() {
 	var beginTime = process.hrtime();
         let result = await handler(req)
 	var endTime = process.hrtime(beginTime);
+        //console.log("result:%o", result)
+        res.json(result)
 	var interval = parseInt(endTime[0] * 1e6 + endTime[1]*1e-3);
 	console.log('[Results] exe (handler) costs: ', interval, 'us' )
-        console.log("result:%o", result)
-        res.json(result)
     })
     //server = app.listen(40041, function () {
     server = app.listen(process.env.PORT, function () {
