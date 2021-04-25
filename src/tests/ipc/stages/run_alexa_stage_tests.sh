@@ -22,20 +22,49 @@ function run_test(){
 	docker stop $(docker ps -aq)
 }
 
-##Clean
-docker stop $(docker ps -aq)
+function run_all(){
+	##Clean
+	docker stop $(docker ps -aq)
 
-# 1. front-end -> interact
-run_test front-interact
+	# 1. front-end -> interact
+	run_test front-interact
 
-# 2. interact-smarthome
-run_test interact-smarthome
+	# 2. interact-smarthome
+	run_test interact-smarthome
 
-# # # 3. smarthome-door
-run_test smarthome-door
+	# # # 3. smarthome-door
+	run_test smarthome-door
 
-# # # 4. smarthome-light
-run_test smarthome-light
+	# # # 4. smarthome-light
+	run_test smarthome-light
 
-##Clean
-docker stop $(docker ps -aq)
+	##Clean
+	docker stop $(docker ps -aq)
+}
+
+function print_usage(){
+	echo "run_alexa_stage_test.sh [args]"
+	echo "args:"
+	echo "-a: run all test cases in one command"
+	echo "-c: run specific test case, e.g., -c front-interact"
+	echo "-h: Print the help info"
+	echo "-r: run a test case's caller, e.g., -r front-interact"
+	echo "-e: run a test case's callee, e.g., -e front-interact"
+}
+
+while getopts ":habc:" opt; do
+	case $opt in
+		a)
+			echo "Run all test cases"
+			run_all
+			exit
+			;;
+		h)
+			print_usage
+			exit
+			;;
+
+
+	esac
+done
+
