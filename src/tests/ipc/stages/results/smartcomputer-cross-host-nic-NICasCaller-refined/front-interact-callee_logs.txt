@@ -1,0 +1,1605 @@
+Node.JS runtime for Molecule-serverless started
+
+Example app listening on port 40041
+{ target: '/home/src/interact/index.js' }
+function init at express
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.50fe71ae-9509-4f99-920a-ff4b066ad609',
+    timestamp: '2021-04-25T08:58:36Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.fd21bb43-4c0e-4346-9944-df0fb24b7fcc',
+    attributes: {}
+  }
+}
+interact exe costs:  5171 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.50fe71ae-9509-4f99-920a-ff4b066ad609',
+      timestamp: '2021-04-25T08:58:36Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.fd21bb43-4c0e-4346-9944-df0fb24b7fcc',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.50fe71ae-9509-4f99-920a-ff4b066ad609',
+    timestamp: '2021-04-25T08:58:36Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.fd21bb43-4c0e-4346-9944-df0fb24b7fcc',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.51e70728-46ba-4bcc-84e8-057efc4ecb29',
+    timestamp: '2021-04-25T08:58:37Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.34dcda02-e02f-47e9-8a17-a12163679a8d',
+    attributes: {}
+  }
+}
+interact exe costs:  2437 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.51e70728-46ba-4bcc-84e8-057efc4ecb29',
+      timestamp: '2021-04-25T08:58:37Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.34dcda02-e02f-47e9-8a17-a12163679a8d',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.51e70728-46ba-4bcc-84e8-057efc4ecb29',
+    timestamp: '2021-04-25T08:58:37Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.34dcda02-e02f-47e9-8a17-a12163679a8d',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.318735ab-8fac-4504-9fb9-d5aa92f66c1c',
+    timestamp: '2021-04-25T08:58:38Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.b5002e2b-ac77-455d-96da-1351b0758ee5',
+    attributes: {}
+  }
+}
+interact exe costs:  1757 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.318735ab-8fac-4504-9fb9-d5aa92f66c1c',
+      timestamp: '2021-04-25T08:58:38Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.b5002e2b-ac77-455d-96da-1351b0758ee5',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.318735ab-8fac-4504-9fb9-d5aa92f66c1c',
+    timestamp: '2021-04-25T08:58:38Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.b5002e2b-ac77-455d-96da-1351b0758ee5',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.1580103f-bc1a-4a76-95f3-74064d0df4a2',
+    timestamp: '2021-04-25T08:58:39Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.35c23e2c-7d65-41c3-9c2d-23f891791d84',
+    attributes: {}
+  }
+}
+interact exe costs:  1601 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.1580103f-bc1a-4a76-95f3-74064d0df4a2',
+      timestamp: '2021-04-25T08:58:39Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.35c23e2c-7d65-41c3-9c2d-23f891791d84',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.1580103f-bc1a-4a76-95f3-74064d0df4a2',
+    timestamp: '2021-04-25T08:58:39Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.35c23e2c-7d65-41c3-9c2d-23f891791d84',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.6f6aa874-10c5-4886-b0af-74a9ceafc88a',
+    timestamp: '2021-04-25T08:58:40Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.ac4af711-1a7d-4620-b458-5f22e61be5c9',
+    attributes: {}
+  }
+}
+interact exe costs:  1588 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.6f6aa874-10c5-4886-b0af-74a9ceafc88a',
+      timestamp: '2021-04-25T08:58:40Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.ac4af711-1a7d-4620-b458-5f22e61be5c9',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.6f6aa874-10c5-4886-b0af-74a9ceafc88a',
+    timestamp: '2021-04-25T08:58:40Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.ac4af711-1a7d-4620-b458-5f22e61be5c9',
+    attributes: {}
+  }
+}
+[Results] exe (handler) costs:  7935 us
+[Results] exe (handler) costs:  4569 us
+[Results] exe (handler) costs:  3828 us
+[Results] exe (handler) costs:  3572 us
+[Results] exe (handler) costs:  3493 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.d3030268-7c36-48c8-8d8a-ec8ef7fec994',
+    timestamp: '2021-04-25T08:58:41Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.cc2e35e2-954b-4093-91f7-642b144f56cc',
+    attributes: {}
+  }
+}
+interact exe costs:  1725 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.d3030268-7c36-48c8-8d8a-ec8ef7fec994',
+      timestamp: '2021-04-25T08:58:41Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.cc2e35e2-954b-4093-91f7-642b144f56cc',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.d3030268-7c36-48c8-8d8a-ec8ef7fec994',
+    timestamp: '2021-04-25T08:58:41Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.cc2e35e2-954b-4093-91f7-642b144f56cc',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.65ce4f4a-a95b-4ca8-8f6a-e883761a9d16',
+    timestamp: '2021-04-25T08:58:42Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.74f03bad-3bc6-4c40-b564-64e9435bc3a7',
+    attributes: {}
+  }
+}
+interact exe costs:  1615 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.65ce4f4a-a95b-4ca8-8f6a-e883761a9d16',
+      timestamp: '2021-04-25T08:58:42Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.74f03bad-3bc6-4c40-b564-64e9435bc3a7',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.65ce4f4a-a95b-4ca8-8f6a-e883761a9d16',
+    timestamp: '2021-04-25T08:58:42Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.74f03bad-3bc6-4c40-b564-64e9435bc3a7',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.ac9b637b-35b1-4ae7-a2e1-7f68bbc3e89d',
+    timestamp: '2021-04-25T08:58:43Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.81d0cee5-83c4-45e3-9201-aab8972a5351',
+    attributes: {}
+  }
+}
+interact exe costs:  1471 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.ac9b637b-35b1-4ae7-a2e1-7f68bbc3e89d',
+      timestamp: '2021-04-25T08:58:43Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.81d0cee5-83c4-45e3-9201-aab8972a5351',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.ac9b637b-35b1-4ae7-a2e1-7f68bbc3e89d',
+    timestamp: '2021-04-25T08:58:43Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.81d0cee5-83c4-45e3-9201-aab8972a5351',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.1bacdb43-efae-4877-a959-67842f6804a2',
+    timestamp: '2021-04-25T08:58:44Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.552c86d0-c9b0-424f-956a-f8b3e4d664e2',
+    attributes: {}
+  }
+}
+interact exe costs:  1494 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.1bacdb43-efae-4877-a959-67842f6804a2',
+      timestamp: '2021-04-25T08:58:44Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.552c86d0-c9b0-424f-956a-f8b3e4d664e2',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.1bacdb43-efae-4877-a959-67842f6804a2',
+    timestamp: '2021-04-25T08:58:44Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.552c86d0-c9b0-424f-956a-f8b3e4d664e2',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.1c273e56-5e99-4600-b8c3-76b333df3bf1',
+    timestamp: '2021-04-25T08:58:46Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.96a8eaa8-4ce7-40ad-b5bd-90ced4371f9a',
+    attributes: {}
+  }
+}
+interact exe costs:  1493 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.1c273e56-5e99-4600-b8c3-76b333df3bf1',
+      timestamp: '2021-04-25T08:58:46Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.96a8eaa8-4ce7-40ad-b5bd-90ced4371f9a',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.1c273e56-5e99-4600-b8c3-76b333df3bf1',
+    timestamp: '2021-04-25T08:58:46Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.96a8eaa8-4ce7-40ad-b5bd-90ced4371f9a',
+    attributes: {}
+  }
+}
+[Results] exe (handler) costs:  3669 us
+[Results] exe (handler) costs:  3497 us
+[Results] exe (handler) costs:  4979 us
+[Results] exe (handler) costs:  3375 us
+[Results] exe (handler) costs:  3354 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.760eb478-d72e-40f5-88b8-76cce798681d',
+    timestamp: '2021-04-25T08:58:47Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.8921c057-5474-4e41-ba11-2c6b880e00fc',
+    attributes: {}
+  }
+}
+interact exe costs:  1538 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.760eb478-d72e-40f5-88b8-76cce798681d',
+      timestamp: '2021-04-25T08:58:47Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.8921c057-5474-4e41-ba11-2c6b880e00fc',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.760eb478-d72e-40f5-88b8-76cce798681d',
+    timestamp: '2021-04-25T08:58:47Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.8921c057-5474-4e41-ba11-2c6b880e00fc',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.3844966d-d8de-4fe4-ad85-68ca8392a8c2',
+    timestamp: '2021-04-25T08:58:48Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.6f1e51cb-5197-4686-b235-fd5c33e58a45',
+    attributes: {}
+  }
+}
+interact exe costs:  1688 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.3844966d-d8de-4fe4-ad85-68ca8392a8c2',
+      timestamp: '2021-04-25T08:58:48Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.6f1e51cb-5197-4686-b235-fd5c33e58a45',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.3844966d-d8de-4fe4-ad85-68ca8392a8c2',
+    timestamp: '2021-04-25T08:58:48Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.6f1e51cb-5197-4686-b235-fd5c33e58a45',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.8b341b2a-2d6a-41c6-92b3-a9e17dc70773',
+    timestamp: '2021-04-25T08:58:49Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.afd860af-c6c2-4060-91c4-31fc9b0feaa9',
+    attributes: {}
+  }
+}
+interact exe costs:  1858 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.8b341b2a-2d6a-41c6-92b3-a9e17dc70773',
+      timestamp: '2021-04-25T08:58:49Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.afd860af-c6c2-4060-91c4-31fc9b0feaa9',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.8b341b2a-2d6a-41c6-92b3-a9e17dc70773',
+    timestamp: '2021-04-25T08:58:49Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.afd860af-c6c2-4060-91c4-31fc9b0feaa9',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c1ad50f4-8e7b-44a9-bab6-ed5c96fedd80',
+    timestamp: '2021-04-25T08:58:50Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.e26d5cec-2afb-4731-a3a7-e1d81a723485',
+    attributes: {}
+  }
+}
+interact exe costs:  1565 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.c1ad50f4-8e7b-44a9-bab6-ed5c96fedd80',
+      timestamp: '2021-04-25T08:58:50Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.e26d5cec-2afb-4731-a3a7-e1d81a723485',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c1ad50f4-8e7b-44a9-bab6-ed5c96fedd80',
+    timestamp: '2021-04-25T08:58:50Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.e26d5cec-2afb-4731-a3a7-e1d81a723485',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.eda288ab-49f4-4c85-9295-4b00463159b2',
+    timestamp: '2021-04-25T08:58:51Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.0fb7afca-03fe-4cf2-ae5b-3d8f4ac6127e',
+    attributes: {}
+  }
+}
+interact exe costs:  1670 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.eda288ab-49f4-4c85-9295-4b00463159b2',
+      timestamp: '2021-04-25T08:58:51Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.0fb7afca-03fe-4cf2-ae5b-3d8f4ac6127e',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.eda288ab-49f4-4c85-9295-4b00463159b2',
+    timestamp: '2021-04-25T08:58:51Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.0fb7afca-03fe-4cf2-ae5b-3d8f4ac6127e',
+    attributes: {}
+  }
+}
+[Results] exe (handler) costs:  3470 us
+[Results] exe (handler) costs:  3697 us
+[Results] exe (handler) costs:  3929 us
+[Results] exe (handler) costs:  3540 us
+[Results] exe (handler) costs:  3706 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.85e1b2a0-110b-4324-80d9-dc5633f7b44e',
+    timestamp: '2021-04-25T08:58:52Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.1c531724-29d7-4ec3-839c-b53a5d4f16e7',
+    attributes: {}
+  }
+}
+interact exe costs:  1492 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.85e1b2a0-110b-4324-80d9-dc5633f7b44e',
+      timestamp: '2021-04-25T08:58:52Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.1c531724-29d7-4ec3-839c-b53a5d4f16e7',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.85e1b2a0-110b-4324-80d9-dc5633f7b44e',
+    timestamp: '2021-04-25T08:58:52Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.1c531724-29d7-4ec3-839c-b53a5d4f16e7',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.cad9c329-ff58-4056-95c5-eac3d566b21f',
+    timestamp: '2021-04-25T08:58:53Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.a59aefaf-0a63-493b-9fae-64f9ce7c0f22',
+    attributes: {}
+  }
+}
+interact exe costs:  1480 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.cad9c329-ff58-4056-95c5-eac3d566b21f',
+      timestamp: '2021-04-25T08:58:53Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.a59aefaf-0a63-493b-9fae-64f9ce7c0f22',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.cad9c329-ff58-4056-95c5-eac3d566b21f',
+    timestamp: '2021-04-25T08:58:53Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.a59aefaf-0a63-493b-9fae-64f9ce7c0f22',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.8925457c-1112-40b7-8065-394437aed233',
+    timestamp: '2021-04-25T08:58:54Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.13fb4670-0f41-440a-b3b9-41f8021fc9c4',
+    attributes: {}
+  }
+}
+interact exe costs:  2058 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.8925457c-1112-40b7-8065-394437aed233',
+      timestamp: '2021-04-25T08:58:54Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.13fb4670-0f41-440a-b3b9-41f8021fc9c4',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.8925457c-1112-40b7-8065-394437aed233',
+    timestamp: '2021-04-25T08:58:54Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.13fb4670-0f41-440a-b3b9-41f8021fc9c4',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.e4670277-96bf-4d1d-960f-48c088fdb0cd',
+    timestamp: '2021-04-25T08:58:55Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.debff9a8-32ef-4162-8019-fb0ee0638bbe',
+    attributes: {}
+  }
+}
+interact exe costs:  1437 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.e4670277-96bf-4d1d-960f-48c088fdb0cd',
+      timestamp: '2021-04-25T08:58:55Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.debff9a8-32ef-4162-8019-fb0ee0638bbe',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.e4670277-96bf-4d1d-960f-48c088fdb0cd',
+    timestamp: '2021-04-25T08:58:55Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.debff9a8-32ef-4162-8019-fb0ee0638bbe',
+    attributes: {}
+  }
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'interact',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '69',
+  host: '192.168.120.1:12302',
+  connection: 'close'
+}
+req body: { skill: 'smarthome', utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.6331efcf-218e-4bf7-835a-8ecfa4d6db8b',
+    timestamp: '2021-04-25T08:58:56Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.003d6fad-4262-4afd-a345-7fdd7cbe6794',
+    attributes: {}
+  }
+}
+interact exe costs:  1441 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.6331efcf-218e-4bf7-835a-8ecfa4d6db8b',
+      timestamp: '2021-04-25T08:58:56Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.003d6fad-4262-4afd-a345-7fdd7cbe6794',
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.6331efcf-218e-4bf7-835a-8ecfa4d6db8b',
+    timestamp: '2021-04-25T08:58:56Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.003d6fad-4262-4afd-a345-7fdd7cbe6794',
+    attributes: {}
+  }
+}
+[Results] exe (handler) costs:  3421 us
+[Results] exe (handler) costs:  3369 us
+[Results] exe (handler) costs:  4868 us
+[Results] exe (handler) costs:  3321 us
+[Results] exe (handler) costs:  3309 us
