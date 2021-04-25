@@ -64,15 +64,15 @@ function run_test_e(){
 
 # 1 args: the testcase name
 function run_test_invoke(){
-	#./test_ipc.sh
-	#sleep 2
-	##docker logs ipc_stage_test_caller > $NAME-caller_logs.txt
-	##docker logs ipc_stage_test_callee > $NAME-callee_logs.txt
-	#docker logs test_ipc_caller | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > $1-caller_logs.txt
+	./test_ipc.sh
+	sleep 2
+	#docker logs ipc_stage_test_caller > $NAME-caller_logs.txt
+	#docker logs ipc_stage_test_callee > $NAME-callee_logs.txt
+	docker logs test_ipc_caller | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > $1-caller_logs.txt
 	docker logs test_ipc_callee | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > $1-callee_logs.txt
 
 	##Clean
-	#docker stop test_ipc_caller
+	docker stop test_ipc_caller
 	docker stop test_ipc_callee
 }
 
