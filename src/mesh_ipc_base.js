@@ -41,6 +41,7 @@ function sleep(time = 0) {
 
 // getData assume we will send data to the next step function, now we igonre the param
 GetData = (opts, data) => {
+	//var beginTime = process.hrtime();
     let finalData = "{}"
     let needPost = true
     if (needPost) {
@@ -49,19 +50,23 @@ GetData = (opts, data) => {
         opts.headers['Content-Length'] = finalData.length
     }
     opts.timeout = 1000
-    console.log("GetData's opts: %o\n", opts)
+	//var endTime = process.hrtime(beginTime);
+	//var interval = parseInt(endTime[0] * 1e6 + endTime[1]*1e-3);
+	//console.log('[Results] Caller prepare http costs: ', interval, 'us' )
+    //console.log("GetData's opts: %o\n", opts)
     return new Promise(function (resolve, reject) {
+		//var beginTime = process.hrtime();
         let method = http
         if (opts.protocol === 'https:') {
             method = https
         }
         let req = method.request(opts, (res) => {
-            console.log('req in')
-            console.log(`STATUS: ${res.statusCode}`)
-            console.log(`HEADERS: ${JSON.stringify(res.headers)}`)
+            //console.log('req in')
+            //console.log(`STATUS: ${res.statusCode}`)
+            //console.log(`HEADERS: ${JSON.stringify(res.headers)}`)
             let returnData = ''
             res.on('data', function (d) {
-                console.log('get data')
+                //console.log('get data')
                 returnData += d
             })
             res.on('end', function (date) {
@@ -76,6 +81,9 @@ GetData = (opts, data) => {
             req.write(finalData)
         }
         req.end()
+		//var endTime = process.hrtime(beginTime);
+		//var interval = parseInt(endTime[0] * 1e6 + endTime[1]*1e-3);
+		//console.log('[Results] Caller issue http costs: ', interval, 'us' )
     })
 }
 // deprecated
