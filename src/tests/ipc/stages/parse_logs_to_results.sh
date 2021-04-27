@@ -13,6 +13,11 @@ function parse_logs(){
 	echo "Caller results:"
 	#cat $LOG_DIR/$1-caller_logs.txt | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | grep "callee comm" | awk '{print $9}'
 	cat $LOG_DIR/$1-caller_logs.txt | sed "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g"| sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | grep "callee comm" | awk '{print $9}'
+
+#	echo "Callee results (after receiving, before_sending):"
+#	cat $LOG_DIR/$1-callee_logs.txt |  sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" |  grep "after_receiving" | awk '{print $3, $5}'
+#	echo "Caller results: (after receiving, before_sending):"
+#	cat $LOG_DIR/$1-caller_logs.txt | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | grep "after_receiving" | awk '{print $3, $5}'
 	echo ""
 }
 
