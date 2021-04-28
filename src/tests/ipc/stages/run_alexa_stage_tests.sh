@@ -40,7 +40,7 @@ function run_test_e(){
 	docker stop test_ipc_callee
 	#./docker_run-IPC-server.sh tests/ipc/stages/$NAME/
 	#./docker_run-IPC-server.sh tests/ipc/stages/$1/ $1-callee 12302
-	docker run --rm --name test_ipc_callee --ipc=host -d -it -p 12302:40041 -v /tmp/fifo_dir/:/tmp/fifo_dir -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_ipc_callee.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/$1
+	docker run --rm --name $1-callee --ipc=host -d -it -v /tmp/fifo_dir/:/tmp/fifo_dir -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_ipc_callee.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/$1
 	sleep 1
 }
 
@@ -59,7 +59,7 @@ function run_test_E(){
 	docker stop test_ipc_callee
 	#./docker_run-IPC-server.sh tests/ipc/stages/$NAME/
 	#./docker_run-IPC-server.sh tests/ipc/stages/$1/ $1-callee 12302
-	docker run --rm --name test_ipc_callee --ipc=host -it -p 12302:40041 -v /tmp/fifo_dir/:/tmp/fifo_dir -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_ipc_callee.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/$1
+	docker run --rm --name $1-callee --ipc=host -it -v /tmp/fifo_dir/:/tmp/fifo_dir -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_ipc_callee.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/$1
 	sleep 1
 }
 
