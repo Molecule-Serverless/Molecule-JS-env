@@ -7,6 +7,7 @@
 
 ## The current path should be /env in the container
 source ./env_prepare.sh
-source ./env_frontend.sh
-# node ./index_ipc_base.js
-node ./index_heteroIPC.js
+#source ./env_frontend.sh
+source ./$1/env_caller.sh
+node ./index_ipc_base.js
+#node ./index_heteroIPC.js
