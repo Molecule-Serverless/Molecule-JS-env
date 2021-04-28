@@ -59,7 +59,7 @@ async function handler(req) {
             result = await func({})
         } else {
             //console.log("req body: %s", req.body)
-            console.log("req body: %o", req.body)
+            //console.log("req body: %o", req.body)
             result = await func(req.body)
         }
     } else {
@@ -70,7 +70,7 @@ async function handler(req) {
         localSpan.finish()
     }
     let callee = await mesh.GetCallee(meshData, applicationName, stepName, result, localSpan, span)
-    console.log("get callee %o", callee)
+    //console.log("get callee %o", callee)
     if (!callee) {
         console.log("send result directly %o", result)
         finalResult = result
@@ -97,8 +97,8 @@ async function handler(req) {
 	var endTime = process.hrtime(beginTime);
 	var interval = parseInt(endTime[0] * 1e6 + endTime[1]*1e-3);
 	console.log('[Results] callee comm (round-trip) + exe (callee) costs: ', interval, 'us' )
-        console.log("send result indirectly which is from %o", callee)
-        console.log("response: %o", response)
+	//console.log("send result indirectly which is from %o", callee)
+        //console.log("response: %o", response)
         finalResult = JSON.parse(response)
     } else if (callee.information === null) {
         console.log("error callee.info is null\n")
@@ -142,7 +142,7 @@ async function handler(req) {
         } else {
             finalResult = result;
         }
-        console.log("end of a call: %o", finalResult)
+        //console.log("end of a call: %o", finalResult)
     }
     return finalResult
 }

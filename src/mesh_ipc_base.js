@@ -313,7 +313,7 @@ async function executeBranch(meshData, app, stepName, result, localSpan, span) {
 // GetCallee will give all of getData information which is from mesh control plane
 // stepName is now stepName
 GetCallee = async (meshData, applicationName, stepName, result, localSpan, span) => {
-    console.log("in Get Callee")
+//    console.log("in Get Callee")
     return new Promise(async (resolve, reject) => {
 
 	    //resolve(new CalleeInformation(process.env.NEXTSTEPNAME, process.env.INFORMATION, result))
