@@ -213,6 +213,7 @@ while getopts ":hCnabc:R:E:r:e:i:" opt; do
 			;;
 		n)
 			is_arm=1
+			;;
 		:)
 			echo "Option -$OPTARG requires an argument".
 			exit
