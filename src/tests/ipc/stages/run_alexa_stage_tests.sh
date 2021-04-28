@@ -83,6 +83,43 @@ function run_chain_baseline(){
 	docker stop light
 }
 
+function run_chain_baseline_arm64(){
+	#clean docker
+	#docker stop $(docker ps -aq)
+	docker stop front
+	docker stop interact
+	docker stop smarthome
+	docker stop door
+	docker stop light
+
+	docker run --rm --name front -it -d -p 12301:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_client.sh ddnirvana/molecule-js-env:v3-node14.16.0-arm tests/ipc/stages/front-interact
+
+	docker run --rm --name interact -it -d -p 12302:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_server.sh ddnirvana/molecule-js-env:v3-node14.16.0-arm tests/ipc/stages/front-interact
+
+	docker run --rm --name smarthome -it -d -p 12303:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_server.sh ddnirvana/molecule-js-env:v3-node14.16.0-arm tests/ipc/stages/interact-smarthome
+
+	docker run --rm --name door -it -d -p 12304:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_server.sh ddnirvana/molecule-js-env:v3-node14.16.0-arm tests/ipc/stages/smarthome-door
+
+	docker run --rm --name light -it -d -p 12305:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_server.sh ddnirvana/molecule-js-env:v3-node14.16.0-arm tests/ipc/stages/smarthome-light
+
+	./test_ipc.sh
+
+	docker logs front | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > front_logs.txt
+	docker logs interact | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > interact_logs.txt
+	docker logs smarthome | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > smarthome_logs.txt
+	docker logs door | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > door_logs.txt
+	docker logs light | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > light_logs.txt
+
+	#docker stop $(docker ps -aq)
+
+	#clean docker
+	docker stop front
+	docker stop interact
+	docker stop smarthome
+	docker stop door
+	docker stop light
+}
+
 MOLECULE_ENV_HOME=$(pwd)/../../../../
 # Accept 1 args: e.g., front-interact (i.e., the name of test case)
 function run_test_r(){
@@ -127,10 +164,12 @@ function print_usage(){
 	echo "-R: run a test case's caller (show terminal/blocking), e.g., -r front-interact"
 	echo "-E: run a test case's callee (show terminal/blocking), e.g., -e front-interact"
 	echo "-C: run a chain locally, e.g., -C"
+	echo "-n: enable arm mode, e.g., -n, n means NIC"
 	echo "-i: invoke a test case (need prepared caller and calee), e.g., -e front-interact"
 }
 
-while getopts ":hCabc:R:E:r:e:i:" opt; do
+is_arm=0
+while getopts ":hCnabc:R:E:r:e:i:" opt; do
 	case $opt in
 		a)
 			echo "Run all test cases"
@@ -165,9 +204,16 @@ while getopts ":hCabc:R:E:r:e:i:" opt; do
 			exit
 			;;
 		C)
-			run_chain_baseline
+			if [ $is_arm == 1 ]
+			then
+				run_chain_baseline_arm64
+			else
+				run_chain_baseline
+			fi
 			exit
 			;;
+		n)
+			is_arm=1
 		:)
 			echo "Option -$OPTARG requires an argument".
 			exit
