@@ -1,0 +1,1103 @@
+This should be eight: [33m8[39m
+Node.JS runtime for Molecule-serverless　hetero started
+
+IPC Test Callee Start
+
+[register_self_global] invoked
+[register_self_global] resp: self_global_id: 2
+[register_self_global] shmid_string:/tmp/fifo_dir/shm-2 segment_id: 1476423096
+/env/tests/ipc/stages/interact-smarthome/callee_config.json
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: 1
+_fifo_ipc_init before open
+_fifo_ipc_init after open
+[global_fifo_init_uuid] invoked
+[global_fifo_init_uuid] resp: global_fifo_id: 514
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: 2
+Callee init successfully
+
+fifo_read result: 465, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.7487ff47-239f-42ba-ae5e-e587a6beae72","timestamp":"2021-04-28T03:06:52Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.bc76b905-b9f8-4d7c-b4f3-963d536e40ae","attributes":{}}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    context: { System: [36m[Object][39m },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.7487ff47-239f-42ba-ae5e-e587a6beae72'[39m,
+      timestamp: [32m'2021-04-28T03:06:52Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: [36m[Object][39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: {},
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.bc76b905-b9f8-4d7c-b4f3-963d536e40ae'[39m,
+      attributes: {}
+    }
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m9251[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.0ca27b75-7465-42ae-bb5f-2045f1913bc6'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.e22f392d-3884-48f8-b8a0-db485a825789'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.811bcb36-a5cd-4c95-8ceb-9317170709fc'[39m,
+      timestamp: [32m'2021-04-28T03:06:52Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.e22f392d-3884-48f8-b8a0-db485a825789'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:349 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.811bcb36-a5cd-4c95-8ceb-9317170709fc","timestamp":"2021-04-28T03:06:52Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.e22f392d-3884-48f8-b8a0-db485a825789"}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.811bcb36-a5cd-4c95-8ceb-9317170709fc","timestamp":"2021-04-28T03:06:52Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.e22f392d-3884-48f8-b8a0-db485a825789"}}} >
+callee after_receiving:  [33m1298898520111.657[39m before_sending:  [33m1298898544754.345[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}b36-a5cd-4c95-8ceb-9317170709fc","timestamp":"2021-04-28T03:06:52Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.e22f392d-3884-48f8-b8a0-db485a825789"}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 465, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.c0b8cf57-c2a4-45ea-b3a7-d5b834699555","timestamp":"2021-04-28T03:06:57Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.a9a60c50-1622-486d-9fb0-854f57d79135","attributes":{}}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    context: { System: [36m[Object][39m },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.c0b8cf57-c2a4-45ea-b3a7-d5b834699555'[39m,
+      timestamp: [32m'2021-04-28T03:06:57Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: [36m[Object][39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: {},
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.a9a60c50-1622-486d-9fb0-854f57d79135'[39m,
+      attributes: {}
+    }
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m2546[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.ba2bd341-72fe-45f0-8d3f-962ba81317ce'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.f4739fd0-04f9-49c8-861d-fcef317e04fc'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.f2442204-4572-49d5-ad50-f9cf79a4f394'[39m,
+      timestamp: [32m'2021-04-28T03:06:57Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.f4739fd0-04f9-49c8-861d-fcef317e04fc'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:349 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.f2442204-4572-49d5-ad50-f9cf79a4f394","timestamp":"2021-04-28T03:06:57Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.f4739fd0-04f9-49c8-861d-fcef317e04fc"}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.f2442204-4572-49d5-ad50-f9cf79a4f394","timestamp":"2021-04-28T03:06:57Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.f4739fd0-04f9-49c8-861d-fcef317e04fc"}}} >
+callee after_receiving:  [33m1298903642140.603[39m before_sending:  [33m1298903649132.367[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}204-4572-49d5-ad50-f9cf79a4f394","timestamp":"2021-04-28T03:06:57Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.f4739fd0-04f9-49c8-861d-fcef317e04fc"}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 465, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.c377d4c8-7395-4936-b396-7b31434a72d1","timestamp":"2021-04-28T03:07:02Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.65ee2f19-db44-4544-b80f-ad0eb326bbc5","attributes":{}}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    context: { System: [36m[Object][39m },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.c377d4c8-7395-4936-b396-7b31434a72d1'[39m,
+      timestamp: [32m'2021-04-28T03:07:02Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: [36m[Object][39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: {},
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.65ee2f19-db44-4544-b80f-ad0eb326bbc5'[39m,
+      attributes: {}
+    }
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m1883[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.b03a1404-3172-4825-bf82-f7006c11b600'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.2ec98439-a0fd-4858-817e-401126df5f37'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.f323b037-f463-4499-91c5-717c40a3506a'[39m,
+      timestamp: [32m'2021-04-28T03:07:02Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.2ec98439-a0fd-4858-817e-401126df5f37'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:349 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.f323b037-f463-4499-91c5-717c40a3506a","timestamp":"2021-04-28T03:07:02Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.2ec98439-a0fd-4858-817e-401126df5f37"}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.f323b037-f463-4499-91c5-717c40a3506a","timestamp":"2021-04-28T03:07:02Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.2ec98439-a0fd-4858-817e-401126df5f37"}}} >
+callee after_receiving:  [33m1298908694825.813[39m before_sending:  [33m1298908699528.159[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}037-f463-4499-91c5-717c40a3506a","timestamp":"2021-04-28T03:07:02Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.2ec98439-a0fd-4858-817e-401126df5f37"}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 465, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.e29301e7-8431-460b-9067-0064da536476","timestamp":"2021-04-28T03:07:08Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.1d0f7210-b107-4cb3-8ae5-d0d32eb32ee6","attributes":{}}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    context: { System: [36m[Object][39m },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.e29301e7-8431-460b-9067-0064da536476'[39m,
+      timestamp: [32m'2021-04-28T03:07:08Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: [36m[Object][39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: {},
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.1d0f7210-b107-4cb3-8ae5-d0d32eb32ee6'[39m,
+      attributes: {}
+    }
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m1865[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.4519be60-2065-424d-8951-c7fe15c5f8f2'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.7d6b37c4-e172-45dd-8552-fd8e080c00a8'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.38694138-2256-45c8-b21e-6bb3e92c609c'[39m,
+      timestamp: [32m'2021-04-28T03:07:08Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.7d6b37c4-e172-45dd-8552-fd8e080c00a8'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:349 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.38694138-2256-45c8-b21e-6bb3e92c609c","timestamp":"2021-04-28T03:07:08Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.7d6b37c4-e172-45dd-8552-fd8e080c00a8"}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.38694138-2256-45c8-b21e-6bb3e92c609c","timestamp":"2021-04-28T03:07:08Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.7d6b37c4-e172-45dd-8552-fd8e080c00a8"}}} >
+callee after_receiving:  [33m1298913744570.496[39m before_sending:  [33m1298913749434.513[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}138-2256-45c8-b21e-6bb3e92c609c","timestamp":"2021-04-28T03:07:08Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.7d6b37c4-e172-45dd-8552-fd8e080c00a8"}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 465, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.0f0aff5c-9ffe-4956-9dd7-12d1cd7a7be3","timestamp":"2021-04-28T03:07:13Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.6509b5cf-37d9-41c0-b19e-89f5ca9c9d61","attributes":{}}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    context: { System: [36m[Object][39m },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.0f0aff5c-9ffe-4956-9dd7-12d1cd7a7be3'[39m,
+      timestamp: [32m'2021-04-28T03:07:13Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: [36m[Object][39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: {},
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.6509b5cf-37d9-41c0-b19e-89f5ca9c9d61'[39m,
+      attributes: {}
+    }
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m1852[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.aaf69eb7-ec60-495c-a3da-39700259d14d'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.95d22bbc-c3e3-4ab1-9f1c-88b6601f104a'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.0a2d45a7-02a5-48ea-a808-a4d648d75c68'[39m,
+      timestamp: [32m'2021-04-28T03:07:13Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.95d22bbc-c3e3-4ab1-9f1c-88b6601f104a'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:349 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.0a2d45a7-02a5-48ea-a808-a4d648d75c68","timestamp":"2021-04-28T03:07:13Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.95d22bbc-c3e3-4ab1-9f1c-88b6601f104a"}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.0a2d45a7-02a5-48ea-a808-a4d648d75c68","timestamp":"2021-04-28T03:07:13Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.95d22bbc-c3e3-4ab1-9f1c-88b6601f104a"}}} >
+callee after_receiving:  [33m1298918797569.935[39m before_sending:  [33m1298918802216.653[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}5a7-02a5-48ea-a808-a4d648d75c68","timestamp":"2021-04-28T03:07:13Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.95d22bbc-c3e3-4ab1-9f1c-88b6601f104a"}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 465, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.298529d4-47d6-4e40-9c45-15dc8c5aefd5","timestamp":"2021-04-28T03:07:18Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.39b52af3-d008-42d5-95a8-2dbb7c35ee56","attributes":{}}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    context: { System: [36m[Object][39m },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.298529d4-47d6-4e40-9c45-15dc8c5aefd5'[39m,
+      timestamp: [32m'2021-04-28T03:07:18Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: [36m[Object][39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: {},
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.39b52af3-d008-42d5-95a8-2dbb7c35ee56'[39m,
+      attributes: {}
+    }
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m1877[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.32f05021-10c1-4600-83e1-b0d8f200744b'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.e6e96ddf-16bb-41ef-acb8-631cfe3a3492'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.8b5d1b97-cfff-443e-98f1-04a1cbed0f9d'[39m,
+      timestamp: [32m'2021-04-28T03:07:18Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.e6e96ddf-16bb-41ef-acb8-631cfe3a3492'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:349 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.8b5d1b97-cfff-443e-98f1-04a1cbed0f9d","timestamp":"2021-04-28T03:07:18Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.e6e96ddf-16bb-41ef-acb8-631cfe3a3492"}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.8b5d1b97-cfff-443e-98f1-04a1cbed0f9d","timestamp":"2021-04-28T03:07:18Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.e6e96ddf-16bb-41ef-acb8-631cfe3a3492"}}} >
+callee after_receiving:  [33m1298923857155.819[39m before_sending:  [33m1298923861770.669[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}b97-cfff-443e-98f1-04a1cbed0f9d","timestamp":"2021-04-28T03:07:18Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.e6e96ddf-16bb-41ef-acb8-631cfe3a3492"}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 465, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.40253f72-417a-43bf-b490-c4fff2f4923d","timestamp":"2021-04-28T03:07:23Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.5e36def6-b5cd-4a59-9e6e-2050cb8749d5","attributes":{}}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    context: { System: [36m[Object][39m },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.40253f72-417a-43bf-b490-c4fff2f4923d'[39m,
+      timestamp: [32m'2021-04-28T03:07:23Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: [36m[Object][39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: {},
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.5e36def6-b5cd-4a59-9e6e-2050cb8749d5'[39m,
+      attributes: {}
+    }
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m1768[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.3282107c-6666-42e1-b248-dea49b24181c'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.f305a6af-c966-4214-8a71-f0929ba1066f'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.e6782375-13e4-4d1b-b7d6-b5da8d09537d'[39m,
+      timestamp: [32m'2021-04-28T03:07:23Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.f305a6af-c966-4214-8a71-f0929ba1066f'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:349 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.e6782375-13e4-4d1b-b7d6-b5da8d09537d","timestamp":"2021-04-28T03:07:23Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.f305a6af-c966-4214-8a71-f0929ba1066f"}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.e6782375-13e4-4d1b-b7d6-b5da8d09537d","timestamp":"2021-04-28T03:07:23Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.f305a6af-c966-4214-8a71-f0929ba1066f"}}} >
+callee after_receiving:  [33m1298928905692.606[39m before_sending:  [33m1298928910184.98[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}375-13e4-4d1b-b7d6-b5da8d09537d","timestamp":"2021-04-28T03:07:23Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.f305a6af-c966-4214-8a71-f0929ba1066f"}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 465, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.9934b250-81fe-4a1f-9858-1440367b3ce4","timestamp":"2021-04-28T03:07:28Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.82816fcc-0169-4da5-82e8-a92c312f8635","attributes":{}}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    context: { System: [36m[Object][39m },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.9934b250-81fe-4a1f-9858-1440367b3ce4'[39m,
+      timestamp: [32m'2021-04-28T03:07:28Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: [36m[Object][39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: {},
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.82816fcc-0169-4da5-82e8-a92c312f8635'[39m,
+      attributes: {}
+    }
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m1722[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.550acb32-691a-4d87-bdf5-96fc396a473e'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.b22d2b4b-8a14-4230-9d62-e13b9e5b7823'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.70dbe76d-ba5c-446c-80d0-28521e438bd6'[39m,
+      timestamp: [32m'2021-04-28T03:07:28Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.b22d2b4b-8a14-4230-9d62-e13b9e5b7823'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:349 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.70dbe76d-ba5c-446c-80d0-28521e438bd6","timestamp":"2021-04-28T03:07:28Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.b22d2b4b-8a14-4230-9d62-e13b9e5b7823"}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.70dbe76d-ba5c-446c-80d0-28521e438bd6","timestamp":"2021-04-28T03:07:28Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.b22d2b4b-8a14-4230-9d62-e13b9e5b7823"}}} >
+callee after_receiving:  [33m1298933954692.836[39m before_sending:  [33m1298933959157.87[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}76d-ba5c-446c-80d0-28521e438bd6","timestamp":"2021-04-28T03:07:28Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.b22d2b4b-8a14-4230-9d62-e13b9e5b7823"}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 465, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.ba97070e-d390-4b42-8a84-4e435082208d","timestamp":"2021-04-28T03:07:33Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.6237d0eb-34ab-4cc8-821e-8b5b16eb974a","attributes":{}}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    context: { System: [36m[Object][39m },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.ba97070e-d390-4b42-8a84-4e435082208d'[39m,
+      timestamp: [32m'2021-04-28T03:07:33Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: [36m[Object][39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: {},
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.6237d0eb-34ab-4cc8-821e-8b5b16eb974a'[39m,
+      attributes: {}
+    }
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m1668[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.aee88a7d-6ee2-4d85-a638-60d8714bc900'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.e06bb681-7085-4127-b277-418e82315100'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.d245c24a-5d81-4f40-9a8d-6489b2250819'[39m,
+      timestamp: [32m'2021-04-28T03:07:33Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.e06bb681-7085-4127-b277-418e82315100'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:349 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.d245c24a-5d81-4f40-9a8d-6489b2250819","timestamp":"2021-04-28T03:07:33Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.e06bb681-7085-4127-b277-418e82315100"}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.d245c24a-5d81-4f40-9a8d-6489b2250819","timestamp":"2021-04-28T03:07:33Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.e06bb681-7085-4127-b277-418e82315100"}}} >
+callee after_receiving:  [33m1298939003237.839[39m before_sending:  [33m1298939007667.032[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}24a-5d81-4f40-9a8d-6489b2250819","timestamp":"2021-04-28T03:07:33Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.e06bb681-7085-4127-b277-418e82315100"}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 465, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.b53660bc-0a67-42b5-a229-41e83cec8014","timestamp":"2021-04-28T03:07:38Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.fd9d172a-77eb-4556-91be-af608eb0d7a8","attributes":{}}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    context: { System: [36m[Object][39m },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.b53660bc-0a67-42b5-a229-41e83cec8014'[39m,
+      timestamp: [32m'2021-04-28T03:07:38Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: [36m[Object][39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: {},
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.fd9d172a-77eb-4556-91be-af608eb0d7a8'[39m,
+      attributes: {}
+    }
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17'[39m,
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'IntentRequest'[39m,
+  intent: {
+    name: [32m'EnterHomeIntent'[39m,
+    slots: { password: { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m } }
+  }
+}
+smarthome exe costs:  [33m1635[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: [32m'virtualAlexa.accessToken.343dc528-96bb-4af1-b82f-ffd12e07cae2'[39m,
+    _apiEndpoint: [32m'https://api.amazonalexa.com'[39m,
+    _interactionModel: [36m<ref *1>[39m InteractionModel {
+      slotTypes: SlotTypes { types: [ [36m[NumberSlotType][39m, [length]: [33m1[39m ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [36m[Array][39m },
+        _interactionModel: [36m[Circular *1][39m
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [36m[Array][39m } }
+    },
+    _locale: [32m'en-US'[39m,
+    _session: SkillSession {
+      _id: [32m'SessionID.3c47695e-2334-4a80-86ce-06679bdcda9b'[39m,
+      _new: [33mtrue[39m,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.1dadae21-0ab7-497e-a873-36834dc2f649'[39m,
+      timestamp: [32m'2021-04-28T03:07:38Z'[39m,
+      type: [32m'LaunchRequest'[39m
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.3c47695e-2334-4a80-86ce-06679bdcda9b'[39m
+    }
+  }
+}
+smarthome invoke result.response: [90mundefined[39m
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:349 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.1dadae21-0ab7-497e-a873-36834dc2f649","timestamp":"2021-04-28T03:07:38Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.3c47695e-2334-4a80-86ce-06679bdcda9b"}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.1dadae21-0ab7-497e-a873-36834dc2f649","timestamp":"2021-04-28T03:07:38Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.3c47695e-2334-4a80-86ce-06679bdcda9b"}}} >
+callee after_receiving:  [33m1298944052435.575[39m before_sending:  [33m1298944056908.514[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}e21-0ab7-497e-a873-36834dc2f649","timestamp":"2021-04-28T03:07:38Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.3c47695e-2334-4a80-86ce-06679bdcda9b"}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
