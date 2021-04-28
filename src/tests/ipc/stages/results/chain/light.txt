@@ -1,0 +1,545 @@
+This should be eight: [33m8[39m
+Node.JS runtime for Molecule-serverless　hetero started
+
+IPC Test Callee Start
+
+[register_self_global] invoked
+[register_self_global] resp: self_global_id: 3
+[register_self_global] shmid_string:/tmp/fifo_dir/shm-3 segment_id: 1476412932
+/env/tests/ipc/stages/smarthome-light/callee_config.json
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: 2
+_fifo_ipc_init before open
+_fifo_ipc_init after open
+[global_fifo_init_uuid] invoked
+[global_fifo_init_uuid] resp: global_fifo_id: 515
+Callee init successfully
+
+fifo_read result: 138, buf: {"source":"prev","data":{"version":"1.0","response":"door switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'door switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m9922[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x3, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+callee after_receiving:  [33m1298898579630.462[39m before_sending:  [33m1298898595623.507[39m
+fifo_read result: 138, buf: {"source":"prev","data":{"version":"1.0","response":"door switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'door switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m2101[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x3, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+callee after_receiving:  [33m1298903657338.996[39m before_sending:  [33m1298903660290.111[39m
+fifo_read result: 138, buf: {"source":"prev","data":{"version":"1.0","response":"door switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'door switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m2004[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x3, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+callee after_receiving:  [33m1298908707361.051[39m before_sending:  [33m1298908710211.719[39m
+fifo_read result: 138, buf: {"source":"prev","data":{"version":"1.0","response":"door switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'door switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m2014[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x3, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+callee after_receiving:  [33m1298913760304.599[39m before_sending:  [33m1298913763206.481[39m
+fifo_read result: 138, buf: {"source":"prev","data":{"version":"1.0","response":"door switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'door switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m1938[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x3, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+callee after_receiving:  [33m1298918810102.1[39m before_sending:  [33m1298918812812.541[39m
+fifo_read result: 138, buf: {"source":"prev","data":{"version":"1.0","response":"door switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'door switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m1909[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x3, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+callee after_receiving:  [33m1298923869753.289[39m before_sending:  [33m1298923872424.654[39m
+fifo_read result: 138, buf: {"source":"prev","data":{"version":"1.0","response":"door switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'door switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m2713[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x3, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+callee after_receiving:  [33m1298928918031.501[39m before_sending:  [33m1298928921820.379[39m
+fifo_read result: 138, buf: {"source":"prev","data":{"version":"1.0","response":"door switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'door switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m2567[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x3, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+callee after_receiving:  [33m1298933966523.2[39m before_sending:  [33m1298933970234.887[39m
+fifo_read result: 138, buf: {"source":"prev","data":{"version":"1.0","response":"door switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'door switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m1868[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x3, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+callee after_receiving:  [33m1298939014957.775[39m before_sending:  [33m1298939017641.423[39m
+fifo_read result: 138, buf: {"source":"prev","data":{"version":"1.0","response":"door switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'door switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+    timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+    type: [32m'LaunchRequest'[39m
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: {},
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'[39m
+  }
+}
+in i18n request : {
+  locale: [32m'en-US'[39m,
+  requestId: [32m'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5'[39m,
+  timestamp: [32m'2021-03-11T10:23:19Z'[39m,
+  type: [32m'LaunchRequest'[39m
+}
+light exe costs:  [33m1754[39m us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x3, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+callee after_receiving:  [33m1298944063697.425[39m before_sending:  [33m1298944066197.73[39m
