@@ -37,12 +37,12 @@ int _fifo_ipc_init(int uuid)
 		throw("Error when fifo init\n");
 	}
 	int read_fifo_fd;
-	printf("_fifo_ipc_init before open\n");
+	//printf("_fifo_ipc_init before open\n");
 	if((read_fifo_fd = open(fifo_path, O_RDONLY)) < 0)
 	{
 		throw("Error opening FIFO for read when fifo init\n");
 	}
-	printf("_fifo_ipc_init after open\n");
+	//printf("_fifo_ipc_init after open\n");
 #ifdef FIFO_DEBUG
 	fprintf(stderr, "[%s] uuid: %d, fd: %d\n", __func__, uuid,read_fifo_fd);
 #endif
@@ -57,7 +57,7 @@ int _fifo_ipc_connect(int uuid)
 	char fifo_path[FIFO_PATH_LEN] = "";
 	sprintf(fifo_path, FIFO_PATH_TEMPLATE, uuid);
 	int write_fifo_fd;
-	printf("ipc_connect fifo_path: %s\n",fifo_path);
+	//printf("ipc_connect fifo_path: %s\n",fifo_path);
 	while((write_fifo_fd = open(fifo_path, O_WRONLY)) < 0)
 	{
 		printf("errno: %d\n", errno);

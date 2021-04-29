@@ -50,3 +50,5 @@ docker rm interact
 docker rm smarthome
 docker rm door
 docker rm light
+
+cat front_logs.txt | grep Results | awk '{print $5}' > chain_exe_e2e_results.txt

@@ -233,7 +233,8 @@ async function main() {
         app.use(json())
         app.use(urlencoded({extended: false}))
         app.get('/invoke', async (req, res)=>{
-            console.log("get into invoke\n")
+            //console.log("get into invoke\n")
+            exe_begin_time = get_microsecond()
             ret = await func(req)
             if(has_next)
             {
@@ -242,19 +243,23 @@ async function main() {
                 result = addon.IPCRecv(self_fifo)
                 after_recving_time = get_microsecond()
                 result = JSON.parse(result)
-                console.log("caller receive result\n")
+                //console.log("caller receive result\n")
                 assert(result.source === 'next')
-                console.log("caller after_receiving: ", after_recving_time, "before_sending: ",  before_sending_time)
+                //console.log("caller after_receiving: ", after_recving_time, "before_sending: ",  before_sending_time)
                 // console.log("caller after_receiving: ")
                 // console.log(after_recving_time)
                 // console.log("caller before sending: ")
                 // console.log(before_sending_time)
                 // //TODO: how to return the result to client?
+                exe_end_time = get_microsecond()
                 res.json(result)
+                console.log("[Results] my exec time:", exe_end_time - exe_begin_time)
             }
             else
             {
+                exe_end_time = get_microsecond()
                 res.json(result)
+                console.log("[Results] my exec time:", exe_end_time - exe_begin_time)
             }
         })
         server = app.listen(40041, ()=>
@@ -303,7 +308,7 @@ async function main() {
             console.log(msg)
             if(msg.source === 'prev')
             {
-                console.log("callee get message\n")
+                //console.log("callee get message\n")
                 ret = await func(msg.data)
                 if(has_next)
                 {
@@ -312,7 +317,7 @@ async function main() {
                         source: 'prev',
                         data: ret
                     }))
-                    console.log("callee after_receiving: ", after_recving_time, "before_sending: ",  before_sending_time)
+                    //console.log("callee after_receiving: ", after_recving_time, "before_sending: ",  before_sending_time)
                 }
                 else
                 {
