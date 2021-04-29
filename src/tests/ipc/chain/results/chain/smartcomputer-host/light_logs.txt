@@ -1,28 +1,19 @@
 This should be eight: 8
 Node.JS runtime for Molecule-serverless　hetero started
 
-/home/src/door/index.js
+/home/src/light/index.js
 IPC Test Callee Start
 
-/env/tests/ipc/chain/smarthome-door/callee_config.json
+/env/tests/ipc/stages/door-light/callee_config.json
 Callee init successfully
 
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.db0d9b24-a892-423c-8c25-89e28bf75acb',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.b31344c3-9b0a-4a17-9791-b0b14a9eca37'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -61,33 +52,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  3063 us
+light exe costs:  10556 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742246762.002 before_sending:  1418742263378.456
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.00c891b3-b107-4f30-a43c-a908c796612d',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.9a6f0c86-4c93-4370-acd8-a30fe9101227'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -126,33 +101,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  777 us
+light exe costs:  2891 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742304060.883 before_sending:  1418742308028.573
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.cc6cc7f1-effe-42bc-8bdf-d2d3cae93e64',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.0a986703-a235-4dab-856e-5a376d479490'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -191,33 +150,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  765 us
+light exe costs:  2254 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742342838.701 before_sending:  1418742346151.611
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.bcbe0919-0f63-4e89-aa39-dc88e1542761',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.b8674cfb-2d21-4e4c-8389-0067afc858a5'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -256,33 +199,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  728 us
+light exe costs:  2608 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742380870.683 before_sending:  1418742384700.681
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.0755292f-eb47-4b73-a105-e46d15f6a961',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.013314e2-bd24-4043-9d41-abaa18ccd983'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -321,33 +248,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  729 us
+light exe costs:  2690 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742421887.63 before_sending:  1418742425704.801
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.ff38cdb3-1ff2-4966-b8bc-55a4da216f8a',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.ddb61578-2c08-4d9a-aba4-3531088d9cd1'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -386,33 +297,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  725 us
+light exe costs:  2552 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742459416.593 before_sending:  1418742462974.157
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.3f0b8319-fd1d-4b9d-95e1-42767fc21824',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.48c04e51-f551-4fcc-bfec-8284886044b9'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -451,33 +346,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  721 us
+light exe costs:  2512 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742495293.548 before_sending:  1418742498855.415
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.70cb6847-0ebd-4c51-afeb-eb54953a12fa',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.ebe14465-0002-440a-ac63-7c9f068a1265'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -516,33 +395,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  709 us
+light exe costs:  1826 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742532157.805 before_sending:  1418742534768.496
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.b58e3052-5d2f-4574-9510-705ed6381b6c',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.eb864b5b-b0f1-436e-9265-2c5e6b54fb93'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -581,33 +444,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  700 us
+light exe costs:  2462 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742567853.995 before_sending:  1418742571276.147
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.b435c1b1-e09c-4e69-8965-5ac2b7e74bc6',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.2efeb2ce-4ca7-4f3c-91c2-6be18e4dd9c0'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -646,33 +493,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  662 us
+light exe costs:  2456 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742603356.169 before_sending:  1418742606796.895
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.0682d7c5-1199-4d4f-a8fe-88aec32ede34',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.c5a14730-8e1a-4ef4-8c43-526950d675e7'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -711,33 +542,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  651 us
+light exe costs:  2464 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742636606.886 before_sending:  1418742640157.851
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.d14af173-27b4-4fc9-b081-d1062fdd2809',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.b2bf67ac-df98-4bfb-aaa5-d0835cfe0066'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -776,33 +591,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  787 us
+light exe costs:  2400 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742673178.882 before_sending:  1418742676618.461
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.5e82bc92-5a6f-477e-aa0a-95435c840be5',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.5a97d752-625f-4c3f-97a2-eb64038da58c'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -841,33 +640,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  673 us
+light exe costs:  2404 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742709627.163 before_sending:  1418742713104.928
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.519b7674-857b-4abb-a3c1-05be30d81142',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.cbe08e02-dab9-4640-9f12-f6924228fb04'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -906,33 +689,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  675 us
+light exe costs:  2358 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742746545.79 before_sending:  1418742749989.95
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.84eb3aa9-0b1b-464c-acd2-2d88b568a399',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.8fbe6ced-78b0-4ff8-9acd-60eb1974ea5f'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -971,33 +738,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  649 us
+light exe costs:  2286 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742784588.016 before_sending:  1418742787969.455
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.749fca22-276d-47a0-940f-26d3379abb24',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.db1f7cf1-8d23-4e70-958d-06830cc8d775'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -1036,33 +787,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  668 us
+light exe costs:  2410 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742821995.135 before_sending:  1418742825439.614
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.79d914d2-4c60-4142-a00b-cf990c8ec131',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.0e540bea-0ea0-4ec8-bd23-6f51aba0bf72'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -1101,33 +836,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  681 us
+light exe costs:  2394 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742859543.216 before_sending:  1418742863027.159
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.ef71d68c-2a3a-449c-9cff-d63bd6ef9c33',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.f206c1e3-6090-4bf8-ba0a-d65b1ae95a62'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -1166,33 +885,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  678 us
+light exe costs:  2390 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742895809.634 before_sending:  1418742899245.964
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.4631b24f-9746-4d1e-b63e-2b50bca69c1a',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.26cb0071-53dd-4e7c-b8cd-0f9759437f5a'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -1231,33 +934,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  719 us
+light exe costs:  2363 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742932806.212 before_sending:  1418742936266.149
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.f2dfd61b-0d5d-42df-a5da-4910c839bb91',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.4244dd19-0b6d-4038-ab3e-b39590f9835d'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -1296,33 +983,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  694 us
+light exe costs:  2514 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418742970362.372 before_sending:  1418742973909.271
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.62b85e97-8583-43cd-ab8c-6acef39b043d',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.85feb298-07e5-4a91-820a-2c4ee16ad6d4'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -1361,33 +1032,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  710 us
+light exe costs:  2575 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418743006837.733 before_sending:  1418743010613.489
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.7ba278d6-fbc8-40e0-89e0-c447e41daf15',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.4ee21374-affc-4d29-baba-452f29a9bba0'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -1426,33 +1081,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  905 us
+light exe costs:  3225 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418743047448.736 before_sending:  1418743051793.326
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.5b88c529-3199-492c-b87a-0ded7fb9a7e0',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.71debbdb-4b1b-4f30-b7d5-a6bea1aace7e'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -1491,33 +1130,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  650 us
+light exe costs:  2506 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418743086802.324 before_sending:  1418743090367.145
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.7054e40c-6c8a-4391-b82c-81abff8f198c',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.f6215949-fd4c-45ec-b7aa-f6bd32b40fdd'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -1556,33 +1179,17 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  686 us
+light exe costs:  2426 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418743124134.38 before_sending:  1418743127647.398
 {
   source: 'prev',
   data: {
-    context: { System: [Object] },
-    request: {
-      locale: 'en-US',
-      requestId: 'amzn1.echo-external.request.cecd25d3-f9c3-43f8-8aff-619b4e2623bd',
-      timestamp: '2021-04-29T11:42:03Z',
-      type: 'LaunchRequest'
-    },
     version: '1.0',
-    session: {
-      application: {},
-      new: true,
-      sessionId: 'SessionID.6522e57b-43d8-4fb5-a8d9-9e48ab722588'
-    }
+    response: 'door switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
   }
 }
 args in door-index :{
@@ -1621,14 +1228,7 @@ in i18n request : {
   timestamp: '2021-03-11T10:23:19Z',
   type: 'LaunchRequest'
 }
-door exe costs:  639 us
+light exe costs:  1476 us
 request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
-{
-  source: 'next',
-  data: {
-    version: '1.0',
-    response: 'light switch: ON',
-    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
-    sessionAttributes: {}
-  }
-}
+callee return result
+callee after_receiving:  1418743158172.926 before_sending:  1418743160285.064
