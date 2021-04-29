@@ -1,0 +1,197 @@
+This should be eight: 8
+Node.JS runtime for Molecule-serverless　hetero started
+
+IPC Test Callee Start
+
+[register_self_global] invoked
+[register_self_global] resp: self_global_id: 2
+[register_self_global] shmid_string:/tmp/fifo_dir/shm-2 segment_id: 1477529451
+/env/tests/ipc/stages/front-interact/callee_config.json
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: 1
+_fifo_ipc_init before open
+_fifo_ipc_init after open
+[global_fifo_init_uuid] invoked
+[global_fifo_init_uuid] resp: global_fifo_id: 2
+Callee init successfully
+
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: 'prev',
+  data: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.16082d41-12f6-4d47-8aa9-4b978c9a3dbe',
+    timestamp: '2021-04-27T03:07:13Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.baa8385b-51f5-4b0d-8bec-0651e631851a',
+    attributes: {}
+  }
+}
+interact exe costs:  3442 us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:465 fifo_write_content:  {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.16082d41-12f6-4d47-8aa9-4b978c9a3dbe","timestamp":"2021-04-27T03:07:13Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.baa8385b-51f5-4b0d-8bec-0651e631851a","attributes":{}}}}
+global fifo write result: 465, buf: {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.16082d41-12f6-4d47-8aa9-4b978c9a3dbe","timestamp":"2021-04-27T03:07:13Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.baa8385b-51f5-4b0d-8bec-0651e631851a","attributes":{}}}} >
+callee after_receiving:  211771124255.286 before_sending:  211771129241.398
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: 'prev',
+  data: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.67b68668-209f-43d6-8569-c7a7ec29c7a9',
+    timestamp: '2021-04-27T03:07:13Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.397a6dc6-9c5e-493e-af0a-80873e2559d0',
+    attributes: {}
+  }
+}
+interact exe costs:  942 us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:465 fifo_write_content:  {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.67b68668-209f-43d6-8569-c7a7ec29c7a9","timestamp":"2021-04-27T03:07:13Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.397a6dc6-9c5e-493e-af0a-80873e2559d0","attributes":{}}}}
+global fifo write result: 465, buf: {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.67b68668-209f-43d6-8569-c7a7ec29c7a9","timestamp":"2021-04-27T03:07:13Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.397a6dc6-9c5e-493e-af0a-80873e2559d0","attributes":{}}}} >
+callee after_receiving:  211771139476.654 before_sending:  211771140674.91
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: 'prev',
+  data: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.807b8006-bdbd-4dfe-a2e6-4b23e7111094',
+    timestamp: '2021-04-27T03:07:14Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.0bcd3af4-7e87-418a-a1be-815825a9f307',
+    attributes: {}
+  }
+}
+interact exe costs:  705 us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:465 fifo_write_content:  {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.807b8006-bdbd-4dfe-a2e6-4b23e7111094","timestamp":"2021-04-27T03:07:14Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.0bcd3af4-7e87-418a-a1be-815825a9f307","attributes":{}}}}
+global fifo write result: 465, buf: {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.807b8006-bdbd-4dfe-a2e6-4b23e7111094","timestamp":"2021-04-27T03:07:14Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.0bcd3af4-7e87-418a-a1be-815825a9f307","attributes":{}}}} >
+callee after_receiving:  211771147969.136 before_sending:  211771148934.359
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: 'prev',
+  data: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.595a43da-6a3d-4d8d-a7fc-29b1fc22231c',
+    timestamp: '2021-04-27T03:07:14Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.e8a33d3f-1a5b-40c8-8ece-b3cc417c7f0a',
+    attributes: {}
+  }
+}
+interact exe costs:  688 us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:465 fifo_write_content:  {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.595a43da-6a3d-4d8d-a7fc-29b1fc22231c","timestamp":"2021-04-27T03:07:14Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.e8a33d3f-1a5b-40c8-8ece-b3cc417c7f0a","attributes":{}}}}
+global fifo write result: 465, buf: {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.595a43da-6a3d-4d8d-a7fc-29b1fc22231c","timestamp":"2021-04-27T03:07:14Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.e8a33d3f-1a5b-40c8-8ece-b3cc417c7f0a","attributes":{}}}} >
+callee after_receiving:  211771156081.315 before_sending:  211771156995.984
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: 'prev',
+  data: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.3160d514-7c5e-489a-b97c-abbe67888ac6',
+    timestamp: '2021-04-27T03:07:14Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.f6c26687-c88c-4702-bbff-02ba66354f5f',
+    attributes: {}
+  }
+}
+interact exe costs:  618 us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x2, len:465 fifo_write_content:  {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.3160d514-7c5e-489a-b97c-abbe67888ac6","timestamp":"2021-04-27T03:07:14Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.f6c26687-c88c-4702-bbff-02ba66354f5f","attributes":{}}}}
+global fifo write result: 465, buf: {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.3160d514-7c5e-489a-b97c-abbe67888ac6","timestamp":"2021-04-27T03:07:14Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.f6c26687-c88c-4702-bbff-02ba66354f5f","attributes":{}}}} >
+callee after_receiving:  211771163931.279 before_sending:  211771164752.325

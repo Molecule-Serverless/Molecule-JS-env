@@ -291,7 +291,7 @@ async function main() {
         {
             msg = addon.IPCRecv(self_fifo)
             after_recving_time = get_microsecond()
-            if(msg != null)
+	    if(msg != "")
             {
                 msg = JSON.parse(msg)
             }
@@ -327,7 +327,7 @@ async function main() {
             }
             else if(msg.source === 'next')
             {
-                addon.IPCSend(prev_fifo, msg)
+	        addon.IPCSend(prev_fifo, JSON.stringify(msg))
             }
             else
             {
