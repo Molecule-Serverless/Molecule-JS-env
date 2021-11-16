@@ -53,4 +53,6 @@ do
 done
 cat results/logs/alexa-$TEST_NAME.txt | grep "exe costs" >> results/data/alexa-$TEST_NAME.txt
 
-
+echo "All the tests finished and passed"
+echo "Check the results/data/ for the final execution latency for each function"
+echo "You can also refer results/logs/ for the logs of the tests"
