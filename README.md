@@ -16,6 +16,8 @@ First, you should download molecule-js-env and molecule-benchmarks from gitlab, 
 1st terminal:
 
 	cd PATH-to-molecule-js-env/src
+	# Init the test environment
+	./scripts/docker_test_init.sh
 	./scripts/docker_run-IPC-client.sh
 
 2nd terminal:
