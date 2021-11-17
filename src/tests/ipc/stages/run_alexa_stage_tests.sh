@@ -3,13 +3,22 @@
 function run_test(){
 	#NAME=interact-smarthome
 	#./docker_run-IPC-client.sh tests/ipc/stages/$NAME/
+	echo "[IPC Unit Test Begin]" Run IPC test for $1-caller and $1-callee
+
+	docker stop $1-caller > /dev/null 2>&1
+	docker stop $1-callee > /dev/null 2>&1
+
 	./docker_run-IPC-client.sh tests/ipc/stages/$1/ $1-caller
 	sleep 1
 	#./docker_run-IPC-server.sh tests/ipc/stages/$NAME/
 	./docker_run-IPC-server.sh tests/ipc/stages/$1/ $1-callee 12302
 	sleep 1
 
-	./test_ipc.sh
+	echo "[Test]" caller and callee function started
+
+	./test_ipc.sh > /dev/null 2>&1
+
+	echo "[Test]" invoke the function chain for 100 times finished
 
 	sleep 2
 
@@ -20,15 +29,21 @@ function run_test(){
 
 	##Clean
 	#docker stop $(docker ps -aq)
-	docker stop ipc_stage_test_caller
-	docker stop ipc_stage_test_callee
+	docker stop ipc_stage_test_caller > /dev/null 2>&1
+	docker stop ipc_stage_test_callee > /dev/null 2>&1
+	docker stop $1-caller > /dev/null 2>&1
+	docker stop $1-callee > /dev/null 2>&1
+
+	echo "[IPC Unit Test End]" IPC test for $1-caller and $1-callee finished, dump results:
+
+	./parse_data.sh $1
 }
 
 function run_all(){
 	##Clean
 	#docker stop $(docker ps -aq)
-		docker stop ipc_stage_test_caller
-		docker stop ipc_stage_test_callee
+	docker stop ipc_stage_test_caller > /dev/null 2>&1
+	docker stop ipc_stage_test_callee > /dev/null 2>&1
 
 	# 1. front-end -> interact
 	run_test front-interact

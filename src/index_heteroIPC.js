@@ -242,9 +242,12 @@ async function main() {
                 result = addon.IPCRecv(self_fifo)
                 after_recving_time = get_microsecond()
                 result = JSON.parse(result)
+				// The logging will not impact the results as we have recorded
+				// the time
                 console.log("caller receive result\n")
                 assert(result.source === 'next')
                 console.log("caller after_receiving: ", after_recving_time, "before_sending: ",  before_sending_time)
+                console.log("callee + round-trip comm: ", after_recving_time - before_sending_time, " us")
                 // console.log("caller after_receiving: ")
                 // console.log(after_recving_time)
                 // console.log("caller before sending: ")
@@ -322,7 +325,8 @@ async function main() {
                         source: 'next',
                         data: ret
                     }))
-                    console.log("callee after_receiving: ", after_recving_time, "before_sending: ", before_sending_time)
+                    //console.log("callee after_receiving: ", after_recving_time, "before_sending: ", before_sending_time)
+                	console.log("calleee takes: ", before_sending_time - after_recving_time, " us")
                 }
             }
             else if(msg.source === 'next')
