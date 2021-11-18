@@ -22,7 +22,7 @@ function run_test(){
 	##Clean
 	docker stop $(docker ps -aq) > /dev/null 2>&1
 	echo "[Serverless DAG (cross-PU) test]" $1 test finished, dump results:
-	#./parse_data.sh $1
+	./parse_data.sh $1
 }
 
 
