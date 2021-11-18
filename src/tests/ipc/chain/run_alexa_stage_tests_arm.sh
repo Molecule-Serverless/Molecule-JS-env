@@ -3,14 +3,13 @@
 function run_test(){
 	#NAME=interact-smarthome
 	#./docker_run-IPC-client.sh tests/ipc/stages/$NAME/
-	echo "[Serverless DAG (cross-PU) test]" Run $1 test
 	./docker_run-IPC-client.sh tests/ipc/stages/$1/ $1-caller
 	sleep 1
 	#./docker_run-IPC-server.sh tests/ipc/stages/$NAME/
 	./docker_run-IPC-server.sh tests/ipc/stages/$1/ $1-callee 12302
 	sleep 1
 
-	./test_ipc.sh > /dev/null 2>&1
+	./test_ipc.sh
 
 	sleep 2
 
@@ -20,9 +19,7 @@ function run_test(){
 	docker logs $1-callee | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" > $1-callee_logs.txt
 
 	##Clean
-	docker stop $(docker ps -aq) > /dev/null 2>&1
-	echo "[Serverless DAG (cross-PU) test]" $1 test finished, dump results:
-	#./parse_data.sh $1
+	docker stop $(docker ps -aq)
 }
 
 
@@ -34,7 +31,7 @@ function run_test_r(){
 	#./docker_run-IPC-client.sh tests/ipc/stages/$NAME/
 	#./docker_run-IPC-client.sh tests/ipc/stages/$1/ $1-caller
 	docker stop test_ipc_caller
-	docker run --rm --name test_ipc_caller --ipc=host -d -it -p 12301:40041 -v /tmp/fifo_dir/:/tmp/fifo_dir -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_ipc_caller.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/$1/
+	docker run --rm --name test_ipc_caller --ipc=host -d -it -p 12301:40041 -v /tmp/fifo_dir/:/tmp/fifo_dir -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_ipc_caller.sh ddnirvana/molecule-js-env:v3-node14.16.0-arm tests/ipc/stages/$1/
 	sleep 1
 }
 
@@ -43,7 +40,7 @@ function run_test_e(){
 	docker stop test_ipc_callee
 	#./docker_run-IPC-server.sh tests/ipc/stages/$NAME/
 	#./docker_run-IPC-server.sh tests/ipc/stages/$1/ $1-callee 12302
-	docker run --rm --name test_ipc_callee --ipc=host -d -it -p 12302:40041 -v /tmp/fifo_dir/:/tmp/fifo_dir -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_ipc_callee.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/$1
+	docker run --rm --name $1-callee --ipc=host -d -it -v /tmp/fifo_dir/:/tmp/fifo_dir -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_ipc_callee.sh ddnirvana/molecule-js-env:v3-node14.16.0-arm tests/ipc/stages/$1
 	sleep 1
 }
 
@@ -53,7 +50,7 @@ function run_test_R(){
 	#./docker_run-IPC-client.sh tests/ipc/stages/$NAME/
 	#./docker_run-IPC-client.sh tests/ipc/stages/$1/ $1-caller
 	docker stop test_ipc_caller
-	docker run --rm --name test_ipc_caller --ipc=host -it -p 12301:40041 -v /tmp/fifo_dir/:/tmp/fifo_dir -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_ipc_caller.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/$1/
+	docker run --rm --name test_ipc_caller --ipc=host -it -p 12301:40041 -v /tmp/fifo_dir/:/tmp/fifo_dir -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_ipc_caller.sh ddnirvana/molecule-js-env:v3-node14.16.0-arm tests/ipc/stages/$1/
 	sleep 1
 }
 
@@ -62,7 +59,7 @@ function run_test_E(){
 	docker stop test_ipc_callee
 	#./docker_run-IPC-server.sh tests/ipc/stages/$NAME/
 	#./docker_run-IPC-server.sh tests/ipc/stages/$1/ $1-callee 12302
-	docker run --rm --name test_ipc_callee --ipc=host -it -p 12302:40041 -v /tmp/fifo_dir/:/tmp/fifo_dir -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_ipc_callee.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/$1
+	docker run --rm --name $1-callee --ipc=host -it -v /tmp/fifo_dir/:/tmp/fifo_dir -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_ipc_callee.sh ddnirvana/molecule-js-env:v3-node14.16.0-arm tests/ipc/stages/$1
 	sleep 1
 }
 
@@ -82,7 +79,7 @@ function run_test_invoke(){
 
 function run_all(){
 	##Clean
-	docker stop $(docker ps -aq) > /dev/null 2>&1
+	docker stop $(docker ps -aq)
 
 	# 1. front-end -> interact
 	run_test front-interact
@@ -97,7 +94,7 @@ function run_all(){
 	run_test smarthome-light
 
 	##Clean
-	docker stop $(docker ps -aq) > /dev/null 2>&1
+	docker stop $(docker ps -aq)
 }
 
 function print_usage(){

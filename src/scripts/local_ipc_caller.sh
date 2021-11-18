@@ -9,6 +9,7 @@
 TEST_PATH=$1
 source ./env_prepare.sh
 # source ./$TEST_PATH/env_caller.sh
+pwd
 source ./$TEST_PATH/env_ipc_caller.sh
 # node ./index_ipc_base.js
 node ./index_heteroIPC.js

@@ -245,6 +245,7 @@ async function main() {
                 // console.log("caller receive result\n")
                 assert(result.source === 'next')
                 console.log("caller after_receiving: ", after_recving_time, "before_sending: ",  before_sending_time)
+				console.log("callee + round-trip comm: ", after_recving_time - before_sending_time, " us")
                 // console.log("caller after_receiving: ")
                 // console.log(after_recving_time)
                 // console.log("caller before sending: ")
@@ -315,6 +316,7 @@ async function main() {
                         data: ret
                     }))
                     console.log("callee after_receiving: ", after_recving_time, "before_sending: ",  before_sending_time)
+					console.log("calleee takes: ", before_sending_time - after_recving_time, " us")
                 }
                 else
                 {
@@ -325,6 +327,7 @@ async function main() {
                         data: ret
                     }))
                     console.log("callee after_receiving: ", after_recving_time, "before_sending: ", before_sending_time)
+					console.log("calleee takes: ", before_sending_time - after_recving_time, " us")
                 }
             }
             else if(msg.source === 'next')
