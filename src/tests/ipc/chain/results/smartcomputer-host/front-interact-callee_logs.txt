@@ -1,0 +1,515 @@
+Node.JS runtime for Molecule-serverless started
+
+Example app listening on port 40041
+{ target: [32m'/home/src/interact/index.js'[39m }
+function init at express
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'interact'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'69'[39m,
+  host: [32m'172.17.0.1:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: { skill: [32m'smarthome'[39m, utter: [32m'open smarthome to I love Taylor Swift'[39m }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.758f276e-02bc-44f0-aea4-bc80192dff28'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.968d058d-960c-42f4-a8d1-6fa11335b307'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m4597[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.758f276e-02bc-44f0-aea4-bc80192dff28'[39m,
+      timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.968d058d-960c-42f4-a8d1-6fa11335b307'[39m,
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.758f276e-02bc-44f0-aea4-bc80192dff28'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.968d058d-960c-42f4-a8d1-6fa11335b307'[39m,
+    attributes: {}
+  }
+}
+[Results] exe (handler) costs:  [33m6530[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.758f276e-02bc-44f0-aea4-bc80192dff28'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.968d058d-960c-42f4-a8d1-6fa11335b307'[39m,
+    attributes: {}
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'interact'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'69'[39m,
+  host: [32m'172.17.0.1:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: { skill: [32m'smarthome'[39m, utter: [32m'open smarthome to I love Taylor Swift'[39m }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.032aeccd-9dd2-4abd-a02b-8f38dc0326b0'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f4321093-46cd-4445-84b8-dc758b8a224f'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m1326[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.032aeccd-9dd2-4abd-a02b-8f38dc0326b0'[39m,
+      timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.f4321093-46cd-4445-84b8-dc758b8a224f'[39m,
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.032aeccd-9dd2-4abd-a02b-8f38dc0326b0'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f4321093-46cd-4445-84b8-dc758b8a224f'[39m,
+    attributes: {}
+  }
+}
+[Results] exe (handler) costs:  [33m2685[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.032aeccd-9dd2-4abd-a02b-8f38dc0326b0'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.f4321093-46cd-4445-84b8-dc758b8a224f'[39m,
+    attributes: {}
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'interact'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'69'[39m,
+  host: [32m'172.17.0.1:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: { skill: [32m'smarthome'[39m, utter: [32m'open smarthome to I love Taylor Swift'[39m }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.2adf82ac-8401-4297-b2b0-d61313bb5573'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.0ee683bc-1f1b-4b98-be3c-41365a07a398'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m2574[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.2adf82ac-8401-4297-b2b0-d61313bb5573'[39m,
+      timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.0ee683bc-1f1b-4b98-be3c-41365a07a398'[39m,
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.2adf82ac-8401-4297-b2b0-d61313bb5573'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.0ee683bc-1f1b-4b98-be3c-41365a07a398'[39m,
+    attributes: {}
+  }
+}
+[Results] exe (handler) costs:  [33m5389[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.2adf82ac-8401-4297-b2b0-d61313bb5573'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.0ee683bc-1f1b-4b98-be3c-41365a07a398'[39m,
+    attributes: {}
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'interact'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'69'[39m,
+  host: [32m'172.17.0.1:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: { skill: [32m'smarthome'[39m, utter: [32m'open smarthome to I love Taylor Swift'[39m }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.45ff75d3-1d3b-4da7-a853-a36397108a95'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.d2f02ce8-c557-4e27-bcc9-d39d86cb19eb'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m1534[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.45ff75d3-1d3b-4da7-a853-a36397108a95'[39m,
+      timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.d2f02ce8-c557-4e27-bcc9-d39d86cb19eb'[39m,
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.45ff75d3-1d3b-4da7-a853-a36397108a95'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.d2f02ce8-c557-4e27-bcc9-d39d86cb19eb'[39m,
+    attributes: {}
+  }
+}
+[Results] exe (handler) costs:  [33m3409[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.45ff75d3-1d3b-4da7-a853-a36397108a95'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.d2f02ce8-c557-4e27-bcc9-d39d86cb19eb'[39m,
+    attributes: {}
+  }
+}
+{
+  [32m'uber-trace-id'[39m: [32m'2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1'[39m,
+  [32m'step-name'[39m: [32m'interact'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'69'[39m,
+  host: [32m'172.17.0.1:12302'[39m,
+  connection: [32m'close'[39m
+}
+req body: { skill: [32m'smarthome'[39m, utter: [32m'open smarthome to I love Taylor Swift'[39m }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.358f7115-4621-4b6b-aa55-64151afbbe49'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.daafb3aa-663d-4bb2-9401-5de74866f3f9'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m1964[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [90mundefined[39m,
+  information: [90mundefined[39m,
+  result: {
+    context: { System: { application: { applicationId: [90mundefined[39m } } },
+    request: {
+      locale: [32m'en-US'[39m,
+      requestId: [32m'amzn1.echo-external.request.358f7115-4621-4b6b-aa55-64151afbbe49'[39m,
+      timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+      type: [32m'IntentRequest'[39m,
+      intent: { name: [32m'EnterHomeIntent'[39m, slots: { password: [36m[SlotValue][39m } }
+    },
+    version: [32m'1.0'[39m,
+    session: {
+      application: { applicationId: [90mundefined[39m },
+      new: [33mtrue[39m,
+      sessionId: [32m'SessionID.daafb3aa-663d-4bb2-9401-5de74866f3f9'[39m,
+      attributes: {}
+    }
+  }
+}
+end of a call: {
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.358f7115-4621-4b6b-aa55-64151afbbe49'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.daafb3aa-663d-4bb2-9401-5de74866f3f9'[39m,
+    attributes: {}
+  }
+}
+[Results] exe (handler) costs:  [33m4864[39m us
+result:{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.358f7115-4621-4b6b-aa55-64151afbbe49'[39m,
+    timestamp: [32m'2021-04-09T02:51:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.daafb3aa-663d-4bb2-9401-5de74866f3f9'[39m,
+    attributes: {}
+  }
+}

@@ -1,0 +1,1585 @@
+Node.JS runtime for Molecule-serverless started
+
+Example app listening on port 40041
+{ target: '/home/src/smarthome/index.js' }
+function init at express
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  4559 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.8b97f15c-3555-4adf-acd9-91a2a0cd249c',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.dcd3d037-72b1-44e4-9590-a7e4ccf98f91',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.2133c1e8-4013-47ac-85cf-21abeae1cdca',
+      timestamp: '2021-04-28T13:06:44Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.dcd3d037-72b1-44e4-9590-a7e4ccf98f91'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  141989 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  2342 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.44a5351d-1042-4c11-b8c7-55ed9a63e952',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.49e123d5-6eea-4f36-9d35-e132027eb2b1',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.e2cfa2af-2887-42b3-a6f2-46e983cce155',
+      timestamp: '2021-04-28T13:06:45Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.49e123d5-6eea-4f36-9d35-e132027eb2b1'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  61871 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  2997 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.b9ae88d3-b32e-46b7-9cbb-409ab917560c',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.d7fb5cad-1861-4e30-9f54-7ef7a57728ed',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.479c5155-e020-4e70-a0b5-26c49c3d050f',
+      timestamp: '2021-04-28T13:06:46Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.d7fb5cad-1861-4e30-9f54-7ef7a57728ed'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  25361 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  1849 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.fe02efa7-d8ed-45f1-aa3e-3668617a894e',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.ebcc0600-957d-4a28-83a5-4d0a72f44447',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.d5992917-65d7-430f-a952-91b2beb72150',
+      timestamp: '2021-04-28T13:06:47Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.ebcc0600-957d-4a28-83a5-4d0a72f44447'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  24596 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  2722 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.4f5d29a3-4aae-4f5d-93dc-94b6b28f273f',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.1da185d3-1f79-47ba-af16-6748ddf3c4fd',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.d1af61e3-46f0-465a-b937-0fcef85d2268',
+      timestamp: '2021-04-28T13:06:48Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.1da185d3-1f79-47ba-af16-6748ddf3c4fd'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  24983 us
+[Results] exe (handler) costs:  151731 us
+[Results] exe (handler) costs:  67360 us
+[Results] exe (handler) costs:  32137 us
+[Results] exe (handler) costs:  29230 us
+[Results] exe (handler) costs:  31727 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  1933 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.e68efb50-8125-4ca6-b01e-4610ca981c45',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.885df165-6b95-46ca-aafc-0fa48721a76f',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.5a04e49c-1962-4268-885b-37fca2dd8927',
+      timestamp: '2021-04-28T13:06:49Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.885df165-6b95-46ca-aafc-0fa48721a76f'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  24448 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  2760 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.38ea3b6d-2fb2-4282-9cfb-240a76a8d614',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.c5df76ad-69f5-48c1-9249-c1618d23f333',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.98b5a02c-61d5-4d25-82f5-d80e22cf8a35',
+      timestamp: '2021-04-28T13:06:50Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.c5df76ad-69f5-48c1-9249-c1618d23f333'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  23577 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  2538 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.eb51caa7-69f3-483f-ac10-501acc23414d',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.ab3ed10d-b5fa-4bf0-8d20-0bfb60ea4f91',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.56689b3d-89dd-4547-b685-0917ac3084fe',
+      timestamp: '2021-04-28T13:06:51Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.ab3ed10d-b5fa-4bf0-8d20-0bfb60ea4f91'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  23653 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  3190 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.4e6da8bf-0ac9-4e0c-8270-6d395928d0c9',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.67ab3407-4339-4e9d-8bb4-762ef552e57f',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.9ca99627-2ba3-490e-acc4-452db25511b1',
+      timestamp: '2021-04-28T13:06:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.67ab3407-4339-4e9d-8bb4-762ef552e57f'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  27480 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  2448 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.28cc2965-0c7c-4bf9-83f0-5c6cb5cfe1c2',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.2e4a89d2-42bd-4e56-813f-551f489cc1a9',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.ea392ec0-8206-4151-b198-6966174888fd',
+      timestamp: '2021-04-28T13:06:54Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.2e4a89d2-42bd-4e56-813f-551f489cc1a9'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  24769 us
+[Results] exe (handler) costs:  29320 us
+[Results] exe (handler) costs:  30187 us
+[Results] exe (handler) costs:  30080 us
+[Results] exe (handler) costs:  35549 us
+[Results] exe (handler) costs:  30281 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  1795 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.53c33f6f-e6e8-42ff-b9f4-a818dcb7c602',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.ccc0f0c5-6ead-4eab-8fc7-782aaef2d0cf',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.2e1bea70-b36e-4b1c-8d84-b000ffa6c71f',
+      timestamp: '2021-04-28T13:06:55Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.ccc0f0c5-6ead-4eab-8fc7-782aaef2d0cf'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  23675 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  2492 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.b0bac705-98f0-41c6-b887-6522042cee5f',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.6b7425f5-c683-4950-9966-1076bad8c4a9',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.dc35ea89-e3cb-4b3f-a2c1-61ee0b4befa8',
+      timestamp: '2021-04-28T13:06:56Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.6b7425f5-c683-4950-9966-1076bad8c4a9'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  22567 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  2395 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.209c1f6e-b7a8-45f3-8967-ee7717c847be',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.ea98af53-ad28-4fbc-852c-1c4a19e3754d',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.3327b247-170d-43ce-90db-519e9ec06a16',
+      timestamp: '2021-04-28T13:06:57Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.ea98af53-ad28-4fbc-852c-1c4a19e3754d'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  21445 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  1735 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.c05816a2-2a62-4b7e-a023-dbc64f6d398c',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.d44dab29-b347-4f65-81e3-f13532fa6a2d',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.97fb9b7d-0550-4f2e-bb0d-19722af6f0a2',
+      timestamp: '2021-04-28T13:06:58Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.d44dab29-b347-4f65-81e3-f13532fa6a2d'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  22467 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  2456 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.8b25d35b-dfed-434d-8916-e58014fe0fe8',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.bb848bb8-49a1-4ea5-86c3-2d3611cdbb7e',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.c88cda55-29b5-417b-a4ca-8f2a1fa78cf0',
+      timestamp: '2021-04-28T13:06:59Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.bb848bb8-49a1-4ea5-86c3-2d3611cdbb7e'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  20886 us
+[Results] exe (handler) costs:  28329 us
+[Results] exe (handler) costs:  29688 us
+[Results] exe (handler) costs:  26922 us
+[Results] exe (handler) costs:  26996 us
+[Results] exe (handler) costs:  26976 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  3134 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.3ca9fcc3-376d-4734-8690-f76c6d6b86ff',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.dc8a0666-b8ea-4edb-8bf4-e062d492815d',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.9e3fd879-b040-4640-93f8-8dd0a9cdbf5e',
+      timestamp: '2021-04-28T13:07:00Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.dc8a0666-b8ea-4edb-8bf4-e062d492815d'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  20736 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  1735 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.eb155f7e-5ffc-4fb4-817e-99a4ce73fbe9',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.e4adc8ca-c54c-468f-bb89-a0ce7a413fc3',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.80c50bc7-3b34-4da4-80fb-d7a1335dd858',
+      timestamp: '2021-04-28T13:07:01Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.e4adc8ca-c54c-468f-bb89-a0ce7a413fc3'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  21321 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  2473 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.2094aa63-8d26-4c19-8fe7-202784305b60',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.a2f9fe5c-ff88-4450-812a-3ae1de08f8e9',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.2bbb5e91-b608-4e0f-bfe3-5d93074da7db',
+      timestamp: '2021-04-28T13:07:02Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.a2f9fe5c-ff88-4450-812a-3ae1de08f8e9'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  20647 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  1838 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.4ca33550-e134-4e57-aae4-b92d1acec619',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.0204ad67-f2f2-451a-aa6c-6f255673012d',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.9a84fe10-d8b1-4f22-ad8f-4ce284bc440d',
+      timestamp: '2021-04-28T13:07:03Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.0204ad67-f2f2-451a-aa6c-6f255673012d'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  22280 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'smarthome',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '440',
+  host: '192.168.120.1:12303',
+  connection: 'close'
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  1862 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.14f20a8f-58d0-4862-b6b9-ce7d6bf3b0ff',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.91683446-1521-4872-adce-fcb9a35fe92e',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.2fd3700f-ba17-43e4-8881-c8ce3a541b21',
+      timestamp: '2021-04-28T13:07:04Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.91683446-1521-4872-adce-fcb9a35fe92e'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+[Results] callee comm (round-trip) + exe (callee) costs:  22030 us
+[Results] exe (handler) costs:  26537 us
+[Results] exe (handler) costs:  25836 us
+[Results] exe (handler) costs:  26424 us
+[Results] exe (handler) costs:  27031 us
+[Results] exe (handler) costs:  26846 us

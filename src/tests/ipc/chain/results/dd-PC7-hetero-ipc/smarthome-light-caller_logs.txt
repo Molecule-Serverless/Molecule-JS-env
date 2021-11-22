@@ -1,0 +1,1839 @@
+This should be eight: 8
+Node.JS runtime for Molecule-serverless　hetero started
+
+/home/src/smarthome/index.js
+IPC Test Caller Start
+
+/env/tests/ipc/stages/smarthome-light/caller_config.json
+_fifo_ipc_init before open
+_fifo_ipc_init after open
+ipc_connect fifo_path: /env/ipc_fifo_server-16111
+caller init successfully
+
+caller listening in port 40041
+
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  4101 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.9de19273-a06c-45a9-a108-9e65d6d3a56d',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.d708530a-f031-40fc-9783-9fd118a8fd6a',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.f25a027d-7019-4f61-aa16-6f0e90c91aad',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.d708530a-f031-40fc-9783-9fd118a8fd6a'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316627046.769 before_sending:  875316621470.657
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  704 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.ed36f103-3589-49e7-93fc-fe473c7b3f9c',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.1f04f03b-be49-4c0d-85b5-aae3e7536e6e',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.4b067c97-6d89-4255-bd25-1d54875ae4ee',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.1f04f03b-be49-4c0d-85b5-aae3e7536e6e'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316639408.804 before_sending:  875316638105.771
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  684 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.597bd1b7-51f5-4c47-aac8-6cbc1789d679',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.61e430c5-88d5-4d62-aef1-c69f566320af',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.141c969b-1a72-4e44-80a1-fa86105ef20a',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.61e430c5-88d5-4d62-aef1-c69f566320af'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316648793.635 before_sending:  875316647549.998
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  711 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.40dfef72-e4ef-40af-9e70-4362eeb830c4',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.3537f6b6-f35a-46e8-83c3-6b8240c9d77a',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.ace67382-3e24-48a9-88f9-eb9dc1e57118',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.3537f6b6-f35a-46e8-83c3-6b8240c9d77a'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316658033.53 before_sending:  875316656846.429
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  703 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.6479a4dd-52bf-4bdc-81a9-ce20fccbf569',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.d215f880-0f20-49d1-a34e-fea67f94d48a',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.112fc9e6-6f96-4cc7-bbe7-6ace8b442890',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.d215f880-0f20-49d1-a34e-fea67f94d48a'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316667206.312 before_sending:  875316666049.561
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  688 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.4bc9a16a-83d6-4442-aa55-f1e543855a97',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.c52710b5-6663-4966-8d7d-e8a52d6087f3',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.0c9cbf02-4b2e-4f03-9776-c86f1f23003c',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.c52710b5-6663-4966-8d7d-e8a52d6087f3'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316676349.237 before_sending:  875316675128.327
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  674 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.26fbffa8-e0af-4a56-b50f-270ffbf882ff',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.8085c26c-128f-492d-a65c-6dcfdb083a01',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.1b379dcd-a1fe-4b2d-bf65-41b72fed4c2a',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.8085c26c-128f-492d-a65c-6dcfdb083a01'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316685479.646 before_sending:  875316684312.351
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  668 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.c0272a62-ec71-4270-b280-95c051d80af5',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.3de864ab-4b0b-491a-90fe-01a0bb48d4f7',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.efd9b70a-4b9d-483a-92f3-2fb82541d4f0',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.3de864ab-4b0b-491a-90fe-01a0bb48d4f7'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316694468.422 before_sending:  875316693355.4
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  633 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.f812c5ad-0d20-4073-8713-76bf7bb27878',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.20d530f5-31cd-46ad-8e5d-03e177ba9617',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.24f4cb08-cf1b-496c-ae8c-edd49e4c8524',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.20d530f5-31cd-46ad-8e5d-03e177ba9617'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316703485.116 before_sending:  875316702370.331
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  642 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.2fb780dc-79f2-4916-a9ea-a5417d02868e',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.8e197994-23ec-4fda-9efd-8d6b8483a912',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.b561034b-973b-4b53-81fb-cff404baac39',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.8e197994-23ec-4fda-9efd-8d6b8483a912'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316712411.986 before_sending:  875316711276.138
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  646 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.6e648023-ca21-4f7f-8c92-d9c814c51c21',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.80097919-896a-4935-ada9-2c9548da5c96',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.b323f3a1-4ca9-4737-a412-a3deac01389a',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.80097919-896a-4935-ada9-2c9548da5c96'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316721327.328 before_sending:  875316720177.979
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  674 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.d9d3fc54-706b-49b1-90c4-8819e52cefc7',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.ddbf9b8b-bdc5-4be7-879d-e8fdf08f0777',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.7011d050-918a-431d-a5cc-34b44a04ae99',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.ddbf9b8b-bdc5-4be7-879d-e8fdf08f0777'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316730519.492 before_sending:  875316729430.96
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  644 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.3588533f-0854-4ea9-9ff0-d80bd1bb9caf',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.36c7706d-9f77-4eb0-b0d9-e6c268fed265',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.fd3e1ca3-0f79-4256-ab49-d21b9b30c940',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.36c7706d-9f77-4eb0-b0d9-e6c268fed265'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316739457.099 before_sending:  875316738362.42
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  607 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.6c2f3e6b-0265-4eb3-a625-4bf8896fee74',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.7b6398c8-4b34-44b8-a18a-0b8f2431fbac',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.d695e6dc-ce13-4ef8-97a4-88abaa0c8f2c',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.7b6398c8-4b34-44b8-a18a-0b8f2431fbac'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316748177.327 before_sending:  875316747128.272
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  641 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.33abb008-d576-468e-ac28-5584b0cc94f1',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.de3b8db9-c299-4ec3-9c12-15d42fbbbd02',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.cf637ab0-302d-40e8-8d85-72ba3b90a9ab',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.de3b8db9-c299-4ec3-9c12-15d42fbbbd02'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316756951.176 before_sending:  875316755925.547
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  627 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.f9be5330-08b6-467f-82a3-393a812fc194',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.5bf6fd57-f58b-4023-a5c8-f66fc5da18e0',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.597f4d1c-2ea7-477a-9094-9a59b9e4c5e6',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.5bf6fd57-f58b-4023-a5c8-f66fc5da18e0'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316765852.527 before_sending:  875316764719.289
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  628 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.40370dd8-2bbf-406b-8070-7c27137a5cd7',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.dcd528c2-3d25-4f66-92c7-f1ecc7fac7b7',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.00ca7cb5-2c7f-4384-93d9-47f26ea0335a',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.dcd528c2-3d25-4f66-92c7-f1ecc7fac7b7'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316774666.479 before_sending:  875316773625.266
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  697 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.640c602d-3947-4000-afb9-e00b1f488a2d',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.ffb759f0-e411-4168-aa0f-07277c33f708',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.e21954a2-87de-41cd-84ed-4927bb8e3699',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.ffb759f0-e411-4168-aa0f-07277c33f708'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316783625.196 before_sending:  875316782503.547
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  653 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.df8e6395-60c5-4319-a350-41f52f8f19e1',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.6bfecbd2-d159-40b8-813a-e5e7ddfee66a',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.0a1a5c6d-f39d-4fa4-ac6f-e155e3629118',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.6bfecbd2-d159-40b8-813a-e5e7ddfee66a'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316792557.292 before_sending:  875316791360.904
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  902 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.94cd6c88-5fb4-4715-8ce7-dd51e7f48733',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.29ac821d-4f97-4887-9f11-310529df818c',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.ad8f161c-9c14-4170-9265-8eef4b6e6aab',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.29ac821d-4f97-4887-9f11-310529df818c'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316801839.585 before_sending:  875316800570.945
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  640 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.caa13658-94c8-433b-ac72-e3bb51ae2362',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.c617bc2f-316f-46a2-8dbd-32b834875ecc',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.1111e905-3afa-4bbc-a58e-0f91b4fd3f62',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.c617bc2f-316f-46a2-8dbd-32b834875ecc'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316810877.741 before_sending:  875316809676.784
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  627 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.6553bdef-bdd7-4789-b301-acea01946657',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.46865a57-f2b7-462f-aca3-c3ef0f4837b5',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.32c005f7-50b6-4b83-a4ff-7ee6f7052b3d',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.46865a57-f2b7-462f-aca3-c3ef0f4837b5'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316820035.699 before_sending:  875316818706.215
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  612 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.e3d35d90-e927-4e45-917f-d3599895190a',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.df315ec4-5ab2-4877-b7a5-0c30ad025f62',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.7be6ab8e-89b1-4f5a-bbd0-dd947f38387a',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.df315ec4-5ab2-4877-b7a5-0c30ad025f62'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316829110.84 before_sending:  875316827989.395
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  642 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.3efda755-f555-4f56-885d-908bebd1f729',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.40259f10-df04-4b8e-bf8c-c4df819a25cf',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.dbe9e794-dfea-45d4-8b5a-58794f9caae7',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.40259f10-df04-4b8e-bf8c-c4df819a25cf'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316838080.657 before_sending:  875316836941.985
+get into invoke
+
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: { password: { name: 'password', value: 'Taylor Swift' } }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f061d76a-ce58-45e3-be52-d839d91e1a17',
+    attributes: {}
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'IntentRequest',
+  intent: {
+    name: 'EnterHomeIntent',
+    slots: { password: { name: 'password', value: 'Taylor Swift' } }
+  }
+}
+smarthome exe costs:  647 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.c2ac317f-ed36-4c8f-90a3-23723ad0ea2a","timestamp":"2021-03-11T10:23:19Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}}
+enterRequest: SkillRequest {
+  context: SkillContext {
+    _apiAccessToken: 'virtualAlexa.accessToken.9c119517-0c01-4b23-b7c5-86dbd1058ff2',
+    _apiEndpoint: 'https://api.amazonalexa.com',
+    _interactionModel: <ref *1> InteractionModel {
+      slotTypes: SlotTypes { types: [ [NumberSlotType], [length]: 1 ] },
+      sampleUtterances: SampleUtterances {
+        samples: { EnterHomeIntent: [Array] },
+        _interactionModel: [Circular *1]
+      },
+      intentSchema: IntentSchema { schemaJSON: { intents: [Array] } }
+    },
+    _locale: 'en-US',
+    _session: SkillSession {
+      _id: 'SessionID.0122043b-881d-4193-9e64-5eb11c402e59',
+      _new: true,
+      _attributes: {}
+    }
+  },
+  _json: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.a4112e05-b0be-4b1b-8a11-7b50b1593016',
+      timestamp: '2021-04-18T05:50:52Z',
+      type: 'LaunchRequest'
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.0122043b-881d-4193-9e64-5eb11c402e59'
+    }
+  }
+}
+smarthome invoke result.response: undefined
+caller receive result
+
+caller after_receiving:  875316847044.353 before_sending:  875316845956.847
