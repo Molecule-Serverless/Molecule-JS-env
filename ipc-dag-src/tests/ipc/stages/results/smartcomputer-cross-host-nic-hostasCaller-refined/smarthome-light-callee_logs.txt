@@ -1,0 +1,1605 @@
+Node.JS runtime for Molecule-serverless started
+
+Example app listening on port 40041
+{ target: '/home/src/light/index.js' }
+function init at express
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.905cfb3a-e5c6-4274-a04c-d3a3726f9f81',
+    timestamp: '2021-04-25T08:27:01Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.57ff1399-e4e8-401e-86aa-c5757f2b2ada'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  19766 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.7eae85b7-dede-46a4-8a62-347b94df3780',
+    timestamp: '2021-04-25T08:27:02Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.1f051828-3048-4d82-aa60-2a84c72befcc'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  4560 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.03fb1708-e2bd-4e49-9b47-c8ba3c6b558b',
+    timestamp: '2021-04-25T08:27:03Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.63345f02-0dc9-4bd2-ad7f-d09d1b34a574'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  4375 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.34256b2a-81ca-4c8f-a3f3-31bd6995cd5c',
+    timestamp: '2021-04-25T08:27:04Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.5565e962-0d9a-480c-a38e-3c988a99fee6'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  4404 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.1332d0ce-c5a3-41d0-93d7-3ce7207a9ac9',
+    timestamp: '2021-04-25T08:27:05Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.815eb20e-4166-4739-b66e-2980c85fccd1'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  4295 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+[Results] exe (handler) costs:  32793 us
+[Results] exe (handler) costs:  8916 us
+[Results] exe (handler) costs:  8250 us
+[Results] exe (handler) costs:  8430 us
+[Results] exe (handler) costs:  8152 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.d91986a8-2ff4-43e6-89d4-2008e7c2beec',
+    timestamp: '2021-04-25T08:27:06Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.08a9a194-7aad-42cd-a4e9-cb20493f2b1b'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  4113 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.2e1eecb3-fc11-4f4b-ae12-c44921119131',
+    timestamp: '2021-04-25T08:27:07Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.5cdd69c0-a56e-4d6a-a6b3-acec41070c8e'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  4015 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.08e8052c-bc53-494f-b007-397ef2e8e6d5',
+    timestamp: '2021-04-25T08:27:08Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.d359cbf7-517c-41d1-afd6-00c4eb0c7dab'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  3904 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.50f47389-06e1-46e3-8705-d25cf7ecaedc',
+    timestamp: '2021-04-25T08:27:09Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.8c0a4592-a41f-4083-82cf-1e613206864c'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  3908 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c132fd39-ebba-4748-981a-4384a43011ce',
+    timestamp: '2021-04-25T08:27:10Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.1cc7066e-8f0b-4a69-bdaf-5773b19ff86e'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  3601 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+[Results] exe (handler) costs:  8005 us
+[Results] exe (handler) costs:  7894 us
+[Results] exe (handler) costs:  7781 us
+[Results] exe (handler) costs:  7668 us
+[Results] exe (handler) costs:  7399 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.43503a25-54c7-4265-bf2d-00a6aa9ec228',
+    timestamp: '2021-04-25T08:27:11Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.d99dbd05-d77b-4dd4-bb0f-bbc89b032530'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  3870 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.49f7a9ea-c6b5-4dd6-93d2-4c58a412c3be',
+    timestamp: '2021-04-25T08:27:12Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.dbabb484-69d7-49eb-9feb-1ee2bb92892e'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  3850 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.51252dac-12a5-4999-a150-84dbb082eff4',
+    timestamp: '2021-04-25T08:27:13Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.c2db3c01-d910-4e9e-ae57-0e918a17ca59'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  3647 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.3739aa6d-df2e-4e38-b635-9e682f81ac33',
+    timestamp: '2021-04-25T08:27:14Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.f390778b-5d9e-4918-bfed-ae94298b60cc'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  3934 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.2cb3d135-24be-494c-bb1c-9d9071250d37',
+    timestamp: '2021-04-25T08:27:15Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.7eb454d9-aca2-483f-b780-162a8f7872d2'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  4029 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+[Results] exe (handler) costs:  7605 us
+[Results] exe (handler) costs:  7859 us
+[Results] exe (handler) costs:  7504 us
+[Results] exe (handler) costs:  8051 us
+[Results] exe (handler) costs:  8243 us
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.754d5ca8-367b-4ef8-b8e7-7906f78da16e',
+    timestamp: '2021-04-25T08:27:16Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.6a026adc-0a09-4447-bd35-d0cf052bdf9b'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  3865 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.6090a939-f588-4e30-a527-1070de42127f',
+    timestamp: '2021-04-25T08:27:17Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.4edb439e-86be-4a63-b3ec-39df73591209'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  3695 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.f9b3effe-5ecc-4e69-8237-7025328e1a28',
+    timestamp: '2021-04-25T08:27:18Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2df4d164-f314-4a8b-b4a1-96c850212772'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  3853 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.977cc76b-2a10-45be-91fb-06d2ea61d27c',
+    timestamp: '2021-04-25T08:27:20Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.0b4e7239-64ea-417d-ab95-ebeb5d62e42f'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  3738 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+{
+  'uber-trace-id': '2a0285386f62c81a:2a0285386f62c81a:0000000000000000:1',
+  'step-name': 'light',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '324',
+  host: '192.168.120.2:12302',
+  connection: 'close'
+}
+req body: {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c276c2d2-d7c4-4dfd-bf28-ba27d9775cab',
+    timestamp: '2021-04-25T08:27:21Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bcc10ed-f8fa-441d-b54a-f1d3a3830144'
+  }
+}
+args in door-index :{
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n envelop : {
+  context: { System: { application: {} } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+    timestamp: '2021-03-11T10:23:19Z',
+    type: 'LaunchRequest'
+  },
+  version: '1.0',
+  session: {
+    application: {},
+    new: true,
+    sessionId: 'SessionID.2bbe5504-dcc3-4239-9518-28d0e91457b6'
+  }
+}
+in i18n request : {
+  locale: 'en-US',
+  requestId: 'amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5',
+  timestamp: '2021-03-11T10:23:19Z',
+  type: 'LaunchRequest'
+}
+light exe costs:  3781 us
+request: {"locale":"en-US","requestId":"amzn1.echo-external.request.532b9a7f-5dcb-4d3b-a366-740e095ddcf5","timestamp":"2021-03-11T10:23:19Z","type":"LaunchRequest"}
+in Get Callee
+get callee CalleeInformation {
+  stepName: undefined,
+  information: undefined,
+  result: {
+    version: '1.0',
+    response: 'light switch: ON',
+    userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+    sessionAttributes: {}
+  }
+}
+end of a call: {
+  version: '1.0',
+  response: 'light switch: ON',
+  userAgent: 'ask-node/2.10.1 Node/v14.16.0',
+  sessionAttributes: {}
+}
+[Results] exe (handler) costs:  7923 us
+[Results] exe (handler) costs:  7821 us
+[Results] exe (handler) costs:  7796 us
+[Results] exe (handler) costs:  7717 us
+[Results] exe (handler) costs:  7675 us

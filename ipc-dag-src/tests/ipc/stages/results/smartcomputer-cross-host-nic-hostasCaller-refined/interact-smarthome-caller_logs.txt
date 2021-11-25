@@ -1,0 +1,1865 @@
+Node.JS runtime for Molecule-serverless started
+
+Example app listening on port 40041
+{ target: '/home/src/interact/index.js' }
+function init at express
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.54763c98-aef1-4dbe-a193-f5852ad328c1',
+    timestamp: '2021-04-25T08:23:24Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.d4071a56-a39f-4ef1-9766-1111713c7982',
+    attributes: {}
+  }
+}
+interact exe costs:  4300 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.54763c98-aef1-4dbe-a193-f5852ad328c1',
+      timestamp: '2021-04-25T08:23:24Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.d4071a56-a39f-4ef1-9766-1111713c7982',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  135843 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.54763c98-aef1-4dbe-a193-f5852ad328c1',
+      timestamp: '2021-04-25T08:23:24Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.d4071a56-a39f-4ef1-9766-1111713c7982',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.9c50ca1b-6023-44b6-b7ff-bbb2fb246842","timestamp":"2021-04-25T08:23:25Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.08df8c31-9603-4e6f-9a15-1d048a09e9ab"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.2171c6a3-f272-4894-a868-30c7721c96f9',
+    timestamp: '2021-04-25T08:23:26Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.212bbdf7-2a62-4de9-80ec-8ee1c2a981a9',
+    attributes: {}
+  }
+}
+interact exe costs:  3045 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.2171c6a3-f272-4894-a868-30c7721c96f9',
+      timestamp: '2021-04-25T08:23:26Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.212bbdf7-2a62-4de9-80ec-8ee1c2a981a9',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  26190 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.2171c6a3-f272-4894-a868-30c7721c96f9',
+      timestamp: '2021-04-25T08:23:26Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.212bbdf7-2a62-4de9-80ec-8ee1c2a981a9',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.c6d9449e-88ea-471d-82be-5756c4e6dd70","timestamp":"2021-04-25T08:23:26Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.3ec99cd8-3c97-4c02-8b84-bd9c017215ae"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.a78572f2-3e8e-41b0-b2ef-716cfbff13cd',
+    timestamp: '2021-04-25T08:23:27Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.c0e9426f-5aec-475f-8aba-d7df9dc9b27c',
+    attributes: {}
+  }
+}
+interact exe costs:  1630 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.a78572f2-3e8e-41b0-b2ef-716cfbff13cd',
+      timestamp: '2021-04-25T08:23:27Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.c0e9426f-5aec-475f-8aba-d7df9dc9b27c',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  22329 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.a78572f2-3e8e-41b0-b2ef-716cfbff13cd',
+      timestamp: '2021-04-25T08:23:27Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.c0e9426f-5aec-475f-8aba-d7df9dc9b27c',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.552ae079-354e-4b92-aa4a-739dd57983b7","timestamp":"2021-04-25T08:23:27Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.a5ecf58d-0a23-4820-a5a8-ba7aecb01b6f"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.9d641c85-3dc9-4938-a783-4ff6485cf452',
+    timestamp: '2021-04-25T08:23:28Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.14b0b827-af6a-4b5c-aa8a-81bd025b3984',
+    attributes: {}
+  }
+}
+interact exe costs:  2105 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.9d641c85-3dc9-4938-a783-4ff6485cf452',
+      timestamp: '2021-04-25T08:23:28Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.14b0b827-af6a-4b5c-aa8a-81bd025b3984',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  21528 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.9d641c85-3dc9-4938-a783-4ff6485cf452',
+      timestamp: '2021-04-25T08:23:28Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.14b0b827-af6a-4b5c-aa8a-81bd025b3984',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.2b17a003-bfbd-4944-9b9a-3e1c2a386986","timestamp":"2021-04-25T08:23:28Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.2b71bc92-20a2-4efe-802a-43f0208f5254"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.4073bd0c-0a70-47e5-a4d8-06403ae98b33',
+    timestamp: '2021-04-25T08:23:29Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.a75dd2a6-f4e0-42fb-aa82-68b54921ef53',
+    attributes: {}
+  }
+}
+interact exe costs:  1541 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.4073bd0c-0a70-47e5-a4d8-06403ae98b33',
+      timestamp: '2021-04-25T08:23:29Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.a75dd2a6-f4e0-42fb-aa82-68b54921ef53',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  21718 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.4073bd0c-0a70-47e5-a4d8-06403ae98b33',
+      timestamp: '2021-04-25T08:23:29Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.a75dd2a6-f4e0-42fb-aa82-68b54921ef53',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.4f6e77ee-9b42-403e-a4d6-93abbdd70172","timestamp":"2021-04-25T08:23:29Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.c1d3afb0-ab73-4774-a215-3ab12cbbb410"}}'
+[Results] exe (handler) costs:  144323 us
+[Results] exe (handler) costs:  33100 us
+[Results] exe (handler) costs:  26906 us
+[Results] exe (handler) costs:  26958 us
+[Results] exe (handler) costs:  25828 us
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.88f23f8c-10c8-4410-98e3-3eb161c016d4',
+    timestamp: '2021-04-25T08:23:30Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.30c9757f-1891-40de-bd52-29047f30ef07',
+    attributes: {}
+  }
+}
+interact exe costs:  3369 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.88f23f8c-10c8-4410-98e3-3eb161c016d4',
+      timestamp: '2021-04-25T08:23:30Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.30c9757f-1891-40de-bd52-29047f30ef07',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  20994 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.88f23f8c-10c8-4410-98e3-3eb161c016d4',
+      timestamp: '2021-04-25T08:23:30Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.30c9757f-1891-40de-bd52-29047f30ef07',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.72c7e888-73a6-4924-bb42-1aa88a34889f","timestamp":"2021-04-25T08:23:30Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.9635aef9-5f63-4a01-8bd4-56801391833a"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.4764e13f-101d-4308-b52c-c151d18f34f2',
+    timestamp: '2021-04-25T08:23:31Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.5e8405c6-783f-4ba6-b18c-280beb83c7fa',
+    attributes: {}
+  }
+}
+interact exe costs:  2102 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.4764e13f-101d-4308-b52c-c151d18f34f2',
+      timestamp: '2021-04-25T08:23:31Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.5e8405c6-783f-4ba6-b18c-280beb83c7fa',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  22070 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.4764e13f-101d-4308-b52c-c151d18f34f2',
+      timestamp: '2021-04-25T08:23:31Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.5e8405c6-783f-4ba6-b18c-280beb83c7fa',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.098b80c0-f4c7-4109-abb2-3b414cf00c4a","timestamp":"2021-04-25T08:23:31Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.555cf971-c974-4784-944f-8df882270541"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.007509d3-7c03-48b4-9279-a3c771527c9c',
+    timestamp: '2021-04-25T08:23:32Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.e7d478bd-7964-46ea-87c2-6d530a9a249e',
+    attributes: {}
+  }
+}
+interact exe costs:  1915 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.007509d3-7c03-48b4-9279-a3c771527c9c',
+      timestamp: '2021-04-25T08:23:32Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.e7d478bd-7964-46ea-87c2-6d530a9a249e',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  22707 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.007509d3-7c03-48b4-9279-a3c771527c9c',
+      timestamp: '2021-04-25T08:23:32Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.e7d478bd-7964-46ea-87c2-6d530a9a249e',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.323ea398-4e23-4a0d-9946-8840bcded5e2","timestamp":"2021-04-25T08:23:32Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.ad3c050c-01e8-41da-a806-592dab28989f"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.1fb4cbed-297c-4876-8e40-a755dab02d0e',
+    timestamp: '2021-04-25T08:23:33Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.a7f226a0-fa20-46cd-b692-7d98bfd17d83',
+    attributes: {}
+  }
+}
+interact exe costs:  2084 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.1fb4cbed-297c-4876-8e40-a755dab02d0e',
+      timestamp: '2021-04-25T08:23:33Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.a7f226a0-fa20-46cd-b692-7d98bfd17d83',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  20147 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.1fb4cbed-297c-4876-8e40-a755dab02d0e',
+      timestamp: '2021-04-25T08:23:33Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.a7f226a0-fa20-46cd-b692-7d98bfd17d83',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.4526d4ce-ca63-44c3-8fa6-c9f5f8115ade","timestamp":"2021-04-25T08:23:33Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.b3c756c2-77fc-4b76-ad22-8efdc80f15d5"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.3e6ace14-2d5d-4395-ae3d-2b4aa8e3c8ce',
+    timestamp: '2021-04-25T08:23:34Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.c73cf970-c177-4426-b0b7-1f70d1892315',
+    attributes: {}
+  }
+}
+interact exe costs:  2171 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.3e6ace14-2d5d-4395-ae3d-2b4aa8e3c8ce',
+      timestamp: '2021-04-25T08:23:34Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.c73cf970-c177-4426-b0b7-1f70d1892315',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  20026 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.3e6ace14-2d5d-4395-ae3d-2b4aa8e3c8ce',
+      timestamp: '2021-04-25T08:23:34Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.c73cf970-c177-4426-b0b7-1f70d1892315',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.1340e950-3297-427d-abbf-7001e589fab5","timestamp":"2021-04-25T08:23:34Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.ed8523fb-f97f-49b1-b2e0-0407d65175dc"}}'
+[Results] exe (handler) costs:  26996 us
+[Results] exe (handler) costs:  27431 us
+[Results] exe (handler) costs:  28000 us
+[Results] exe (handler) costs:  25792 us
+[Results] exe (handler) costs:  25901 us
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.3c0521a0-5b38-4c9d-91b3-ec7681d55f91',
+    timestamp: '2021-04-25T08:23:35Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.fbfa16de-3cb2-4202-a51a-e101766daebf',
+    attributes: {}
+  }
+}
+interact exe costs:  2202 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.3c0521a0-5b38-4c9d-91b3-ec7681d55f91',
+      timestamp: '2021-04-25T08:23:35Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.fbfa16de-3cb2-4202-a51a-e101766daebf',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  19348 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.3c0521a0-5b38-4c9d-91b3-ec7681d55f91',
+      timestamp: '2021-04-25T08:23:35Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.fbfa16de-3cb2-4202-a51a-e101766daebf',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.603e2ed8-1327-4d16-b9b8-43f363c34f99","timestamp":"2021-04-25T08:23:35Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.46be5919-41f7-4010-ba42-0008e70ba282"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.b06493b6-0ef1-4a99-b414-eb54976ef52c',
+    timestamp: '2021-04-25T08:23:36Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.90a8fcf3-75a0-4d6b-b55a-d971bdc2f13c',
+    attributes: {}
+  }
+}
+interact exe costs:  1500 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.b06493b6-0ef1-4a99-b414-eb54976ef52c',
+      timestamp: '2021-04-25T08:23:36Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.90a8fcf3-75a0-4d6b-b55a-d971bdc2f13c',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  19324 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.b06493b6-0ef1-4a99-b414-eb54976ef52c',
+      timestamp: '2021-04-25T08:23:36Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.90a8fcf3-75a0-4d6b-b55a-d971bdc2f13c',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.88ebc123-b580-4ed2-bc00-0320a7ca7685","timestamp":"2021-04-25T08:23:36Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.2c706047-9e67-4dfa-ac28-23e8d2f4e5ef"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.54836366-ae43-46e8-9c28-1dd2829fdb3b',
+    timestamp: '2021-04-25T08:23:37Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.40ed295a-9e17-4cc9-9cad-d0854186d018',
+    attributes: {}
+  }
+}
+interact exe costs:  2058 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.54836366-ae43-46e8-9c28-1dd2829fdb3b',
+      timestamp: '2021-04-25T08:23:37Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.40ed295a-9e17-4cc9-9cad-d0854186d018',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  19442 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.54836366-ae43-46e8-9c28-1dd2829fdb3b',
+      timestamp: '2021-04-25T08:23:37Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.40ed295a-9e17-4cc9-9cad-d0854186d018',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.1c2f8241-4317-43c2-b4e0-ab412ff0734c","timestamp":"2021-04-25T08:23:37Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.e6b2b54c-2126-4702-94a7-f4c20783e0f3"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.c1df971f-afc3-4d41-a7e4-002ca07f92f9',
+    timestamp: '2021-04-25T08:23:38Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.a04e21d8-e44d-4d25-a468-89a791efd090',
+    attributes: {}
+  }
+}
+interact exe costs:  2024 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.c1df971f-afc3-4d41-a7e4-002ca07f92f9',
+      timestamp: '2021-04-25T08:23:38Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.a04e21d8-e44d-4d25-a468-89a791efd090',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  19896 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.c1df971f-afc3-4d41-a7e4-002ca07f92f9',
+      timestamp: '2021-04-25T08:23:38Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.a04e21d8-e44d-4d25-a468-89a791efd090',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.989bc493-c08a-4091-9a48-2477717508c5","timestamp":"2021-04-25T08:23:38Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.95294a94-3c77-427e-b783-9b8e964320b0"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.a400f247-5704-4d7c-ad03-e09223ef937a',
+    timestamp: '2021-04-25T08:23:39Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.2953d6c7-5940-4ad4-aa1e-15cf51486e83',
+    attributes: {}
+  }
+}
+interact exe costs:  1797 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.a400f247-5704-4d7c-ad03-e09223ef937a',
+      timestamp: '2021-04-25T08:23:39Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.2953d6c7-5940-4ad4-aa1e-15cf51486e83',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  19227 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.a400f247-5704-4d7c-ad03-e09223ef937a',
+      timestamp: '2021-04-25T08:23:39Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.2953d6c7-5940-4ad4-aa1e-15cf51486e83',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.f937c0ac-0101-4dc4-b717-cd28114af333","timestamp":"2021-04-25T08:23:39Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.4364bdc0-1187-4f7b-a1a9-f386f93f8358"}}'
+[Results] exe (handler) costs:  24997 us
+[Results] exe (handler) costs:  23386 us
+[Results] exe (handler) costs:  24800 us
+[Results] exe (handler) costs:  25217 us
+[Results] exe (handler) costs:  24234 us
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.dd032ad5-6f77-4389-8a5b-a6b4083efe07',
+    timestamp: '2021-04-25T08:23:40Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.e000e248-d9f6-4611-b77a-e17b9150eeb4',
+    attributes: {}
+  }
+}
+interact exe costs:  1253 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.dd032ad5-6f77-4389-8a5b-a6b4083efe07',
+      timestamp: '2021-04-25T08:23:40Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.e000e248-d9f6-4611-b77a-e17b9150eeb4',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  23156 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.dd032ad5-6f77-4389-8a5b-a6b4083efe07',
+      timestamp: '2021-04-25T08:23:40Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.e000e248-d9f6-4611-b77a-e17b9150eeb4',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.c1f6b8a7-ae4d-414a-8cc6-92eb9ca713ed","timestamp":"2021-04-25T08:23:40Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.5f887972-7753-4532-a494-507ee2569f5b"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.5208ceb7-3e42-4e7a-8aa5-3ceefbac7dff',
+    timestamp: '2021-04-25T08:23:41Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.ca8640ac-82fe-4009-896c-7db591d3bb91',
+    attributes: {}
+  }
+}
+interact exe costs:  1981 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.5208ceb7-3e42-4e7a-8aa5-3ceefbac7dff',
+      timestamp: '2021-04-25T08:23:41Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.ca8640ac-82fe-4009-896c-7db591d3bb91',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  26330 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.5208ceb7-3e42-4e7a-8aa5-3ceefbac7dff',
+      timestamp: '2021-04-25T08:23:41Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.ca8640ac-82fe-4009-896c-7db591d3bb91',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.47ec267d-b806-4ef6-a793-86ddbe6d47c6","timestamp":"2021-04-25T08:23:41Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.c09842a0-8eee-45cf-8d3c-47ca53ca1872"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.bb4ebd47-92da-4806-9ce4-2e08f726dac9',
+    timestamp: '2021-04-25T08:23:42Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.e87d9776-0431-4811-b32e-3363dcc2de14',
+    attributes: {}
+  }
+}
+interact exe costs:  1552 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.bb4ebd47-92da-4806-9ce4-2e08f726dac9',
+      timestamp: '2021-04-25T08:23:42Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.e87d9776-0431-4811-b32e-3363dcc2de14',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  26644 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.bb4ebd47-92da-4806-9ce4-2e08f726dac9',
+      timestamp: '2021-04-25T08:23:42Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.e87d9776-0431-4811-b32e-3363dcc2de14',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.af9b0cbb-eeb0-4e1a-94d3-8b262545d5ab","timestamp":"2021-04-25T08:23:42Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.a33e5fbc-e2a2-437a-aab5-d24a0cc9e19c"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.cd017b3b-89ee-4e3c-92d7-d1b6683d64ba',
+    timestamp: '2021-04-25T08:23:43Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.fe6699f9-1dd3-4fea-b01a-c55e051d0792',
+    attributes: {}
+  }
+}
+interact exe costs:  1933 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.cd017b3b-89ee-4e3c-92d7-d1b6683d64ba',
+      timestamp: '2021-04-25T08:23:43Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.fe6699f9-1dd3-4fea-b01a-c55e051d0792',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  19956 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.cd017b3b-89ee-4e3c-92d7-d1b6683d64ba',
+      timestamp: '2021-04-25T08:23:43Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.fe6699f9-1dd3-4fea-b01a-c55e051d0792',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.845217ea-ab72-4fa3-822c-6473fe515ad7","timestamp":"2021-04-25T08:23:43Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.61f87e1d-a3d0-43cc-bf2a-dda0f6fb5061"}}'
+{
+  host: '127.0.0.1:12301',
+  'user-agent': 'curl/7.75.0',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: undefined } } },
+  request: {
+    locale: 'en-US',
+    requestId: 'amzn1.echo-external.request.6f2e933f-1ec1-4c27-a386-288fca38621f',
+    timestamp: '2021-04-25T08:23:44Z',
+    type: 'IntentRequest',
+    intent: {
+      name: 'EnterHomeIntent',
+      slots: {
+        password: SlotValue { name: 'password', value: 'Taylor Swift' }
+      }
+    }
+  },
+  version: '1.0',
+  session: {
+    application: { applicationId: undefined },
+    new: true,
+    sessionId: 'SessionID.7be96415-b2fb-4ec1-a572-f59156f72169',
+    attributes: {}
+  }
+}
+interact exe costs:  1639 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.6f2e933f-1ec1-4c27-a386-288fca38621f',
+      timestamp: '2021-04-25T08:23:44Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.7be96415-b2fb-4ec1-a572-f59156f72169',
+      attributes: {}
+    }
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  19067 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'smarthome',
+  information: Information {
+    hostname: '192.168.120.2',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    context: { System: { application: { applicationId: undefined } } },
+    request: {
+      locale: 'en-US',
+      requestId: 'amzn1.echo-external.request.6f2e933f-1ec1-4c27-a386-288fca38621f',
+      timestamp: '2021-04-25T08:23:44Z',
+      type: 'IntentRequest',
+      intent: { name: 'EnterHomeIntent', slots: { password: [SlotValue] } }
+    },
+    version: '1.0',
+    session: {
+      application: { applicationId: undefined },
+      new: true,
+      sessionId: 'SessionID.7be96415-b2fb-4ec1-a572-f59156f72169',
+      attributes: {}
+    }
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.3010a26e-d09f-49b2-812b-63cfacb0f5cc","timestamp":"2021-04-25T08:23:44Z","type":"LaunchRequest"},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.d11fbbf1-c7cb-43f6-8ea1-5635716d0b1d"}}'
+[Results] exe (handler) costs:  26990 us
+[Results] exe (handler) costs:  31004 us
+[Results] exe (handler) costs:  30883 us
+[Results] exe (handler) costs:  25219 us
+[Results] exe (handler) costs:  23506 us

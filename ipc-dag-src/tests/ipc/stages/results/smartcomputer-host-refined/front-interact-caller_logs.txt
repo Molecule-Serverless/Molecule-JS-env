@@ -1,0 +1,945 @@
+Node.JS runtime for Molecule-serverless started
+
+Example app listening on port 40041
+{ target: [32m'/home/src/frontend/index.js'[39m }
+function init at express
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m814[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m47883[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.c2ff12e7-b634-40b3-8623-3b61f4a08f5f","timestamp":"2021-04-24T14:19:36Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.75b9ab03-5c01-41c5-b5a0-d451ae316c10","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m694[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m13601[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.f0a765b3-ce1d-4031-bb4f-122bd2d589da","timestamp":"2021-04-24T14:19:37Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.293d20a4-db3a-4132-9e6b-275b067e261a","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m636[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9663[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.03c90163-b23a-490c-9e8c-f1baf810efc4","timestamp":"2021-04-24T14:19:38Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.4bf5b7d8-402c-41fb-834d-66364dae5aca","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m277[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9692[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.6d84fcc4-49a5-472c-b714-63eceda596bd","timestamp":"2021-04-24T14:19:40Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.975a10d7-9043-4aa4-afe3-c256c5344831","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m296[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9507[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.c924a173-7b5c-421f-beea-d0f203ddea46","timestamp":"2021-04-24T14:19:41Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.32e465b1-2ba0-4c09-834d-00b68e1c54a6","attributes":{}}}'[39m
+[Results] exe (handler) costs:  [33m52852[39m us
+[Results] exe (handler) costs:  [33m17829[39m us
+[Results] exe (handler) costs:  [33m12894[39m us
+[Results] exe (handler) costs:  [33m12874[39m us
+[Results] exe (handler) costs:  [33m13067[39m us
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m299[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m8364[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.2330aded-2897-4add-b7e0-72cec51d722c","timestamp":"2021-04-24T14:19:42Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.04ee44bf-00f1-4772-8c1a-72e96c2f5317","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m272[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m8039[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.8dbd8e2c-d99e-48fd-b068-08aff6c77a55","timestamp":"2021-04-24T14:19:43Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.b9684ca1-7cad-49bb-a9d4-088c653f4617","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m291[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m8677[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.444ba2dc-e1c7-41bc-b6df-6e86e99a4851","timestamp":"2021-04-24T14:19:44Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.941640ae-dca5-476f-972c-64248a86b3ee","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m666[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m13008[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.169f53f3-6765-4e29-80fb-36885c495046","timestamp":"2021-04-24T14:19:45Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.e5d5e25c-5bd2-4a6d-8bc9-aef409ab689f","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m687[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m13075[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.81b2c6a4-6af7-459c-ad4e-a32511e98ebd","timestamp":"2021-04-24T14:19:46Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.83b9f7ab-9c81-46ed-b844-28a4e6d54e3c","attributes":{}}}'[39m
+[Results] exe (handler) costs:  [33m11809[39m us
+[Results] exe (handler) costs:  [33m11363[39m us
+[Results] exe (handler) costs:  [33m11890[39m us
+[Results] exe (handler) costs:  [33m16750[39m us
+[Results] exe (handler) costs:  [33m17082[39m us
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m662[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m10599[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.843865eb-e183-46e2-af28-cbffe675a926","timestamp":"2021-04-24T14:19:47Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.32842205-ec51-4e1d-8b46-46c439d05734","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m317[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9708[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.b4c29393-dd0a-49df-bd9e-ebbb1cf81085","timestamp":"2021-04-24T14:19:48Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.520ce170-76a0-4c82-a3d0-caf51abe2c53","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m234[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m8522[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.867078bf-673c-43ac-949e-320283758d23","timestamp":"2021-04-24T14:19:49Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.5ef45a52-4de3-4d3f-92b7-5bb464ce5f37","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m288[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m8952[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.0c7ce977-6195-4556-8215-15eef8655e35","timestamp":"2021-04-24T14:19:50Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.2b0e3e38-8159-4c58-b05e-114844034b65","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m296[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m8071[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.36a0c9b8-bc79-4b2e-8345-bf60833b5a62","timestamp":"2021-04-24T14:19:51Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.7c4e7b49-5b74-46a2-91b5-6f24b132e6c8","attributes":{}}}'[39m
+[Results] exe (handler) costs:  [33m14374[39m us
+[Results] exe (handler) costs:  [33m13157[39m us
+[Results] exe (handler) costs:  [33m11326[39m us
+[Results] exe (handler) costs:  [33m12391[39m us
+[Results] exe (handler) costs:  [33m11550[39m us
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m336[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m10164[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.0d844a1a-05c4-4cdb-829d-8c9a9b56498c","timestamp":"2021-04-24T14:19:52Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.f6c0dcad-e3a1-4535-ab51-39ff2603ba55","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m280[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9014[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.de975bb3-857d-4684-9961-ebc2540ed9cf","timestamp":"2021-04-24T14:19:53Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.64f2d670-9e57-495f-9f5f-1a2249b2ba5a","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m240[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9104[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.0e9be440-65d7-40ed-a149-90e81f9a4d71","timestamp":"2021-04-24T14:19:54Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.54b9c971-7cbe-4f61-b0c4-c444d80647c3","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m224[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m8537[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.4e4d9599-e54e-4ce1-88b9-b4079e5fe81b","timestamp":"2021-04-24T14:19:55Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.c153e3b9-f4b4-4cfa-a339-99e4849a1da2","attributes":{}}}'[39m
+{
+  host: [32m'127.0.0.1:12301'[39m,
+  [32m'user-agent'[39m: [32m'curl/7.75.0'[39m,
+  accept: [32m'*/*'[39m,
+  [32m'step-name'[39m: [32m'frontend'[39m,
+  [32m'app-name'[39m: [32m'alexa_v2'[39m,
+  [32m'content-type'[39m: [32m'application/json'[39m,
+  [32m'content-length'[39m: [32m'53'[39m
+}
+req body: { utter: [32m'open smarthome to I love Taylor Swift'[39m }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  [33m272[39m us
+in Get Callee
+get callee CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  [33m9309[39m us
+send result indirectly which is from CalleeInformation {
+  stepName: [32m'interact'[39m,
+  information: Information {
+    hostname: [32m'172.17.0.1'[39m,
+    port: [32m'12302'[39m,
+    path: [32m'/invoke'[39m,
+    method: [32m'GET'[39m,
+    protocol: [32m'http:'[39m
+  },
+  result: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+response: [32m'{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.6278041a-cfc6-45c9-b791-d67c65d5cc63","timestamp":"2021-04-24T14:19:56Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.d974563f-0f2f-4b65-b010-823ce4dcb8cd","attributes":{}}}'[39m
+[Results] exe (handler) costs:  [33m13539[39m us
+[Results] exe (handler) costs:  [33m12430[39m us
+[Results] exe (handler) costs:  [33m11379[39m us
+[Results] exe (handler) costs:  [33m11200[39m us
+[Results] exe (handler) costs:  [33m12604[39m us

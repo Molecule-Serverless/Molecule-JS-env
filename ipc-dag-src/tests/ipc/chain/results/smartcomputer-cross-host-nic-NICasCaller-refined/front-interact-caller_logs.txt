@@ -1,0 +1,945 @@
+Node.JS runtime for Molecule-serverless started
+
+Example app listening on port 40041
+{ target: '/home/src/frontend/index.js' }
+function init at express
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  3042 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  63035 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.50fe71ae-9509-4f99-920a-ff4b066ad609","timestamp":"2021-04-25T08:58:36Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.fd21bb43-4c0e-4346-9944-df0fb24b7fcc","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  1684 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  13504 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.51e70728-46ba-4bcc-84e8-057efc4ecb29","timestamp":"2021-04-25T08:58:37Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.34dcda02-e02f-47e9-8a17-a12163679a8d","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  720 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  10969 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.318735ab-8fac-4504-9fb9-d5aa92f66c1c","timestamp":"2021-04-25T08:58:38Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.b5002e2b-ac77-455d-96da-1351b0758ee5","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  609 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  10971 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.1580103f-bc1a-4a76-95f3-74064d0df4a2","timestamp":"2021-04-25T08:58:39Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.35c23e2c-7d65-41c3-9c2d-23f891791d84","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  634 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  10304 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.6f6aa874-10c5-4886-b0af-74a9ceafc88a","timestamp":"2021-04-25T08:58:40Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.ac4af711-1a7d-4620-b458-5f22e61be5c9","attributes":{}}}'
+[Results] exe (handler) costs:  79582 us
+[Results] exe (handler) costs:  21264 us
+[Results] exe (handler) costs:  17115 us
+[Results] exe (handler) costs:  20618 us
+[Results] exe (handler) costs:  15918 us
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  643 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  10644 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.d3030268-7c36-48c8-8d8a-ec8ef7fec994","timestamp":"2021-04-25T08:58:41Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.cc2e35e2-954b-4093-91f7-642b144f56cc","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  609 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  10275 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.65ce4f4a-a95b-4ca8-8f6a-e883761a9d16","timestamp":"2021-04-25T08:58:42Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.74f03bad-3bc6-4c40-b564-64e9435bc3a7","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  599 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  11418 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.ac9b637b-35b1-4ae7-a2e1-7f68bbc3e89d","timestamp":"2021-04-25T08:58:43Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.81d0cee5-83c4-45e3-9201-aab8972a5351","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  642 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  10150 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.1bacdb43-efae-4877-a959-67842f6804a2","timestamp":"2021-04-25T08:58:44Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.552c86d0-c9b0-424f-956a-f8b3e4d664e2","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  615 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  9700 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.1c273e56-5e99-4600-b8c3-76b333df3bf1","timestamp":"2021-04-25T08:58:46Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.96a8eaa8-4ce7-40ad-b5bd-90ced4371f9a","attributes":{}}}'
+[Results] exe (handler) costs:  16220 us
+[Results] exe (handler) costs:  15632 us
+[Results] exe (handler) costs:  16866 us
+[Results] exe (handler) costs:  15728 us
+[Results] exe (handler) costs:  15064 us
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  704 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  9935 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.760eb478-d72e-40f5-88b8-76cce798681d","timestamp":"2021-04-25T08:58:47Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.8921c057-5474-4e41-ba11-2c6b880e00fc","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  691 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  10333 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.3844966d-d8de-4fe4-ad85-68ca8392a8c2","timestamp":"2021-04-25T08:58:48Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.6f1e51cb-5197-4686-b235-fd5c33e58a45","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  610 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  10918 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.8b341b2a-2d6a-41c6-92b3-a9e17dc70773","timestamp":"2021-04-25T08:58:49Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.afd860af-c6c2-4060-91c4-31fc9b0feaa9","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  646 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  9693 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.c1ad50f4-8e7b-44a9-bab6-ed5c96fedd80","timestamp":"2021-04-25T08:58:50Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.e26d5cec-2afb-4731-a3a7-e1d81a723485","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  630 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  9958 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.eda288ab-49f4-4c85-9295-4b00463159b2","timestamp":"2021-04-25T08:58:51Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.0fb7afca-03fe-4cf2-ae5b-3d8f4ac6127e","attributes":{}}}'
+[Results] exe (handler) costs:  15488 us
+[Results] exe (handler) costs:  15756 us
+[Results] exe (handler) costs:  16355 us
+[Results] exe (handler) costs:  15400 us
+[Results] exe (handler) costs:  15477 us
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  622 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  9208 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.85e1b2a0-110b-4324-80d9-dc5633f7b44e","timestamp":"2021-04-25T08:58:52Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.1c531724-29d7-4ec3-839c-b53a5d4f16e7","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  589 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  9331 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.cad9c329-ff58-4056-95c5-eac3d566b21f","timestamp":"2021-04-25T08:58:53Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.a59aefaf-0a63-493b-9fae-64f9ce7c0f22","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  632 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  10567 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.8925457c-1112-40b7-8065-394437aed233","timestamp":"2021-04-25T08:58:54Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.13fb4670-0f41-440a-b3b9-41f8021fc9c4","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  666 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  9860 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.e4670277-96bf-4d1d-960f-48c088fdb0cd","timestamp":"2021-04-25T08:58:55Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.debff9a8-32ef-4162-8019-fb0ee0638bbe","attributes":{}}}'
+{
+  'user-agent': 'curl/7.29.0',
+  host: '127.0.0.1:12301',
+  accept: '*/*',
+  'step-name': 'frontend',
+  'app-name': 'alexa_v2',
+  'content-type': 'application/json',
+  'content-length': '53'
+}
+req body: { utter: 'open smarthome to I love Taylor Swift' }
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  634 us
+in Get Callee
+get callee CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+[Results] callee comm (round-trip) + exe (callee) costs:  10542 us
+send result indirectly which is from CalleeInformation {
+  stepName: 'interact',
+  information: Information {
+    hostname: '192.168.120.1',
+    port: '12302',
+    path: '/invoke',
+    method: 'GET',
+    protocol: 'http:'
+  },
+  result: {
+    skill: 'smarthome',
+    utter: 'open smarthome to I love Taylor Swift'
+  }
+}
+response: '{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.6331efcf-218e-4bf7-835a-8ecfa4d6db8b","timestamp":"2021-04-25T08:58:56Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.003d6fad-4262-4afd-a345-7fdd7cbe6794","attributes":{}}}'
+[Results] exe (handler) costs:  14699 us
+[Results] exe (handler) costs:  14610 us
+[Results] exe (handler) costs:  15990 us
+[Results] exe (handler) costs:  15958 us
+[Results] exe (handler) costs:  16222 us
