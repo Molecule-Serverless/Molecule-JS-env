@@ -1,0 +1,80 @@
+/env
+This should be eight: 8
+Node.JS runtime for Molecule-serverless　hetero started
+
+IPC Test Caller Start
+
+/env/tests/ipc/stages/front-interact/caller_config.json
+[register_self_global] invoked
+[register_self_global] resp: self_global_id: 9
+[register_self_global] shmid_string:/tmp/fifo_dir/shm-9 segment_id: 1477533718
+_fifo_ipc_init before open
+_fifo_ipc_init after open
+[global_fifo_init_uuid] invoked
+[global_fifo_init_uuid] resp: global_fifo_id: 9
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: 2
+caller init successfully
+
+caller listening in port 40041
+
+get into invoke
+
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  472 us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x9, len:94 fifo_write_content:  {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}}
+global fifo write result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+fifo_read result: 465, buf: {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.25d50d09-a6a4-4e97-a80e-c806a0248f44","timestamp":"2021-11-30T03:03:43Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.473f70b7-c6a3-4097-bfcd-e4344f35d341","attributes":{}}}} >
+caller after_receiving:  688576295644.874 before_sending:  688576289123.278
+callee + round-trip comm:  6521.5960693359375  us
+get into invoke
+
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  231 us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x9, len:94 fifo_write_content:  {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}}
+global fifo write result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+fifo_read result: 465, buf: {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.7166d2e2-93a8-49ca-af8d-b8ddbb3f5a53","timestamp":"2021-11-30T03:03:43Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.0e5c35e6-93a2-484c-b034-59c41beac1ef","attributes":{}}}} >
+caller after_receiving:  688576306799.303 before_sending:  688576305473.546
+callee + round-trip comm:  1325.7569580078125  us
+get into invoke
+
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  114 us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x9, len:94 fifo_write_content:  {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}}
+global fifo write result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+fifo_read result: 465, buf: {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.5aa83bde-29e1-4d0f-8877-d8e7c117d3e6","timestamp":"2021-11-30T03:03:43Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.46e4aa48-f2eb-4e76-8cba-63250ebc774b","attributes":{}}}} >
+caller after_receiving:  688576314576.945 before_sending:  688576313555.544
+callee + round-trip comm:  1021.4010009765625  us
+get into invoke
+
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  102 us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x9, len:94 fifo_write_content:  {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}}
+global fifo write result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+fifo_read result: 465, buf: {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.115c1a57-a9af-4d39-a399-2e5792d02d78","timestamp":"2021-11-30T03:03:43Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.84458b2a-f892-4920-9057-2b796b1169e1","attributes":{}}}} >
+caller after_receiving:  688576322072.071 before_sending:  688576321126.798
+callee + round-trip comm:  945.2730712890625  us
+get into invoke
+
+hello frontend
+utter: open smarthome to I love Taylor Swift
+result[0,1,2]: open smarthome to I love Taylor Swift, open, smarthome to I love Taylor Swift
+skill: smarthome to I love Taylor Swift
+frontend exe costs:  97 us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x9, len:94 fifo_write_content:  {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}}
+global fifo write result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+fifo_read result: 465, buf: {"source":"next","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.e8c0353b-5152-4a7d-a3bc-913e5dd563d7","timestamp":"2021-11-30T03:03:43Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.2ccf6bf0-d9d2-407f-8d99-1b081f947111","attributes":{}}}} >
+caller after_receiving:  688576329755.98 before_sending:  688576328815.374
+callee + round-trip comm:  940.60595703125  us

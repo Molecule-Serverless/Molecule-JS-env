@@ -1,0 +1,509 @@
+This should be eight: [33m8[39m
+Node.JS runtime for Molecule-serverless　hetero started
+
+IPC Test Callee Start
+
+[register_self_global] invoked
+[register_self_global] resp: self_global_id: 1
+[register_self_global] shmid_string:/tmp/fifo_dir/shm-1 segment_id: 1476601552
+/env/tests/ipc/stages/front-interact/callee_config.json
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: 513
+_fifo_ipc_init before open
+_fifo_ipc_init after open
+[global_fifo_init_uuid] invoked
+[global_fifo_init_uuid] resp: global_fifo_id: 1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: -1
+[global_fifo_connect] invoked
+[global_fifo_connect] resp: global_fifo_id: 514
+Callee init successfully
+
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.7487ff47-239f-42ba-ae5e-e587a6beae72'[39m,
+    timestamp: [32m'2021-04-28T03:06:52Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.bc76b905-b9f8-4d7c-b4f3-963d536e40ae'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m21878[39m us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:465 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.7487ff47-239f-42ba-ae5e-e587a6beae72","timestamp":"2021-04-28T03:06:52Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.bc76b905-b9f8-4d7c-b4f3-963d536e40ae","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.7487ff47-239f-42ba-ae5e-e587a6beae72","timestamp":"2021-04-28T03:06:52Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.bc76b905-b9f8-4d7c-b4f3-963d536e40ae","attributes":{}}}} >
+callee after_receiving:  [33m919622647347.63[39m before_sending:  [33m919622678592.744[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}f47-239f-42ba-ae5e-e587a6beae72","timestamp":"2021-04-28T03:06:52Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.bc76b905-b9f8-4d7c-b4f3-963d536e40ae","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c0b8cf57-c2a4-45ea-b3a7-d5b834699555'[39m,
+    timestamp: [32m'2021-04-28T03:06:57Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.a9a60c50-1622-486d-9fb0-854f57d79135'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m6232[39m us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:465 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.c0b8cf57-c2a4-45ea-b3a7-d5b834699555","timestamp":"2021-04-28T03:06:57Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.a9a60c50-1622-486d-9fb0-854f57d79135","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.c0b8cf57-c2a4-45ea-b3a7-d5b834699555","timestamp":"2021-04-28T03:06:57Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.a9a60c50-1622-486d-9fb0-854f57d79135","attributes":{}}}} >
+callee after_receiving:  [33m919627794098.528[39m before_sending:  [33m919627801610.81[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}f57-c2a4-45ea-b3a7-d5b834699555","timestamp":"2021-04-28T03:06:57Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.a9a60c50-1622-486d-9fb0-854f57d79135","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.c377d4c8-7395-4936-b396-7b31434a72d1'[39m,
+    timestamp: [32m'2021-04-28T03:07:02Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.65ee2f19-db44-4544-b80f-ad0eb326bbc5'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m4088[39m us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:465 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.c377d4c8-7395-4936-b396-7b31434a72d1","timestamp":"2021-04-28T03:07:02Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.65ee2f19-db44-4544-b80f-ad0eb326bbc5","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.c377d4c8-7395-4936-b396-7b31434a72d1","timestamp":"2021-04-28T03:07:02Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.65ee2f19-db44-4544-b80f-ad0eb326bbc5","attributes":{}}}} >
+callee after_receiving:  [33m919632849141.345[39m before_sending:  [33m919632854416.71[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}4c8-7395-4936-b396-7b31434a72d1","timestamp":"2021-04-28T03:07:02Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.65ee2f19-db44-4544-b80f-ad0eb326bbc5","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.e29301e7-8431-460b-9067-0064da536476'[39m,
+    timestamp: [32m'2021-04-28T03:07:08Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.1d0f7210-b107-4cb3-8ae5-d0d32eb32ee6'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m3963[39m us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:465 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.e29301e7-8431-460b-9067-0064da536476","timestamp":"2021-04-28T03:07:08Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.1d0f7210-b107-4cb3-8ae5-d0d32eb32ee6","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.e29301e7-8431-460b-9067-0064da536476","timestamp":"2021-04-28T03:07:08Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.1d0f7210-b107-4cb3-8ae5-d0d32eb32ee6","attributes":{}}}} >
+callee after_receiving:  [33m919637899077.572[39m before_sending:  [33m919637904074.087[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}1e7-8431-460b-9067-0064da536476","timestamp":"2021-04-28T03:07:08Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.1d0f7210-b107-4cb3-8ae5-d0d32eb32ee6","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.0f0aff5c-9ffe-4956-9dd7-12d1cd7a7be3'[39m,
+    timestamp: [32m'2021-04-28T03:07:13Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.6509b5cf-37d9-41c0-b19e-89f5ca9c9d61'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m3837[39m us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:465 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.0f0aff5c-9ffe-4956-9dd7-12d1cd7a7be3","timestamp":"2021-04-28T03:07:13Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.6509b5cf-37d9-41c0-b19e-89f5ca9c9d61","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.0f0aff5c-9ffe-4956-9dd7-12d1cd7a7be3","timestamp":"2021-04-28T03:07:13Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.6509b5cf-37d9-41c0-b19e-89f5ca9c9d61","attributes":{}}}} >
+callee after_receiving:  [33m919642952291.085[39m before_sending:  [33m919642957135.388[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}f5c-9ffe-4956-9dd7-12d1cd7a7be3","timestamp":"2021-04-28T03:07:13Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.6509b5cf-37d9-41c0-b19e-89f5ca9c9d61","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.298529d4-47d6-4e40-9c45-15dc8c5aefd5'[39m,
+    timestamp: [32m'2021-04-28T03:07:18Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.39b52af3-d008-42d5-95a8-2dbb7c35ee56'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m14101[39m us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:465 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.298529d4-47d6-4e40-9c45-15dc8c5aefd5","timestamp":"2021-04-28T03:07:18Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.39b52af3-d008-42d5-95a8-2dbb7c35ee56","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.298529d4-47d6-4e40-9c45-15dc8c5aefd5","timestamp":"2021-04-28T03:07:18Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.39b52af3-d008-42d5-95a8-2dbb7c35ee56","attributes":{}}}} >
+callee after_receiving:  [33m919648001334.828[39m before_sending:  [33m919648016588.529[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}9d4-47d6-4e40-9c45-15dc8c5aefd5","timestamp":"2021-04-28T03:07:18Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.39b52af3-d008-42d5-95a8-2dbb7c35ee56","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.40253f72-417a-43bf-b490-c4fff2f4923d'[39m,
+    timestamp: [32m'2021-04-28T03:07:23Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.5e36def6-b5cd-4a59-9e6e-2050cb8749d5'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m3725[39m us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:465 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.40253f72-417a-43bf-b490-c4fff2f4923d","timestamp":"2021-04-28T03:07:23Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.5e36def6-b5cd-4a59-9e6e-2050cb8749d5","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.40253f72-417a-43bf-b490-c4fff2f4923d","timestamp":"2021-04-28T03:07:23Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.5e36def6-b5cd-4a59-9e6e-2050cb8749d5","attributes":{}}}} >
+callee after_receiving:  [33m919653060542.116[39m before_sending:  [33m919653065223.738[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}f72-417a-43bf-b490-c4fff2f4923d","timestamp":"2021-04-28T03:07:23Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.5e36def6-b5cd-4a59-9e6e-2050cb8749d5","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.9934b250-81fe-4a1f-9858-1440367b3ce4'[39m,
+    timestamp: [32m'2021-04-28T03:07:28Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.82816fcc-0169-4da5-82e8-a92c312f8635'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m3425[39m us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:465 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.9934b250-81fe-4a1f-9858-1440367b3ce4","timestamp":"2021-04-28T03:07:28Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.82816fcc-0169-4da5-82e8-a92c312f8635","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.9934b250-81fe-4a1f-9858-1440367b3ce4","timestamp":"2021-04-28T03:07:28Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.82816fcc-0169-4da5-82e8-a92c312f8635","attributes":{}}}} >
+callee after_receiving:  [33m919658109781.385[39m before_sending:  [33m919658114258.47[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}250-81fe-4a1f-9858-1440367b3ce4","timestamp":"2021-04-28T03:07:28Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.82816fcc-0169-4da5-82e8-a92c312f8635","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.ba97070e-d390-4b42-8a84-4e435082208d'[39m,
+    timestamp: [32m'2021-04-28T03:07:33Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.6237d0eb-34ab-4cc8-821e-8b5b16eb974a'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m3635[39m us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:465 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.ba97070e-d390-4b42-8a84-4e435082208d","timestamp":"2021-04-28T03:07:33Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.6237d0eb-34ab-4cc8-821e-8b5b16eb974a","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.ba97070e-d390-4b42-8a84-4e435082208d","timestamp":"2021-04-28T03:07:33Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.6237d0eb-34ab-4cc8-821e-8b5b16eb974a","attributes":{}}}} >
+callee after_receiving:  [33m919663157942.73[39m before_sending:  [33m919663162548.374[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}70e-d390-4b42-8a84-4e435082208d","timestamp":"2021-04-28T03:07:33Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.6237d0eb-34ab-4cc8-821e-8b5b16eb974a","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+fifo_read result: 94, buf: {"source":"prev","data":{"skill":"smarthome","utter":"open smarthome to I love Taylor Swift"}} >
+{
+  source: [32m'prev'[39m,
+  data: {
+    skill: [32m'smarthome'[39m,
+    utter: [32m'open smarthome to I love Taylor Swift'[39m
+  }
+}
+skill: smarthome , utter: open smarthome to I love Taylor Swift
+slotName: password slotValue: Taylor Swift intent.name: EnterHomeIntent
+interact result :{
+  context: { System: { application: { applicationId: [90mundefined[39m } } },
+  request: {
+    locale: [32m'en-US'[39m,
+    requestId: [32m'amzn1.echo-external.request.b53660bc-0a67-42b5-a229-41e83cec8014'[39m,
+    timestamp: [32m'2021-04-28T03:07:38Z'[39m,
+    type: [32m'IntentRequest'[39m,
+    intent: {
+      name: [32m'EnterHomeIntent'[39m,
+      slots: {
+        password: SlotValue { name: [32m'password'[39m, value: [32m'Taylor Swift'[39m }
+      }
+    }
+  },
+  version: [32m'1.0'[39m,
+  session: {
+    application: { applicationId: [90mundefined[39m },
+    new: [33mtrue[39m,
+    sessionId: [32m'SessionID.fd9d172a-77eb-4556-91be-af608eb0d7a8'[39m,
+    attributes: {}
+  }
+}
+interact exe costs:  [33m3549[39m us
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:465 fifo_write_content:  {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.b53660bc-0a67-42b5-a229-41e83cec8014","timestamp":"2021-04-28T03:07:38Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.fd9d172a-77eb-4556-91be-af608eb0d7a8","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"prev","data":{"context":{"System":{"application":{}}},"request":{"locale":"en-US","requestId":"amzn1.echo-external.request.b53660bc-0a67-42b5-a229-41e83cec8014","timestamp":"2021-04-28T03:07:38Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.fd9d172a-77eb-4556-91be-af608eb0d7a8","attributes":{}}}} >
+callee after_receiving:  [33m919668207422.578[39m before_sending:  [33m919668211963.712[39m
+fifo_read result: 139, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
+{
+  source: [32m'next'[39m,
+  data: {
+    version: [32m'1.0'[39m,
+    response: [32m'light switch: ON'[39m,
+    userAgent: [32m'ask-node/2.10.1 Node/v14.16.0'[39m,
+    sessionAttributes: {}
+  }
+}
+[MoleculeRuntime@global_fifo_write] shm_uuid: 0x1, len:139 fifo_write_content:  {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}}0bc-0a67-42b5-a229-41e83cec8014","timestamp":"2021-04-28T03:07:38Z","type":"IntentRequest","intent":{"name":"EnterHomeIntent","slots":{"password":{"name":"password","value":"Taylor Swift"}}}},"version":"1.0","session":{"application":{},"new":true,"sessionId":"SessionID.fd9d172a-77eb-4556-91be-af608eb0d7a8","attributes":{}}}}
+global fifo write result: 0, buf: {"source":"next","data":{"version":"1.0","response":"light switch: ON","userAgent":"ask-node/2.10.1 Node/v14.16.0","sessionAttributes":{}}} >
