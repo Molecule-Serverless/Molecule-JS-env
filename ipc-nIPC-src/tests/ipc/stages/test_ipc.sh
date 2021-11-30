@@ -6,7 +6,7 @@ do
 	--header 'Step-Name: frontend' \
 	--header 'App-Name: alexa_v2' \
 	--header 'Content-Type: application/json' \
-	--data-raw '{
+	--data '{
 	    "utter" : "open smarthome to I love Taylor Swift"
 	}'
 done
