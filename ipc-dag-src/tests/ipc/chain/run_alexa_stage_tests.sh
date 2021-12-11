@@ -70,15 +70,15 @@ function run_chain_baseline(){
 	docker stop door
 	docker stop light
 
-	docker run --rm --name front -it -d -p 12301:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_client.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/front-interact
+	docker run --rm --name front -it -d -p 12301:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/ipc-dag-src/:/env -w /env --entrypoint=/env/scripts/local_client.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/front-interact
 
-	docker run --rm --name interact -it -d -p 12302:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_server.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/front-interact
+	docker run --rm --name interact -it -d -p 12302:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/ipc-dag-src/:/env -w /env --entrypoint=/env/scripts/local_server.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/front-interact
 
-	docker run --rm --name smarthome -it -d -p 12303:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_server.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/interact-smarthome
+	docker run --rm --name smarthome -it -d -p 12303:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/ipc-dag-src/:/env -w /env --entrypoint=/env/scripts/local_server.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/interact-smarthome
 
-	docker run --rm --name door -it -d -p 12304:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_server.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/smarthome-door
+	docker run --rm --name door -it -d -p 12304:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/ipc-dag-src/:/env -w /env --entrypoint=/env/scripts/local_server.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/smarthome-door
 
-	docker run --rm --name light -it -d -p 12305:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/src/:/env -w /env --entrypoint=/env/scripts/local_server.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/smarthome-light
+	docker run --rm --name light -it -d -p 12305:40041 -v $MOLECULE_ENV_HOME/../molecule-benchmarks/:/home -v $MOLECULE_ENV_HOME/ipc-dag-src/:/env -w /env --entrypoint=/env/scripts/local_server.sh ddnirvana/molecule-js-env:v3-node14.16.0 tests/ipc/stages/smarthome-light
 
 	./test_ipc.sh
 
